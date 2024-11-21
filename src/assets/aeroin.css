@@ -1,0 +1,4613 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: grey;
+    /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+    /* Rounded corners for the scrollbar */
+    border: 2px solid grey;
+    /* Border color around the thumb */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black #111;
+    /* Thumb color black, track color grey */
+}
+
+
+/*  Large screen devices more than 1024px - Start */
+
+/* Styling for Navbar */
+.navbar {
+    padding: 20px 100px;
+    text-align: center;
+    /* background-color: #181818; */
+    background-color: #0000;
+    /* background: linear-gradient(to bottom, #181818 50%, rgba(24, 24, 24, 0) 100%); */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 100px;
+    /* Adjust the width as per your need */
+    height: auto;
+    /* This will automatically adjust the height proportionally */
+    max-height: 80px;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    /* color: #3E4040; */
+    /* color: #5d5e5e; */
+    /* color: rgb(180, 171, 171); */
+    color: whitesmoke;
+    margin: 0;
+}
+
+.navbar-nav {
+    font-size: 18px;
+    list-style: none;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    /* color: #FFF; */
+    /* color: #5d5e5e; */
+    color: whitesmoke;
+    text-align: left;
+    /* 768px - 1024px screen size  */
+    font-weight: 100;
+    transition: color 0.3s ease-in-out;
+    /* margin-left: 20px; */
+    /* 768px - 1024px screen size   */
+}
+
+.navbar-nav .nav-link:hover {
+    /* color: #00FFBF; */
+    color: #828E92
+        /* Hover effect */
+}
+
+/* For large desktops and monitors */
+
+
+.navbar .container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    text-align: left;
+}
+
+/* Hero Section Styling */
+
+.hero {
+    height: 85vh;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%),
+        url('https://ik.imagekit.io/cjh0dpnmu/space-background-with-fictional-planets.jpg?updatedAt=1731719707691'); */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%),
+        url('https://ik.imagekit.io/cjh0dpnmu/planet-earth-background.jpg?updatedAt=1731719706005');
+    background-size: cover;
+    background-position: calc(50% - 20px) calc(79% - 10px);
+    /* background-position: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* Centering and adjusting the text position */
+.hero-text {
+    position: absolute;
+    /* Use absolute to move freely inside the hero section */
+    bottom: 0%;
+    /* Move the text closer to the bottom, adjust as needed */
+    left: 50%;
+    /* Horizontally center the text */
+    transform: translateX(-50%);
+    /* Perfectly center the text horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+}
+
+
+.hero-text span {
+    font-size: 68px;
+    /* Adjusted to make the text smaller */
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0);
+    /* Subtle text color */
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    background: linear-gradient(to bottom, #777 0%, rgba(0, 0, 0, 0.8) 73%);
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Fading effect */
+    overflow: hidden;
+}
+
+.hero-text::before {
+    content: '';
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, transparent 0%, black 100%);
+    z-index: 0;
+}
+
+/* Overlay images */
+/* General styling for overlay image container */
+.overlay-images a {
+    position: absolute;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.overlay-images a.animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.overlay-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+.overlay-image {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+}
+
+/* All images are black and white by default */
+.overlay-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: grayscale(100%); */
+    /* Apply black and white filter */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Smooth transition */
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+/* When hovered, show the original color */
+.overlay-image:hover img {
+    transform: scale(1.1);
+    /* filter: grayscale(0); */
+    /* Remove the black and white filter */
+}
+
+.overlay-images .drone-image {
+    top: 5%;
+    left: 15%;
+}
+
+.overlay-images .cubesat-image {
+    top: 15%;
+    left: 81%;
+}
+
+.overlay-images .rocketry-image {
+    top: 45%;
+    left: 5%;
+}
+
+.overlay-images .robotics-image {
+    top: 60%;
+    left: 92%;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Hover text effect */
+.overlay-image::after {
+    content: attr(data-hover-text);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.overlay-image:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+
+/* Accreduation Section */
+
+.accreditation-section {
+    padding-top: 0;
+    padding-bottom: 70px;
+    margin-top: 100px;
+}
+
+.accreditation-section h2 {
+    font-size: 27px;
+    font-weight: 400;
+    color: #E6E6FA;
+}
+
+.accreditation-icons,
+.recognized-icons {
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.icon-box {
+    background-color: #181818;
+    /* background-color:#BABCB3; */
+    /* background: linear-gradient(135deg, #1c1c1c, #3f3f3e);  */
+    /* background: radial-gradient(circle, #1c1c1c, #353535); */
+    height: 100px;
+    width: 180px;
+    /* Slightly reduced width */
+    border-radius: 8px;
+    margin: 10px;
+    /* Reduced margin */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Light and subtle shadow */
+    /* box-shadow: 0 0 15px 5px rgba(211, 211, 211, 0.4); */
+}
+
+.icon-box img {
+    max-width: 110px;
+    /* Adjusted icon size */
+}
+
+.about-section {
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 0px;
+    background-color: #2827273d;
+    width: 100%;
+    /* background-image: url("https://img.freepik.com/free-vector/gray-geometric-shapes-wireframe-wave-background-vector_53876-177919.jpg?t=st=1727180436~exp=1727184036~hmac=6a11d1e8f40bcfe784c27732c45038453bde136b1f9a58c89c6fe50a5bcb1320&w=1060"); */
+    /* background-repeat: no-repeat; */
+}
+
+.about-section h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #E6E6FA;
+    /* color: #195880; */
+}
+
+.about-section p {
+    margin-top: 40px;
+    font-size: 17px;
+    font-weight: 100;
+    color: #B4ABAB;
+    line-height: 1.7;
+    text-align: justify;
+    max-width: 750px;
+}
+
+.about-section img {
+    margin-left: 100px;
+    height: 85%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Why Aeroin EduTech */
+.growth-section {
+    /* background-color: #0e1b26; */
+    /* padding: 0px 80px; */
+    margin-top: 50px;
+    /* background-color: #181818; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    /* Limits the content width */
+}
+
+/* Left side - Icon container (now horizontal) */
+.growth-icon-container {
+    display: flex;
+    gap: 20px;
+    /* Adds space between icons */
+    width: 55%;
+    /* 40% of the section width */
+}
+
+/* Common styles for all icons */
+.growth-icon-box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #195880; */
+    /* background-color: #0B1F32; */
+    /* background: linear-gradient(135deg, #1c1c1c, #3f3f3e);  */
+    background: radial-gradient(circle, #1c1c1c, #353535);
+    /* background-color: #181818; */
+    border-radius: 5px;
+    animation: bounce 3s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.grid-item h3 i {
+    color: #2f9db6;
+    /* Matches the color scheme */
+    margin-right: 10px;
+    /* Space between icon and text */
+    font-size: 1.5rem;
+    /* Adjust icon size */
+    vertical-align: middle;
+    /* Align icons with text */
+}
+
+/* Bounce animation for icons */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.growth-icon-box i {
+    font-size: 2rem;
+    color: #ffffff;
+    font-style: normal;
+}
+
+/* Specific classes for each icon */
+.icon-rocket:before {
+    content: '\1F680';
+    /* Unicode character for rocket */
+}
+
+.icon-satellite:before {
+    content: '\1F6F0';
+    /* Unicode character for satellite */
+}
+
+.icon-telescope:before {
+    content: '\1F52D';
+    /* Unicode character for telescope */
+}
+
+.icon-planet:before {
+    content: '\1FA90';
+    /* Unicode character for planet */
+}
+
+.icon-astronaut:before {
+    content: '\1F468\200D\1F680';
+    /* Unicode character for astronaut */
+}
+
+.icon-star:before {
+    content: '\1F31F';
+    /* Unicode character for star */
+}
+
+/* Right side - Heading and subtitle */
+.section-heading {
+    text-align: left;
+    width: 50%;
+    /* 50% of the section width */
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: 500;
+    color: #E6E6FA;
+    margin-bottom: 10px;
+}
+
+
+.section-subtitle {
+    /* font-size: 1.2rem;
+        color: #c9d1d9; */
+    font-size: 17px;
+    font-weight: 100;
+    color: #B4ABAB;
+    line-height: 1.7;
+}
+
+/*  */
+
+
+/* 4 Grid Styling */
+div.grid-section {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.aeroin-edutech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 30px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.grid-item {
+    background-color: #181818;
+    /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.grid-item h3 {
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 400;
+    color: #E6E6FA;
+    /* Light heading color */
+    font-weight: bold;
+}
+
+/* Customize icon colors separately from heading */
+.grid-item h3 i {
+    color: #f7f0ef;
+    /* Default icon color */
+    transition: color 0.3s ease;
+}
+
+/* Change color of the .fa-video icon on hover */
+.grid-item:hover i.fa-flask {
+    color: #4bd8c3;
+    /* Custom color for the video icon */
+}
+
+.grid-item:hover i.fa-video {
+    color: #da0303;
+    /* Custom color for the video icon */
+}
+
+.grid-item:hover i.fa-graduation-cap {
+    color: #5a5a5a;
+    /* Custom color for the video icon */
+}
+
+.grid-item:hover i.fa-cogs {
+    color: #6f57cf;
+    /* Custom color for the video icon */
+}
+
+.grid-item ul {
+
+    padding: 30;
+}
+
+.grid-item ul li {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.8;
+    color: #adadae;
+    /* Light text color */
+    margin-bottom: 10px;
+}
+
+.grid-item a {
+    color: #40E0D0;
+    /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.grid-item a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a i {
+    margin-left: 8px;
+    /* Add space between text and icon */
+    color: #eaeaea;
+    /* Icon color */
+    transition: transform 0.3s ease;
+    /* Optional hover animation */
+}
+
+a:hover i {
+    transform: translateY(-2px);
+    /* Slight bounce effect on hover */
+}
+
+/* Feedback Section Styles */
+.feedback-container {
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.feedback-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+
+}
+
+.feedback-track {
+    display: flex;
+    animation: scrollFeedback 100s linear infinite;
+}
+
+.feedback-card {
+    background-color: #181818;
+    padding: 27px;
+    /* Reduced padding for a more compact look */
+    margin: 0 10px;
+    /* Adjusted margin for better spacing */
+    border-radius: 8px;
+    color: #E6E6FA;
+
+    width: 450px;
+    /* Fixed width */
+    height: 290px;
+    /* Fixed height */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+    /* Adjusted shadow */
+    display: flex;
+    /* Use flex to manage content layout */
+    flex-direction: column;
+    /* Align items vertically */
+    overflow: hidden;
+    /* Hide overflowing content */
+}
+
+.feedback-top {
+    display: flex;
+    justify-content: flex-end;
+    /* Align quote icon to the right */
+    align-items: flex-start;
+    /* Align items to the top */
+    height: 60px;
+    /* Set height to ensure the icon and content fit */
+    opacity: 20%;
+}
+
+.feedback-top i {
+    font-size: 1.7rem;
+    /* Adjusted icon size */
+    color: #ccc;
+}
+
+/* .feedback-content {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #ddd;
+    text-align: justify;
+    overflow: auto;
+    text-overflow: ellipsis;
+} */
+
+.feedback-content {
+    position: relative;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #ddd;
+    text-align: justify;
+    max-height: 120px;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.feedback-content:hover::after {
+    content: "Scroll for more";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+    color: white;
+    opacity: 0.9;
+    background-color: #000;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* Hide the scrollbar for WebKit browsers (Chrome, Safari) */
+.feedback-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.feedback-content {
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.feedback-content {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.feedback-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    /* Pushes it to the bottom */
+}
+
+.feedback-bottom img {
+    width: 35px;
+    /* Adjusted width */
+    height: 32px;
+    /* Adjusted height */
+    border-radius: 50%;
+    margin-right: 10px;
+    /* Adjusted margin */
+}
+
+.feedback-bottom h5 {
+    margin: 0;
+    color: #ddd;
+    font-size: 15px;
+}
+
+/* Scroll Animation */
+@keyframes scrollFeedback {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Stop animation on hover */
+.feedback-wrapper:hover .feedback-track {
+    animation-play-state: paused;
+}
+
+
+/* Animation for content loading */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    /* Start hidden */
+    transform: translateY(5px);
+    /* Start position */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    /* End state */
+    transform: translateY(0);
+}
+
+/* Contact Page Styling */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    max-width: 1300px;
+    /* background-color: #181818; */
+    /* background-color: #0A0909; */
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    color: #E6E6FA;
+}
+
+/* Left Section */
+.contact-left-section {
+    flex: 1;
+    padding: 20px 50px;
+    /* border-right: 1px solid #252525; */
+}
+
+.contact-left-section h2 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #E6E6FA;
+    /* margin-bottom: 15px; */
+    text-align: center;
+}
+
+.contact-left-section p {
+    margin-bottom: 40px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contact-info .contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.contact-info .contact-info-item .contact-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.highlight {
+    color: #E6E6FA;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Right Section */
+.contact-right-section {
+    flex: 1;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 5px;
+    background-color: #0A0909;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-right-section h2 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #E6E6FA;
+    /* margin-bottom: 15px; */
+    text-align: center;
+}
+
+.contact-right-section p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    color: #a2a2a4;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #181818;
+    /* Black background */
+    color: #fff;
+    /* White text */
+    caret-color: #fff;
+    /* White cursor color */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+    /* Light grey placeholder text */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #353635;
+    /* Green border on focus */
+    outline: none;
+    background-color: #000;
+    /* Keep background black on focus */
+    color: #fff;
+    /* Ensure text remains white */
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+.contact-form button {
+    padding: 12px;
+    background-color: #fbf8f8;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #000;
+    color: #f1eeee;
+    font-weight: 500;
+}
+
+/* About Page Styling */
+.carousel {
+    height: 38vh;
+    /* You can adjust the height */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: initial;
+    height: 300px;
+    /* width: 200px; */
+}
+
+/* Company Introduction Section */
+.company-intro-section {
+    padding: 100px;
+    padding-bottom: 50px;
+    /* background-color: #0e1b26; */
+    /* Dark background */
+}
+
+.company-intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.company-intro-left {
+    flex: 1;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Space between images */
+}
+
+.photo-gallery img {
+    width: calc(33.33% - 10px);
+    /* Adjust this to fit the number of images in a row */
+    height: 210px;
+    border-radius: 20px;
+    object-fit: fill;
+    /* object-fit: cover; */
+    /* object-position: top; */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    filter: grayscale(0%);
+}
+
+
+.company-intro-right {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.company-intro-right p {
+    color: #E6E6FA;
+    font-size: 16.5px;
+    font-weight: 100;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Training Section */
+.training-section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #E6E6FA;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: #666;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+/* Stats Row */
+
+
+.stat-icon {
+    font-size: 60px;
+    color: #E6E6FA;
+    /* Light Lavender color for contrast */
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.stat-box:hover .stat-icon {
+    color: #0CB6EB;
+    /* Changes icon color on hover */
+}
+
+/* Ensuring the stat-row is properly styled */
+.stats-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.stat-box {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow */
+    width: 23%;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4),
+        0 10px 20px rgba(255, 255, 255, 0.1),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Additional style for headings */
+.stat-box h3 {
+    font-size: 36px;
+    color: #0CB6EB;
+    /* Bright yellow for highlighting stats */
+
+}
+
+.stat-box p {
+    font-size: 18px;
+    color: #E6E6FA;
+}
+
+/* Leadership Section */
+.leadership-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.leadership-section h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #E6E6FA;
+    /* text-transform: uppercase; */
+    letter-spacing: 1.5px;
+}
+
+.leadership-section p {
+    color: #666;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.leadership-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 50px;
+}
+
+.leader-box {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leader-box:hover {
+    /* transform: translateY(-10px); */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.leader-box img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.leader-box img:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.leader-box p:first-of-type {
+    font-size: 18px;
+    /* Example styling */
+    font-weight: bold;
+    color: #ffffff;
+    /* Adjust the color as needed */
+    margin-bottom: 5px;
+}
+
+.leader-box p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    color: #dcdcdc;
+    font-weight: 500;
+}
+
+.leader-box p:last-of-type {
+    font-size: 1rem;
+    color: #a9a9a9;
+}
+
+.leader-box a {
+    font-size: 2rem;
+    color: #0e76a8;
+    margin-top: 0px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.leader-box a:hover {
+    color: #08547a;
+    text-decoration: none;
+}
+
+/* Rocket Overview Styling */
+.overview-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 180px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.text-content p {
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.text-content h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #E6E6FA;
+    margin-bottom: 10px;
+}
+
+.text-content h2 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.text-content ul {
+    list-style: none;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.text-content ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content ul li span:first-child {
+    color: #bbb;
+}
+
+.rocket-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rocket-container {
+    width: 400px;
+    height: 390px;
+    perspective: 1000px;
+}
+
+.rocket {
+    width: 85%;
+    height: 100%;
+    animation: rotate 20s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/*  */
+/* Achievement Carousel Styling */
+.achievement-carousel-section {
+    /* padding: 30px; */
+    /* background-color: #f5f5f5; */
+    padding-top: 70px;
+    padding-bottom: 20px;
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.carousel-wrapper-achievement {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.carousel-container-achievement {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.carousel-slide-achievement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    background-color: #181818;
+    border-radius: 10px;
+}
+
+.achievement-content-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Our Awards Section */
+.fixed-heading {
+    margin-bottom: 20px;
+}
+
+.fixed-heading h2 {
+    font-size: 14px;
+    color: #E6E6FA;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.achievement-content-left h3 {
+    font-size: 25px;
+    color: #E6E6FA;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+    /* line-height: 1.5; */
+}
+
+.achievement-content-left p {
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 16px;
+    padding-right: 20px;
+    padding-top: 10px;
+    line-height: 1.5;
+    color: #828E92;
+
+}
+
+.achievement-content-right {
+    flex: 1;
+}
+
+.achievement-content-right img {
+    width: 582px;
+    height: 372px;
+    border-radius: 8px;
+    object-fit: fill;
+}
+
+/* Navigation Buttons */
+.prev-btn-achievement,
+.next-btn-achievement {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #181818;
+    color: #3d3d3f;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev-btn-achievement {
+    left: 10px;
+}
+
+.next-btn-achievement {
+    right: 10px;
+}
+
+.prev-btn-achievement:hover,
+.next-btn-achievement:hover {
+    background-color: #181818;
+}
+
+
+
+
+/* About Page Industry Collbration Styling */
+.collaboration-carousel {
+    margin-top: 120px;
+    padding-left: 105px;
+    padding-right: 105px;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    /* Ensure only visible items are shown */
+    position: relative;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+    /* Smooth scrolling */
+}
+
+.carousel-icon-box {
+    flex: 0 0 auto;
+    /* Maintain consistent size for items */
+    background-color: #181818;
+    height: 100px;
+    width: 320px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-icon-box img {
+    max-width: 300px;
+    overflow: hidden;
+}
+
+
+/* Mission and Vission Section */
+
+.mission-vision-section {
+    margin-top: 50px;
+    /* Light background color for contrast */
+    padding-left: 40px;
+    padding-right: 40px;
+    /* Ample padding for spacing */
+}
+
+.section-title {
+    font-size: 33px;
+    font-weight: 800;
+    color: #E6E6FA;
+    margin-bottom: 10px;
+    text-align: left;
+    /* Center-align headings */
+}
+
+.section-description {
+    color: #bbb;
+    font-size: 15px;
+    font-weight: 200;
+    /* Slightly lighter color for text */
+    line-height: 1.7;
+    /* Improved readability with line height */
+    text-align: justify;
+    /* Center-align text */
+    padding: 0 20px;
+    /* Padding for text */
+}
+
+.mission-box,
+.vision-box {
+    background-color: #181818;
+    /* Black background for boxes */
+    border-radius: 10px;
+    /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 40px;
+    /* Padding inside the boxes */
+    margin: 10px;
+    /* Margin around each box */
+    flex: 1;
+    /* Allow boxes to grow and shrink */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+
+/* Main Courses Page */
+.maincourse {
+    /* background-color: #0e0e0e; */
+    /* Darker background for contrast */
+    color: #E6E6FA;
+    /* padding: 60px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 80vh; */
+
+}
+
+.split-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1700px; */
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    /* border-radius: 15px; */
+    overflow: hidden;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    /* Deeper shadow for depth */
+}
+
+.left-content {
+    flex: 1;
+    /* padding-right: 40px; */
+    padding-left: 70px;
+}
+
+.left-content h1 {
+    font-size: 38px;
+    line-height: 1.6;
+    color: #E6E6FA;
+    /* color: #6A5ACD; */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.left-content ul {
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.left-content ul li {
+    font-size: 18px;
+    line-height: 2;
+    color: #ccc;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.left-content ul li:before {
+    /* content: "\2022"; */
+    /* Bullet point */
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+    /* color: #6A5ACD; */
+    /* Softer accent color */
+    font-size: 24px;
+}
+
+/* .left-content a {
+    margin-top: 200px;
+} */
+
+.right-content {
+    flex: 1;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-content img {
+    width: 100%;
+    max-width: 500px;
+    height: 50vh;
+    border-radius: 7px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0.9;
+    /* Less opacity for softer effect */
+}
+
+.right-content img:hover {
+    transform: scale(1.05);
+    /* Subtle hover scale */
+    opacity: 1;
+}
+
+/* Maincourse About Us */
+.maincourse-about-us {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0e0e0e; */
+    /* color: #E6E6FA; */
+}
+
+.about-us-space-edtech {
+    max-width: 1300px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    /* background-color: #1a1a1a; */
+    /* Subtle background for section */
+    box-shadow: 0 8px 30px rgba(35, 34, 34, 0.5);
+    /* Shadow for depth */
+
+}
+
+.about-us-space-edtech h2 {
+    font-size: 36px;
+    font-weight: 700;
+    /* color: #6A5ACD; */
+    color: #E6E6FA;
+    /* Accent color */
+    /* margin-bottom: 20px; */
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #9b9a9a;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #6A5ACD;
+    color: #fff;
+    padding: 12px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #5337c4;
+}
+
+
+/* Course-List Styling */
+
+.page-title {
+    /* margin-top: 30px; */
+    font-size: 30px;
+    font-weight: 800;
+    color: #E6E6FA;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Programs Page Styles */
+.programs-page {
+    padding: 60px 0;
+
+}
+
+.programs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.program-card {
+    background-color: #181818;
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.live-classes-badge {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    background-color: rgba(255, 0, 0, 0.8);
+    /* Red with transparency */
+    color: #ffffff;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.program-card:hover {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.program-image {
+    width: 242px;
+    height: 190px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    object-fit: cover;
+}
+
+.program-title {
+    font-size: 19px;
+    font-weight: 520;
+    color: #E6E6FA;
+    margin-top: 10px;
+}
+
+.program-description {
+    font-size: 15px;
+    font-weight: 200;
+    color: #666;
+    line-height: 1.5;
+    padding: 18px 0;
+}
+
+.program-card a {
+    display: flex;
+    justify-content: center;
+}
+
+.know-more-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fbf8f8;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.know-more-button:hover {
+    background-color: #1A1A1A;
+    border: 1px solid white;
+    color: #fbf8f8;
+}
+
+/* Vertical Column Styling */
+.aeroin-edutech {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 70px 100px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.box {
+    flex: 1;
+    /* border: 1px solid #E6E6FA; */
+    background-color: #0F0E0E;
+    /* Slight variation from black */
+    color: #E6E6FA;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 250px;
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.103);
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); */
+}
+
+.box:hover .icon {
+    color: #0CB6EB;
+    /* Change icon color on hover */
+}
+
+.attractive-box {
+    color: #E6E6FA;
+    padding: 0;
+    /* Remove padding if not needed */
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.8;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.box-video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #E6E6FA;
+    /* text-align: center; */
+    /* Gold pastel icon color */
+}
+
+.box h3 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #E6E6FA;
+    /* color: #0CB6EB; */
+    position: relative;
+    z-index: 1;
+}
+
+.box p {
+    font-size: 15px;
+    line-height: 1.7;
+    position: relative;
+    color: #666;
+    z-index: 1;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Vertical Column Styling */
+
+
+/* Vertical grid for Aero */
+.aero-closing-gap {
+    text-align: center;
+    padding: 50px 20px;
+    /* background-color: #666; */
+    /* Assuming this is already set */
+    color: #E6E6FA;
+}
+
+.aero-section-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: #E6E6FA;
+}
+
+/* Grid Layout */
+.aero-grid-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.aero-grid-item {
+    height: 55vh;
+    /* background-color: #1a1a1a; */
+    border: 1px solid #E6E6FA;
+    /* Darker box to contrast with the background */
+    border-radius: 10px;
+    padding: 40px;
+    /* text-align: center; */
+    width: 330px;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.aero-grid-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Icon Styling */
+.aero-icon {
+    margin-bottom: 30px;
+}
+
+.aero-icon img {
+    width: 150px;
+    height: 100px;
+}
+
+/* Titles and Descriptions */
+.aero-grid-title {
+    font-size: 20px;
+    font-weight: 550;
+    color: #E6E6FA;
+    margin-bottom: 25px;
+}
+
+.aero-grid-description {
+    font-size: 16px;
+    color: #d3d3d3;
+    /* Slightly lighter grey for readability */
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/*  */
+
+/* Course Details Page Styles  Starting*/
+.course-details-page {
+    padding: 60px 0;
+}
+
+.course-title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.course-description {
+    font-size: 17px;
+    font-weight: 300;
+    color: #666;
+    text-align: justify;
+}
+
+/* Course Details Page Styles ending*/
+
+/*  What You’ll Gain by the End of This Program */
+
+.space-program-overview {
+    width: 83%;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #666;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.space-program-overview h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40;
+    font-weight: 800;
+}
+
+.space-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 300;
+    color: #767373;
+    line-height: 1.7;
+}
+
+.space-left,
+.space-right {
+    width: 45%;
+}
+
+.space-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.space-item i {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    color: #E6E6FA;
+}
+
+.space-item p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/*  */
+
+/* course-plans-three starting */
+.course-plans-three {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 100px;
+}
+
+.course-content {
+    padding: 60px 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-align: center;
+
+}
+
+.course-plans {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
+    background-color: #181818;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 30%;
+    box-sizing: border-box;
+    color: #E6E6FA;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.plan:hover {
+    transform: scale(1.03);
+    /* Slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Larger shadow on hover */
+    background-color: #222;
+    /* Darkens the background on hover */
+}
+
+.plan-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.basic-plan {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #144761;
+}
+
+.basic-plan:hover {
+    background-color: rgba(20, 90, 130, 0.9);
+    /* Slightly lighter color on hover */
+    transform: scale(1.04);
+    /* Slight scale effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Slightly larger shadow on hover */
+}
+
+
+.plan-details {
+    padding: 0;
+    margin: 10px 0;
+    list-style: disc;
+    text-align: justify;
+}
+
+.plan-details li {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #888;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin-bottom: 20px;
+}
+
+.purchase-button {
+
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #000;
+    /* Text color for the button */
+    background-color: #fff;
+    /* White background */
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+}
+
+.purchase-button:hover {
+    background-color: #000;
+    /* Black background on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+/* course-plans-three end */
+
+
+
+/* Certification */
+.certification-section {
+    margin-top: 50px;
+    /* margin-left: 0px;
+        margin-right: 0px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #0A2E1D; */
+    padding: 40px;
+    color: #E6E6FA;
+}
+
+.certification-content {
+    max-width: 50%;
+}
+
+.certification-content h1 {
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.certification-content p {
+    /* width: 550px; */
+    margin-top: 40px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.certification-image {
+    max-width: 40%;
+}
+
+.certification-image img {
+    width: 100%;
+    height: 280px;
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+/* Confused on which plan to choose? */
+.plan-enquiry-section {
+    padding: 50px 0;
+    text-align: center;
+    margin: 80px auto;
+    /* background: linear-gradient(135deg, #181818 0%, #282828 100%); */
+    background-color: #0f0e0e;
+    /* background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("Image/galaxy-night-landscape.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* border: 1px solid wheat; */
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 1300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan-enquiry-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.enquiry-heading {
+    font-size: 36px;
+    font-weight: 800;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.enquiry-subheading {
+    font-size: 18px;
+    font-weight: 300;
+    color: #cccccc;
+    margin-bottom: 50px;
+}
+
+/* Plan Enquiry Section Button */
+.enquiry-button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 15px 30px;
+    background-color: #fbf8f8;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.enquiry-button:hover {
+    background-color: #000;
+    border: 1px solid white;
+    color: #fbf8f8;
+}
+
+/*Css for Enquiry Page */
+
+.enquiry-section {
+    width: 100%;
+    max-width: 750px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Full height of the viewport */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* background-color: #f9f9f9; */
+    overflow: auto;
+}
+
+.enquiry-section h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.enquiry-section p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button-group a {
+    width: 48%;
+    /* Adjust button width */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.enquiry-section form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Rest of the contact form CSS */
+
+/* Team Page css */
+/*  */
+.gallery-section {
+    margin: 70px 0px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+}
+
+.gallery-section h1 {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #E6E6FA;
+}
+
+.gallery-section p {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    color: #777;
+}
+
+.gallery-nav {
+    margin: 20px 0;
+}
+
+.tab-button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* border: 1px solid wheat; */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+
+/* Footer Section */
+.footer {
+    margin-top: 40px;
+    background-color: #181818;
+    color: #E6E6FA;
+    padding: 40px 10px;
+    border-top: 1px solid #444;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    flex: 0 0 40%;
+    margin-right: 20px;
+    padding-right: 40px;
+
+}
+
+.footer-left h3 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #E6E6FA;
+}
+
+.footer-left p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #888;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #E6E6FA;
+    font-size: 1.4em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #E6E6FA;
+    transform: scale(1.1);
+}
+
+.footer-right {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #E6E6FA;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    /* font-size: 16px; */
+    /* line-height: 1.7; */
+}
+
+.footer-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #888;
+    font-size: 15px;
+    line-height: 1.8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li i {
+    margin-right: 8px;
+    color: #E6E6FA;
+    /* or any color you'd like */
+}
+
+
+.footer-section ul li a:hover {
+    color: #E6E6FA;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #E6E6FA;
+}
+
+.footer-bottom a {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #E6E6FA;
+}
+
+.footer-section p a {
+    color: #E6E6FA;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-section p a:hover {
+    color: #E6E6FA;
+}
+
+/* Privacy Policies */
+
+.privacy-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 2rem;
+    /* background-color: #fff; */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.privacy-header {
+    text-align: center;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.privacy-title {
+    font-size: 2.2rem;
+    color: #EFEFEF;
+    font-weight: 800;
+}
+
+.privacy-update-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+
+.section-heading {
+    font-size: 1.8rem;
+    color: #EFEFEF;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    /* border-bottom: 1px solid #007bff; */
+    padding-bottom: 0.5rem;
+}
+
+.subsection-heading {
+    font-size: 1.4rem;
+    color: #EFEFEF;
+    margin-top: 1rem;
+}
+
+.subsection-heading-small {
+    font-size: 1.2rem;
+    color: #EFEFEF;
+    margin-top: 1rem;
+    font-weight: 550;
+}
+
+
+.privacy-intro,
+.privacy-section,
+.privacy-policy p {
+    color: #888;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+
+.definitions-list,
+.data-list {
+    list-style-type: none;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.definitions-list li,
+.data-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.definitions-list li::before,
+.data-list li::before {
+    content: "•";
+    /* color: #007bff; */
+    position: absolute;
+    left: 0;
+}
+
+/* Whatsapp Bot */
+.chat-icon {
+    /* background-color: #282928; */
+    color: white;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    animation: float 2s infinite ease-in-out;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.chat-icon::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    /* border: 2px solid rgba(69, 72, 71, 0.5); */
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.chat-icon:hover {
+    transform: scale(1.2);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+
+
+/* Large screen devices more than 1024px - End */
+
+
+/* For tablets and smaller laptops (768px - 1024px) - Start*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Styles for Navbar */
+    .navbar {
+        padding: 15px 50px;
+        /* Reduced padding for smaller screens */
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+        /* Slightly reduce the font size of the brand name */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        /* Stack the links vertically */
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #828E92;
+    }
+
+    /* Hero Section Styling */
+
+    .hero {
+        height: 85vh;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .hero-text {
+        width: 90%;
+        bottom: 2%;
+    }
+
+    .hero-text span {
+        font-size: 35px;
+        /* Smaller font for tablets */
+    }
+
+    .overlay-image {
+        width: 90px;
+        /* Smaller image size */
+        height: 90px;
+        display: none;
+    }
+
+    .overlay-image img {
+        animation: moveUpDown 2.5s ease-in-out infinite;
+        /* Adjust animation for smaller screens */
+    }
+
+    .overlay-images .drone-image {
+        top: 2%;
+        left: 10%;
+    }
+
+    .overlay-images .cubesat-image {
+        top: 23%;
+        left: 86%;
+    }
+
+    .overlay-images .rocketry-image {
+        top: 45%;
+        left: 0%;
+    }
+
+    .overlay-images .robotics-image {
+        top: 70%;
+        left: 86%;
+    }
+
+    .overlay-image::after {
+        font-size: 11px;
+    }
+
+    /* Accrediation Section */
+
+    .accreditation-section {
+        /* padding-top: 20px; */
+        padding-bottom: 30px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .accreditation-section h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .accreditation-icons,
+    .recognized-icons {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .icon-box {
+        height: 100px;
+        width: 220px;
+    }
+
+    /* Who are we section */
+
+    .about-section {
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    .about-section .container {
+        width: 100%;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .about-section p {
+        margin-top: 30px;
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .about-section img {
+        margin-left: 65px;
+        margin-top: 0px;
+        max-width: 100%;
+        height: 80%;
+    }
+
+    /* Why Aeroin EduTech */
+
+    .growth-section {
+        height: auto;
+        /* Let content define height */
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        /* Adjust width */
+        gap: 20px;
+    }
+
+    .growth-icon-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 15px;
+        /* Reduced gap between icons */
+    }
+
+    .growth-icon-box {
+        width: 100px;
+        /* Reduced size */
+        height: 70px;
+    }
+
+    .section-heading {
+        margin-top: 90px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* 4 Grid Section */
+
+    .aeroin-edutech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 89%;
+        margin-bottom: 50px;
+    }
+
+    .grid-item {
+        padding: 25px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .grid-item h3 {
+        font-size: 24px;
+    }
+
+    .grid-item ul li {
+        font-size: 15px;
+    }
+
+    /* Training Section */
+
+    .training-section {
+        margin-bottom: 90px;
+        padding: 0px;
+        text-align: center;
+        /* max-width: 100%; */
+    }
+
+    .training-section .container {
+        max-width: 92%;
+    }
+
+    .heading h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .heading p {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    /* Stats Row */
+    .stats-row {
+        display: flex;
+        flex-wrap: wrap;
+        /* Wraps items to fit smaller screens */
+        justify-content: space-between;
+        margin: 20px 0;
+        /* Reduced margin for a better fit on tablets */
+    }
+
+    .stat-box {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #181818;
+        padding: 15px;
+        /* Adjust padding for tablets */
+        border-radius: 8px;
+        /* Slightly smaller border-radius for tablets */
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        /* Reduced shadow for a cleaner look */
+        width: 48%;
+        /* Adjust width to fit more items */
+        margin-bottom: 20px;
+        /* Ensure spacing between rows on smaller screens */
+    }
+
+    .stat-box:hover {
+        transform: translateY(-8px);
+        /* Slightly less translation for a more subtle effect */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4),
+            0 8px 16px rgba(255, 255, 255, 0.1),
+            inset 0 0 8px rgba(255, 255, 255, 0.05);
+        /* Adjusted shadow for tablets */
+    }
+
+    /* Additional style for headings */
+    .stat-box h3 {
+        font-size: 30px;
+        /* Slightly smaller font-size for tablets */
+        color: #0CB6EB;
+    }
+
+    .stat-box p {
+        font-size: 16px;
+        /* Slightly smaller font-size for tablets */
+        color: #E6E6FA;
+    }
+
+    /* Feedback Section */
+
+    .feedback-container {
+        width: 100%;
+        padding: 0px 37px;
+    }
+
+    .feedback-card {
+        width: 450px;
+        padding: 25px;
+    }
+
+    .feedback-top i {
+        font-size: 1.3rem;
+    }
+
+    .feedback-content {
+        font-size: 15px;
+        line-height: 1.6;
+
+    }
+
+    .feedback-bottom img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .feedback-bottom h5 {
+        font-size: 14px;
+    }
+
+    /* Footer Section */
+
+    .footer-content {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .footer-left {
+        padding: 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        flex: 1 1 100%;
+        padding-right: 0;
+    }
+
+    .footer-right {
+        padding: 20px;
+        margin-top: 10px;
+        /* padding: 20px; */
+    }
+
+    .footer-bottom p {
+        font-size: 15px;
+        padding: 30px;
+    }
+
+    /* Main Course Page Styling */
+    /* Maincourse 1st section */
+    .split-section {
+        flex-direction: column;
+        justify-content: center;
+        /* Ensure column layout on tablets */
+        /* padding: 30px; */
+        /* Adjust padding */
+    }
+
+    .left-content {
+        padding: 0px;
+        width: 90%;
+        /* Full width for each section */
+    }
+
+    .left-content h1 {
+        font-size: 24px;
+        text-align: center;
+        /* Adjust font-size */
+    }
+
+    .right-content {
+        /* flex: 0; */
+        padding-left: 0px;
+    }
+
+    .right-content img {
+        margin-top: 20px;
+        height: auto;
+        max-width: 90%;
+        /* Ensure responsiveness */
+    }
+
+    .right-content img:hover {
+        transform: scale(1.00);
+    }
+
+    .left-content ul li {
+        display: none;
+        text-align: center;
+        list-style-type: none;
+        font-size: 18px;
+        /* Adjust font-size */
+    }
+
+    .enquiry-button {
+        display: flex;
+        justify-content: center;
+        /* padding: 12px 30px; */
+        font-size: 15px;
+    }
+
+    /* Maincourse About Us */
+    .about-us-space-edtech {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .about-us-space-edtech h2 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .learn-more-btn {
+        padding: 10px 40px;
+        font-size: 15px;
+    }
+
+    /* Course Listing */
+    .programs-page {
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .programs-page .container {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .programs-page h1 {
+        font-size: 24px;
+    }
+
+    .page-title {
+        font-size: 26px;
+    }
+
+    .programs-list {
+        width: 100%;
+        margin-top: 20px;
+        gap: 25px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .program-card {
+        width: 48%;
+        padding: 10px 20px;
+        height: 520px;
+
+    }
+
+    .program-image {
+        margin-top: 20px;
+        width: 100%;
+        height: 45%;
+    }
+
+    .program-title {
+        font-size: 18px;
+    }
+
+    .program-description {
+        font-size: 14px;
+        /* padding: 0px; */
+    }
+
+    /* Vertical Column Grid */
+    .aeroin-edutech {
+        padding: 50px;
+        justify-content: center;
+    }
+
+    .box {
+        min-width: 48%;
+        /* max-width: calc(33.33% - 20px); */
+        /* Adjust to 3 columns */
+    }
+
+    .icon {
+        font-size: 2.5em;
+    }
+
+    .box h3 {
+        font-size: 22px;
+    }
+
+    .box p {
+        font-size: 15px;
+    }
+
+    /* Confused Section */
+    .plan-enquiry-section {
+        padding: 40px 20px;
+        margin: 60px auto;
+    }
+
+    .plan-enquiry-section a {
+        margin: 0px 120px;
+    }
+
+    .enquiry-heading {
+        font-size: 24px;
+    }
+
+    .enquiry-subheading {
+        font-size: 15px;
+    }
+
+    .enquiry-button {
+        font-size: 15px;
+    }
+
+    /* About Page  */
+    .company-intro-section {
+        max-width: 100%;
+        padding: 50px;
+        margin-bottom: 85px;
+    }
+
+    .company-intro-container {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .company-intro-left,
+    .company-intro-right {
+        flex: 1;
+        width: 100%;
+        /* Adjust width for each section */
+    }
+
+    .company-intro-right {
+
+        margin-top: 40px;
+        padding: 0px 15px;
+        /* Add some padding */
+    }
+
+    .company-intro-right p {
+        text-align: justify;
+        font-size: 15.5px;
+    }
+
+    .company-intro-right p:last-child {
+        text-align: center;
+        margin-top: 35px;
+
+    }
+
+    .photo-gallery img {
+        width: calc(33.33% - 10px);
+        /* Three images per row */
+        height: 210px;
+        /* Fixed height */
+    }
+
+    /* Brains Behind Section */
+    .leadership-section {
+        max-width: 90%;
+        padding-left: 50px;
+    }
+
+    .leadership-section h2 {
+        font-size: 24px;
+    }
+
+    .leadership-section p {
+        font-size: 15px;
+    }
+
+    .leadership-container {
+        padding: 0px;
+        justify-content: center;
+        gap: 20px;
+        /* Increase gap */
+    }
+
+    .leader-box {
+        width: calc(50% - 40px);
+        /* Two items per row */
+        max-width: none;
+        /* Remove max-width restriction */
+    }
+
+    .leader-box img {
+        width: 180px;
+        /* Increase image size */
+        height: 180px;
+    }
+
+    /* Achevement Sections */
+    .achievement-carousel-section {
+        max-width: 90%;
+        margin-bottom: 100px;
+    }
+
+    .carousel-slide-achievement {
+        flex-direction: column;
+        /* Stack content vertically */
+        padding: 30px 40px;
+        /* Adjust padding */
+    }
+
+    .achievement-content-left {
+        padding-right: 0;
+    }
+
+    .fixed-heading h2 {
+        font-size: 24px;
+        /* font-weight: 600; */
+        margin-bottom: 30px;
+    }
+
+    .achievement-content-left p {
+        padding-right: 0px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .achievement-content-left h3 {
+        font-size: 20px;
+        font-size: 450;
+        margin-bottom: 10px;
+        /* Adjust heading size */
+    }
+
+
+    .achievement-content-right img {
+        width: 100%;
+        /* Reduce image size */
+        margin-top: 20px;
+    }
+
+    /* Mission Vission Section */
+    .mission-vision-section {
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        /* Adjust font size */
+    }
+
+    .section-description {
+        font-size: 14px;
+        /* Adjust font size */
+    }
+
+    .mission-box,
+    .vision-box {
+        padding: 20px 10px;
+        text-align: center;
+        /* Adjust padding */
+    }
+
+    /* Carousel */
+    .collaboration-carousel {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .carousel-icon-box {
+        flex: 0 0 16%;
+        /* 4 icons visible at once (100% / 4) */
+    }
+
+    /* Contact Page */
+    .contact-container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .contact-left-section h2 {
+        text-align: center;
+    }
+
+    .contact-left-section p {
+        text-align: center;
+    }
+
+    .contact-left-section,
+    .contact-right-section {
+        padding: 20px;
+
+    }
+
+    .contact-right-section {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    /* Insights Page */
+
+    .gallery-section {
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-section h1 {
+        font-size: 24px;
+    }
+
+    .gallery-section p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .image-grid img {
+        height: 250px;
+    }
+
+    /* Course Lisiting Page */
+
+    .overview-section {
+        flex-direction: column-reverse;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .text-content,
+    .rocket-content {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .text-content h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .text-content ul {
+        font-size: 13px;
+        padding-left: 0px;
+    }
+
+    .rocket-container {
+        width: 300px;
+        height: 290px;
+    }
+
+    /* About Section */
+
+    .course-details-page {
+        padding: 40px 0px;
+        width: 100%;
+
+
+    }
+
+    .course-details-page .container {
+        justify-content: center;
+        /* width: 900px; */
+    }
+
+    .course-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+
+    }
+
+    .course-description {
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: justify;
+
+    }
+
+    /* What You'll gain? */
+
+    .space-program-overview {
+        margin-top: 50px;
+        width: 87%;
+        padding: 35px;
+    }
+
+    .space-program-overview h2 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .space-content {
+        flex-direction: column;
+        font-size: 15px;
+        align-content: center;
+    }
+
+    .space-item i {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+
+    .space-left,
+    .space-right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Certification */
+
+    .certification-section {
+        flex-direction: column;
+        /* padding: 30px; */
+        /* text-align: center; */
+        margin-top: 70px;
+    }
+
+    .certification-content {
+        max-width: 95%;
+    }
+
+    .certification-content h1 {
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+    .certification-content p {
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .certification-image {
+        max-width: 95%;
+        margin-top: 20px;
+    }
+
+    .certification-image img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Course Planning */
+
+    .course-plans-three {
+        margin-top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .course-plans {
+        display: flex;
+
+    }
+
+    .plan {
+        width: 95%;
+        padding: 25px 50px;
+    }
+
+    .plan-title {
+        font-size: 24px;
+    }
+
+    .plan-details li {
+        font-size: 14px;
+        list-style-type: disc;
+        /* padding: 0px 20px; */
+        line-height: 1.5;
+
+    }
+
+    .purchase-button {
+        font-size: 16px;
+    }
+
+    /* Enquiry Page Section */
+
+    .enquiry-section {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        min-height: 70vh;
+    }
+
+    .button-group {
+        flex-direction: row;
+        /* Buttons side by side on tablet */
+        justify-content: space-between;
+    }
+
+    .button-group a {
+        width: 48%;
+        /* Keep buttons side by side */
+    }
+
+    .enquiry-section {
+        padding: 20px;
+        /* Slightly larger padding for tablets */
+    }
+
+}
+
+/* For mobile devices (Till - 767px) */
+@media (max-width: 767px) {
+
+    /* Styles for Navbar */
+    .navbar {
+        padding: 15px 10px;
+        /* Reduced padding for smaller screens */
+    }
+
+    .navbar h1 {
+        font-size: 22px;
+        /* Slightly reduce the font size of the brand name */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        /* Stack the links vertically */
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 13px;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #828E92;
+    }
+
+    /*  Hero Section */
+    .hero {
+        height: 65vh;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .hero-text {
+        width: 100%;
+        bottom: 50%;
+
+    }
+
+    .hero-text span {
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.056);
+    }
+
+
+    .overlay-image {
+        width: 90px;
+        /* Smaller image size */
+        height: 90px;
+        display: none;
+    }
+
+    .overlay-image img {
+        animation: moveUpDown 2.5s ease-in-out infinite;
+        /* Adjust animation for smaller screens */
+    }
+
+    .overlay-images .drone-image {
+        top: 2%;
+        left: 9%;
+    }
+
+    .overlay-images .cubesat-image {
+        top: 23%;
+        left: 75%;
+    }
+
+    .overlay-images .rocketry-image {
+        top: 45%;
+        left: 0%;
+    }
+
+    .overlay-images .robotics-image {
+        top: 60%;
+        left: 75%;
+    }
+
+    .overlay-image::after {
+        font-size: 11px;
+    }
+
+    /* Accredited By Section */
+
+    .accreditation-section {
+        /* padding-top: 20px; */
+        padding-bottom: 30px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .accreditation-section h2 {
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    .accreditation-icons,
+    .recognized-icons {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .icon-box {
+        height: 100px;
+        width: 350px;
+    }
+
+    /* Who are we section */
+
+    .about-section {
+        padding: 30px;
+        margin-top: 35px;
+    }
+
+    .about-section .container {
+        width: 100%;
+
+    }
+
+    .about-section h2 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .about-section p {
+        margin-top: 30px;
+        font-size: 15px;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .about-section img {
+        margin-left: 20px;
+        margin-top: 30px;
+        max-width: 100%;
+        height: 39vh;
+    }
+
+    /* Why Aeroin EduTech */
+
+    .growth-section {
+        height: auto;
+        /* Let content define height */
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* Adjust width */
+        gap: 20px;
+    }
+
+    .growth-icon-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        gap: 15px;
+        /* Reduced gap between icons */
+    }
+
+    .growth-icon-box {
+        width: 110px;
+        /* Reduced size */
+        height: 70px;
+    }
+
+    .section-heading {
+        margin-top: 55px;
+        width: 90%;
+        text-align: center;
+
+    }
+
+    .section-heading h1 {
+        font-size: 19px;
+        text-align: center;
+    }
+
+
+    .section-subtitle {
+        font-size: 11px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* 4 Grid Section */
+
+    .aeroin-edutech-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: 89%;
+        margin-bottom: 20px;
+    }
+
+    .grid-item {
+        padding: 25px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .grid-item h3 {
+        font-size: 24px;
+    }
+
+    .grid-item ul li {
+        font-size: 15px;
+    }
+
+    /* Training Section */
+    .training-section {
+
+        margin-bottom: 50px;
+        /* Reduce bottom margin */
+        padding: 0px;
+        text-align: center;
+        /* Ensure the section takes the full width of the mobile screen */
+    }
+
+    .training-section .container {
+        max-width: 98%;
+        /* Make the container full width on mobile */
+    }
+
+    .heading h2 {
+        font-size: 19px;
+        /* Reduce font size for better readability on small screens */
+        margin-bottom: 8px;
+        /* Slightly reduce bottom margin */
+    }
+
+    .heading p {
+        color: #666;
+        font-size: 12px;
+        /* Slightly smaller text for better scaling */
+        margin-bottom: 30px;
+        /* Reduce bottom margin to fit smaller screen */
+    }
+
+    .stat-icon {
+        font-size: 35px;
+    }
+
+    .stat-box:hover .stat-icon {
+        font-size: 24px;
+    }
+
+    .stats-row {
+        display: flex;
+        flex-wrap: wrap;
+        /* Wraps items to fit smaller screens */
+        justify-content: space-between;
+        margin: 20px 0;
+        /* Reduced margin for a better fit on tablets */
+    }
+
+    .stat-box {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #181818;
+        padding: 15px;
+        /* Adjust padding for tablets */
+        border-radius: 8px;
+        /* Slightly smaller border-radius for tablets */
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        /* Reduced shadow for a cleaner look */
+        width: 48%;
+        /* Adjust width to fit more items */
+        margin-bottom: 20px;
+        /* Ensure spacing between rows on smaller screens */
+    }
+
+    .stat-box:hover {
+        transform: translateY(-8px);
+        /* Slightly less translation for a more subtle effect */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4),
+            0 8px 16px rgba(255, 255, 255, 0.1),
+            inset 0 0 8px rgba(255, 255, 255, 0.05);
+        /* Adjusted shadow for tablets */
+    }
+
+    /* Additional style for headings */
+    .stat-box h3 {
+        font-size: 20px;
+        /* Slightly smaller font-size for tablets */
+        color: #0CB6EB;
+    }
+
+    .stat-box p {
+        font-size: 13px;
+        /* Slightly smaller font-size for tablets */
+        color: #E6E6FA;
+    }
+
+    /* Feedback Section */
+
+    .feedback-container {
+        width: 100%;
+        padding: 0px 37px;
+    }
+
+    .feedback-card {
+        width: 350px;
+        padding: 25px;
+    }
+
+    .feedback-top i {
+        font-size: 1.3rem;
+    }
+
+    .feedback-content {
+        font-size: 13px;
+        line-height: 1.6;
+
+    }
+
+    .feedback-bottom img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .feedback-bottom h5 {
+        font-size: 14px;
+    }
+
+    /* Footer Section */
+
+    .footer {
+        width: 100%;
+        padding: 30px 20px;
+        display: flex;
+        /* Use flexbox */
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+
+    .footer-content {
+        display: flex;
+        /* Flex container */
+        flex-wrap: wrap;
+        /* Allow wrapping */
+        justify-content: space-between;
+        /* Space out sections */
+    }
+
+    .footer-left,
+    .footer-right {
+        flex: 1 1 100%;
+        /* Full width on mobile */
+        padding: 10px;
+        /* Adjust padding */
+    }
+
+    .footer-right {
+        margin-top: 20px;
+        display: flex;
+        /* Flex container for sections */
+        flex-direction: column;
+        /* Stack sections */
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        /* Add space between sections */
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    /* Social icons - center aligned */
+    .social-icons {
+        justify-content: left;
+        /* Center align icons */
+        gap: 10px;
+        /* Reduce gap between icons */
+    }
+
+    .footer-left p {
+        text-align: justify;
+        /* Center-align paragraph */
+        font-size: 14px;
+        /* Adjust font size */
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+
+    .footer-bottom a {
+        font-size: 14px;
+    }
+
+
+
+    /* Main Course Page Styling */
+    /* Maincourse 1st section */
+
+    .split-section {
+        flex-direction: column;
+        justify-content: center;
+        /* Ensure column layout on tablets */
+        /* padding: 30px; */
+        /* Adjust padding */
+    }
+
+    .left-content {
+        padding: 0px;
+        width: 100%;
+        /* Full width for each section */
+    }
+
+    .left-content h1 {
+        font-size: 23px;
+        text-align: center;
+        /* Adjust font-size */
+    }
+
+    .right-content {
+        flex: 0;
+        padding-left: 0px;
+    }
+
+    .right-content img {
+        margin-top: 20px;
+        height: 35vh;
+        max-width: 100%;
+        /* Ensure responsiveness */
+    }
+
+    .right-content img:hover {
+        transform: scale(1.00);
+    }
+
+    .left-content ul li {
+        display: none;
+        text-align: center;
+        list-style-type: none;
+        font-size: 18px;
+        /* Adjust font-size */
+    }
+
+    .enquiry-button {
+        display: flex;
+        justify-content: center;
+        /* padding: 12px 30px; */
+        font-size: 15px;
+    }
+
+    /* Maincourse About Us */
+    .about-us-space-edtech {
+
+        padding: 20px;
+        width: 95%;
+    }
+
+    .about-us-space-edtech h2 {
+        font-size: 23px;
+    }
+
+    .subtitle {
+        font-size: 14.5px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .learn-more-btn {
+        padding: 10px 40px;
+        font-size: 15px;
+    }
+
+    /* Course Listing */
+    .programs-page {
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .programs-page .container {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .programs-page h1 {
+        font-size: 23px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .programs-list {
+        width: 100%;
+        margin-top: 20px;
+        gap: 25px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .program-card {
+        width: 380px;
+        padding: 10px 20px;
+        height: 520px;
+
+    }
+
+    .program-image {
+        margin-top: 20px;
+        width: 100%;
+        height: 45%;
+    }
+
+    .program-title {
+        font-size: 18px;
+    }
+
+    .program-description {
+        font-size: 14px;
+        /* padding: 0px; */
+    }
+
+    /* Vertical Column Grid */
+    .aeroin-edutech {
+        padding: 50px;
+        justify-content: center;
+    }
+
+    .box {
+        min-width: 100%;
+        /* max-width: calc(33.33% - 20px); */
+        /* Adjust to 3 columns */
+    }
+
+    .icon {
+        font-size: 2.5em;
+    }
+
+    .box h3 {
+        font-size: 20px;
+    }
+
+    .box p {
+        font-size: 15px;
+    }
+
+    /* Confused Section */
+    .plan-enquiry-section {
+        padding: 40px 20px;
+        margin: 60px auto;
+    }
+
+    .plan-enquiry-section a {
+        margin: 0px 50px;
+    }
+
+    .enquiry-heading {
+        font-size: 15.5px;
+    }
+
+    .enquiry-subheading {
+        font-size: 13px;
+    }
+
+    .enquiry-button {
+        font-size: 14px;
+    }
+
+    /* About Page Section */
+    .company-intro-section {
+        max-width: 100%;
+        padding: 50px;
+        margin-bottom: 85px;
+    }
+
+    .company-intro-container {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .company-intro-left,
+    .company-intro-right {
+        flex: 1;
+        width: 100%;
+        /* Adjust width for each section */
+    }
+
+    .company-intro-right {
+
+        margin-top: 40px;
+        padding: 0px 0px;
+        /* Add some padding */
+    }
+
+    .company-intro-right p {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .company-intro-right p:last-child {
+        text-align: center;
+        margin-top: 35px;
+        padding: 0px;
+
+    }
+
+    .photo-gallery img {
+        width: calc(50% - 10px);
+        /* Three images per row */
+        height: 210px;
+        /* Fixed height */
+    }
+
+    /* Brains Behind Section */
+    .leadership-section {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    .leadership-section h2 {
+        font-size: 22px;
+    }
+
+    .leadership-section p {
+        font-size: 14px;
+    }
+
+    .leadership-container {
+        padding: 0px;
+        justify-content: center;
+        gap: 20px;
+        /* Increase gap */
+    }
+
+    .leader-box {
+        width: calc(100% - 40px);
+        /* Two items per row */
+        max-width: none;
+        gap: 20px;
+        /* Remove max-width restriction */
+    }
+
+    .leader-box img {
+        width: 180px;
+        /* Increase image size */
+        height: 180px;
+    }
+
+    /* Achevement Sections */
+    .achievement-carousel-section {
+        max-width: 90%;
+        margin-bottom: 100px;
+    }
+
+    .carousel-slide-achievement {
+        flex-direction: column;
+        /* Stack content vertically */
+        padding: 30px 40px;
+        /* Adjust padding */
+    }
+
+    .achievement-content-left {
+        padding-right: 0;
+    }
+
+    .fixed-heading h2 {
+        font-size: 21px;
+        /* font-weight: 600; */
+        margin-bottom: 30px;
+    }
+
+    .achievement-content-left p {
+        padding-right: 0px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .achievement-content-left h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        /* Adjust heading size */
+    }
+
+
+    .achievement-content-right img {
+        width: 100%;
+        /* Reduce image size */
+        margin-top: 20px;
+    }
+
+    /* Mission Vission Section */
+    .mission-vision-section {
+        display: flex;
+        flex-direction: row;
+        /* padding-left: 25px; */
+        /* padding-right: 15px; */
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 24px;
+        /* Adjust font size */
+    }
+
+    .section-description {
+        font-size: 15px;
+        /* Adjust font size */
+    }
+
+    .mission-box,
+    .vision-box {
+        padding: 20px 10px;
+        text-align: center;
+        width: 100%;
+        /* Adjust padding */
+    }
+
+    /* Carousel */
+    .collaboration-carousel {
+        font-size: 14px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .collaboration-carousel h2 {
+        font-size: 22px;
+    }
+
+    .carousel-icon-box {
+        flex: 0 0 16%;
+        /* 4 icons visible at once (100% / 4) */
+    }
+
+    /* Contact Page */
+    .contact-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .contact-left-section h2 {
+        text-align: center;
+
+    }
+
+    .contact-left-section p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .contact-info .contact-info-item {
+        font-size: 14px;
+    }
+
+    .contact-info .contact-info-item .contact-icon {
+        font-size: 20px;
+    }
+
+    .highlight {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .contact-left-section,
+    .contact-right-section {
+        padding: 20px;
+        font-size: 15px;
+
+    }
+
+    .contact-right-section {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .contact-right-section p {
+        font-size: 15px;
+    }
+
+    /* Insights Page */
+
+    .gallery-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery-section h1 {
+        font-size: 24px;
+    }
+
+    .gallery-section p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .image-grid img {
+        height: 280px;
+    }
+
+    /* Course Lisiting Page */
+
+    .overview-section {
+        flex-direction: column-reverse;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .text-content,
+    .rocket-content {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .text-content h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .text-content ul {
+        font-size: 13px;
+        padding-left: 0px;
+        text-align: right;
+    }
+
+    .text-content ul li span:first-child {
+        text-align: left;
+    }
+
+    .rocket-container {
+        width: 300px;
+        height: 290px;
+    }
+
+    /* About Section */
+
+    .course-details-page {
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    .course-details-page .container {
+        justify-content: center;
+        /* width: 900px; */
+    }
+
+    .course-title {
+        font-size: 23px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+
+    }
+
+    .course-description {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: justify;
+
+    }
+
+    /* What You'll gain? */
+
+    .space-program-overview {
+        margin-top: 50px;
+        width: 100%;
+        padding: 35px;
+        border-radius: 0px;
+    }
+
+    .space-program-overview h2 {
+        font-size: 23px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+    }
+
+    .space-content {
+        flex-direction: column;
+        font-size: 15px;
+        align-content: center;
+    }
+
+    .space-item i {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+
+    .space-left,
+    .space-right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Certification */
+
+    .certification-section {
+        flex-direction: column;
+        /* padding: 30px; */
+        /* text-align: center; */
+        margin-top: 40px;
+    }
+
+    .certification-content {
+        max-width: 100%;
+    }
+
+    .certification-content h1 {
+        font-size: 23px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .certification-content p {
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .certification-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .certification-image img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Course Planning */
+
+    .course-plans-three {
+        margin-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .course-plans {
+        display: flex;
+
+    }
+
+    .plan {
+        width: 100%;
+        padding: 25px 50px;
+    }
+
+    .plan-title {
+        font-size: 24px;
+    }
+
+    .plan-details li {
+        font-size: 14px;
+        list-style-type: disc;
+        /* padding: 0px 20px; */
+        line-height: 1.5;
+
+    }
+
+    .purchase-button {
+        font-size: 16px;
+    }
+
+    /* Aeroin Insights */
+
+    .tab-button {
+        padding: 10px 15px;
+    }
+
+    /* Enquiry Section */
+
+    .button-group {
+        flex-direction: column;
+        /* Stack buttons vertically */
+    }
+
+    .button-group a {
+        width: 100%;
+        margin-bottom: 10px;
+        /* Space between buttons */
+    }
+
+    .enquiry-section {
+        /* padding: 10px; */
+        width: 95%;
+        /* Reduce padding for mobile */
+    }
+
+    .enquiry-section h2 {
+        font-size: 23px;
+    }
+
+    .enquiry-section p {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 13px;
+        /* Slightly smaller text for mobile */
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        /* Adjust button text size */
+    }
+}
+
+
+
+
+
+
+/* Small Laptops: (1024px - 1366px) */
+/* @media (max-width: 1366px) {
+    .about-section {
+        padding: 35px;
+        margin-top: 25px;
+    }
+
+    .about-section h2 {
+        font-size: 32px;
+       
+    }
+
+    .about-section p {
+        font-size: 16px;
+       
+    }
+
+    #cta-typed-text {
+        font-size: 17px;
+       
+    } 
+
+}*/
