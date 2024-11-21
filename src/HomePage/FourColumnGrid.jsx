@@ -1,18 +1,16 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 function FourColumnGrid() {
-  const navigate = useNavigate();
-
+  
   const handleNavigation = () => {
-    navigate("/course");
+    window.location.href = "/course";
   };
 
   return (
     <>
-      <div className="grid-section" data-aos="fade-up" data-aos-duration={1500}>
+      <div className="grid-section" data-aos="fade-up" data-aos-duration="1500">
         <section className="aeroin-edutech-grid">
-          <a className="grid-item" href="/course">
+          <div className="grid-item" onClick={handleNavigation}>
             <h3>
               <i className="fas fa-flask" /> Research Program
             </h3>
@@ -21,8 +19,8 @@ function FourColumnGrid() {
               <li>Hands-on satellite &amp; propulsion experience</li>
               <li>In-depth research opportunities</li>
             </ul>
-          </a>
-          <a className="grid-item" href="/course">
+          </div>
+          <div className="grid-item" onClick={handleNavigation}>
             <h3>
               <i className="fas fa-video" /> LIVE Sessions
             </h3>
@@ -31,8 +29,8 @@ function FourColumnGrid() {
               <li>Learn about satellite deployment &amp; propulsion</li>
               <li>Engage in live Q&amp;A with experts</li>
             </ul>
-          </a>
-          <a className="grid-item" href="/course">
+          </div>
+          <div className="grid-item" onClick={handleNavigation}>
             <h3>
               <i className="fas fa-graduation-cap" /> Focused Learning
             </h3>
@@ -41,8 +39,8 @@ function FourColumnGrid() {
               <li>Focus on satellite systems and propulsion</li>
               <li>Tailored for future space professionals</li>
             </ul>
-          </a>
-          <a className="grid-item" href="/course">
+          </div>
+          <div className="grid-item" onClick={handleNavigation}>
             <h3>
               <i className="fas fa-cogs" /> Practical Projects
             </h3>
@@ -51,7 +49,7 @@ function FourColumnGrid() {
               <li>Work on drones and real-world projects</li>
               <li>Industry-led guidance in space innovation</li>
             </ul>
-          </a>
+          </div>
         </section>
       </div>
     </>

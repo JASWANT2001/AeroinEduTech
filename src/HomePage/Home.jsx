@@ -3,8 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Navbar from "./Navbar";
-import WhatsApp from "../assets/Whatsapp";
 import Hero from "./Hero";
 import Accredited from "./Accredited";
 import WhoAreWe from "./WhoAreWe";
@@ -12,7 +10,9 @@ import WhatAeroinOffers from "./WhatAeroinOffers";
 import FourColumnGrid from "./FourColumnGrid";
 import Training from "./Training";
 import FeedBack from "./FeedBack";
-import Footer from "./Footer";
+
+import WhatsApp from "../assets/Whatsapp";
+import ScrollToTop from "../assets/ScrollToTop";
 
 function Home() {
   useEffect(() => {
@@ -33,7 +33,9 @@ function Home() {
       <FourColumnGrid />
       <Training />
       <FeedBack />
+
       <WhatsApp />
+      <ScrollToTop />
       {/* <Footer /> */}
     </>
   );
