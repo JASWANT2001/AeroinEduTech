@@ -65,7 +65,7 @@ function CoursePlan() {
               className="purchase-button"
               onClick={() => redirectToPayment("advanced")}
             >
-              Learn More
+              Enroll for ₹20000
             </button>
           </div>
 
@@ -87,7 +87,7 @@ function CoursePlan() {
               <li>Research Paper &amp; Publishing Support</li>
               <li>Career Talk With Experts</li>
             </ul>
-            <button className="purchase-button">Learn More</button>
+            <button className="purchase-button">Enroll for ₹24999</button>
           </div>
         </div>
       </section>

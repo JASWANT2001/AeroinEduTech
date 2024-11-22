@@ -548,19 +548,7 @@ function PrivacyPolicy() {
             posted on this page. <br />
             <br />
           </p>
-          <h4 className="subsection-heading-small">
-            Cancellation &amp; Refund Policy
-          </h4>
-          <p>
-            If applicants for internships, courses, or masterclasses decide not
-            to proceed after making payment, they may request a refund by
-            emailing us. Upon reviewing the request, a full refund will be
-            issued within 5–7 business days. <br />
-            <br />
-            Important: Refund requests must be submitted at least 3–4 days
-            before the start of the course. <br />
-            <br />
-          </p>
+
           <h4 className="subsection-heading-small">Contact Us</h4>
           <ul>
             <li>
@@ -582,7 +570,7 @@ function PrivacyPolicy() {
                   style={{ color: "#EFEFEF" }}
                   target="_blank"
                 >
-                   www.aeroinedutech.in
+                  www.aeroinedutech.in
                 </a>
               </p>
             </li>

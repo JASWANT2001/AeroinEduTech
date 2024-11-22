@@ -21,116 +21,120 @@ function RefundPolicy() {
       >
         <header className="privacy-header">
           <h1 className="privacy-title">Refund and Cancellation</h1>
-          <p className="privacy-update-date">Last updated: November 04, 2024</p>
+          <p className="privacy-update-date">Last updated: November 22, 2024</p>
         </header>
         <section className="privacy-intro">
           <p>
-            These Terms and Conditions outline the rules and regulations for the
-            use of Aeroin EduTech's website, located at aeroinedutech.in. By
-            accessing this website, we assume you accept these terms and
-            conditions. Do not continue to use Aeroin EduTech if you do not
-            agree to all the terms and conditions stated on this page.
+            At Aeroin EduTech, we are committed to providing a seamless
+            experience for our users. Please review our Refund and Cancellation
+            Policy for clarity on how refunds are handled for our services.
           </p>
         </section>
         <br />
         <section className="privacy-section">
-          {/* <h2 class="section-heading">Interpretation and Definitions</h2> */}
-          {/* <h3 class="subsection-heading">Interpretation</h3>  */}
           <p>
-            Eligibility for Refunds To be eligible for a refund, you must
-            provide proof of purchase. Refunds may be available in cases where:
+            <strong>Eligibility for Refunds:</strong> Refunds are applicable
+            under the following conditions, provided the request is made within
+            7 days of purchase:
           </p>
-          <li>
-            The service purchased was not provided or did not meet the
-            description.
-          </li>
-          <li>
-            {" "}
-            Technical issues or errors on our end prevented access to the course
-            or content.
-          </li>
+          <ul className="definitions-list">
+            <li>The purchased service was not delivered as described.</li>
+            <li>
+              Technical issues on our platform prevented access to the service.
+            </li>
+          </ul>
           <br />
-          <h3 className="subsection-heading">Refunds are not applicable if:</h3>
+          <p>
+            <strong>Refunds are not applicable if:</strong>
+          </p>
           <ul className="definitions-list">
             <li>
-              Access to downloadable content or online courses has been used.
+              Access to downloadable content or online courses has already been
+              used.
             </li>
             <li>
-              {" "}
-              The service was accessed or partially used before the request for
-              a refund.
+              The service was accessed or partially used before the refund
+              request.
             </li>
-            <p>
-              Process for Refunds Once your request for cancellation or refund
-              is received, we will notify you by email about the status of your
-              refund. If approved, a credit will be applied to your original
-              payment method within a certain amount of days.
-            </p>
+          </ul>
+          <br />
+          <p>
+            <strong>Refund Process:</strong> To request a refund, contact us at{" "}
+            <a href="mailto:info@aeroinedutech.in" style={{ color: "#EFEFEF" }}>
+              info@aeroinedutech.in
+            </a>{" "}
+            with proof of purchase and details of your request. Once received,
+            we will:
+          </p>
+          <ul className="definitions-list">
+            <li>Notify you by email about the status of your request.</li>
+            <li>
+              If approved, process the refund within 6–8 working days. The
+              amount will be credited back to your original payment method.
+            </li>
           </ul>
         </section>
         <br />
         <section className="privacy-section">
-          <h3 className="subsection-heading">
-            Late or Missing Refunds If you haven’t received a refund yet:
-          </h3>
-          <br />
-          <li>First, check your bank account or online statement.</li>
-          <br />
-          <li>
-            {" "}
-            Contact your credit card company, as it may take some time before
-            your refund is posted.
-          </li>
-          <br />
-          <li>
-            {" "}
-            Contact your bank, as there is often processing time before refunds
-            are finalized.
-          </li>
-          <br />
+          <h3 className="subsection-heading">Late or Missing Refunds</h3>
           <p>
-            If you’ve done all of this and still have not received your refund,
-            please contact us at info@aeroinedutech.in
+            If you have not received your refund after 8 working days, please:
           </p>
-          <br />
-          <section className="privacy-policy">
-            <h4 className="subsection-heading-small">Contact Us</h4>
-            <ul>
-              <li>
-                <p>
-                  By email:
-                  <a
-                    href="mailto:info@aeroinedutech.in"
-                    style={{ color: "#EFEFEF" }}
-                  >
-                    info@aeroinedutech.in
-                  </a>
-                </p>
-              </li>
-              <li>
-                <p>
-                  By visiting this page on our website:
-                  <a
-                    href="https://aeroinedutech.in"
-                    style={{ color: "#EFEFEF" }}
-                    target="_blank"
-                  >
-                    https://aeroinedutech.in
-                  </a>
-                </p>
-              </li>
-              <p />
-              <li>
-                <p>
-                  By phone number:
-                  <a href="tel:+919176209914" style={{ color: "#EFEFEF" }}>
-                    +91 9176209914
-                  </a>
-                </p>
-              </li>
-              <p />
-            </ul>
-          </section>
+          <ul className="definitions-list">
+            <li>Check your bank account or online statement.</li>
+            <li>
+              Contact your credit card company, as processing times may vary.
+            </li>
+            <li>
+              Contact your bank, as there may be delays in posting the refund.
+            </li>
+          </ul>
+          <p>
+            If you have done all of the above and still have not received your
+            refund, please contact us at{" "}
+            <a href="mailto:info@aeroinedutech.in" style={{ color: "#EFEFEF" }}>
+              info@aeroinedutech.in
+            </a>
+            .
+          </p>
+        </section>
+        <br />
+        <section className="privacy-policy">
+          <h4 className="subsection-heading-small">Contact Us</h4>
+          <ul>
+            <li>
+              <p>
+                By email:{" "}
+                <a
+                  href="mailto:info@aeroinedutech.in"
+                  style={{ color: "#EFEFEF" }}
+                >
+                  info@aeroinedutech.in
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                By visiting this page on our website:{" "}
+                <a
+                  href="https://aeroinedutech.in"
+                  style={{ color: "#EFEFEF" }}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  www.aeroinedutech.in
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                By phone number:{" "}
+                <a href="tel:+919176209914" style={{ color: "#EFEFEF" }}>
+                  +91 9176209914
+                </a>
+              </p>
+            </li>
+          </ul>
         </section>
       </div>
     </>
