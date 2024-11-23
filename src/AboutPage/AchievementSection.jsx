@@ -1,38 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AchievementCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
     {
-      title: 'AWS Space Accelerator, India',
+      title: "AWS Space Accelerator, India",
       description:
-        'Aeroin EduTech is honored to be selected for the prestigious AWS Space Accelerator in India. This program recognizes our innovative efforts in revolutionizing space education. With this recognition, we continue our commitment to advancing space exploration and learning through cutting-edge technology.',
-      imageUrl:
-        'src/AboutPage/Image/AWS - AEROIN.webp',
+        "Aeroin EduTech is honored to be selected for the prestigious AWS Space Accelerator in India. This program recognizes our innovative efforts in revolutionizing space education. With this recognition, we continue our commitment to advancing space exploration and learning through cutting-edge technology.",
+      imageUrl: "src/Images/AWS - AEROIN.webp",
     },
     {
-      title: 'DeepTech Startup Award, Pondicherry',
+      title: "DeepTech Startup Award, Pondicherry",
       description:
-        'Aeroin is proud to have won the prestigious DeepTech Startup Award at the Pondicherry Startup Conference. This award celebrates our ongoing mission to drive innovation in space technology, showcasing our dedication to advancing the aerospace industry.',
+        "Aeroin is proud to have won the prestigious DeepTech Startup Award at the Pondicherry Startup Conference. This award celebrates our ongoing mission to drive innovation in space technology, showcasing our dedication to advancing the aerospace industry.",
       imageUrl:
-        'https://ik.imagekit.io/cjh0dpnmu/Achievement%20Content/Pondy%20startup%20conference.JPG',
+        "https://ik.imagekit.io/cjh0dpnmu/Achievement%20Content/Pondy%20startup%20conference.JPG",
     },
     {
-      title: 'National Seminar at Dr. MGR University',
+      title: "National Seminar at Dr. MGR University",
       description:
-        'Our CEO had the privilege of addressing attendees at the National Seminar at Dr. MGR University in Chennai. The session explored the latest innovations in space technology and their impact on education, reinforcing Aeroin EduTech\'s commitment to empowering future space professionals.',
-      imageUrl:
-        'src/AboutPage/Image/mgr_award.webp',
+        "Our CEO had the privilege of addressing attendees at the National Seminar at Dr. MGR University in Chennai. The session explored the latest innovations in space technology and their impact on education, reinforcing Aeroin EduTech's commitment to empowering future space professionals.",
+      imageUrl: "src/Images/mgr_award.webp",
     },
     {
-      title: 'Guest Speaker at KCT, Coimbatore',
+      title: "Guest Speaker at KCT, Coimbatore",
       description:
-        'Our CEO had the honor of being a guest speaker at Kosmorena 23, hosted by Kumaraguru College in Coimbatore. The event offered deep insights into space exploration and technology, in line with Aeroin EduTech’s mission to inspire and educate the next generation of space leaders.',
+        "Our CEO had the honor of being a guest speaker at Kosmorena 23, hosted by Kumaraguru College in Coimbatore. The event offered deep insights into space exploration and technology, in line with Aeroin EduTech’s mission to inspire and educate the next generation of space leaders.",
       imageUrl:
-        'https://ik.imagekit.io/cjh0dpnmu/Achievement%20Content/kct_guest.webp',
+        "https://ik.imagekit.io/cjh0dpnmu/Achievement%20Content/kct_guest.webp",
     },
   ];
 
@@ -92,9 +89,9 @@ const AchievementCarousel = () => {
                   src={slide.imageUrl}
                   alt={slide.title}
                   style={{
-                    objectFit: index === 0 ? 'fill' : 'cover',
-                    objectPosition: 'center',
-                    borderRadius: '8px',
+                    objectFit: index === 0 ? "fill" : "cover",
+                    objectPosition: "center",
+                    borderRadius: "8px",
                   }}
                 />
               </div>
