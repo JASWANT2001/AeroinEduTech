@@ -28,7 +28,7 @@ function Footer() {
               <i className="fab fa-twitter" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/aeroin_edutech/"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import about2 from "./Image/1709281378046.jpg";
+import about3 from "./Image/IMG_20240424_170839.jpg"
+
 function AeroinAboutSection() {
   useEffect(() => {
     AOS.init({
@@ -27,13 +30,13 @@ function AeroinAboutSection() {
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
               <img
-                src="src/AboutPage/Image/1709281378046.jpg"
+                src={about2}
                 alt="Gallery Image 2"
                 data-aos="zoom-in" // Specific animation for this image
                 data-aos-delay="400"
               />
               <img
-                src="src/AboutPage/Image/IMG_20240424_170839.jpg"
+                src={about3}
                 alt="Gallery Image 3"
                 style={{ objectFit: "fill", objectPosition: "center" }}
                 data-aos="zoom-in"

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 const AchievementCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
@@ -10,7 +11,7 @@ const AchievementCarousel = () => {
       description:
         'Aeroin EduTech is honored to be selected for the prestigious AWS Space Accelerator in India. This program recognizes our innovative efforts in revolutionizing space education. With this recognition, we continue our commitment to advancing space exploration and learning through cutting-edge technology.',
       imageUrl:
-        'src/AboutPage/Image/AWS - AEROIN.JPG',
+        'src/AboutPage/Image/AWS - AEROIN.webp',
     },
     {
       title: 'DeepTech Startup Award, Pondicherry',
@@ -24,7 +25,7 @@ const AchievementCarousel = () => {
       description:
         'Our CEO had the privilege of addressing attendees at the National Seminar at Dr. MGR University in Chennai. The session explored the latest innovations in space technology and their impact on education, reinforcing Aeroin EduTech\'s commitment to empowering future space professionals.',
       imageUrl:
-        'src/AboutPage/Image/mgr_award.jpg',
+        'src/AboutPage/Image/mgr_award.webp',
     },
     {
       title: 'Guest Speaker at KCT, Coimbatore',
