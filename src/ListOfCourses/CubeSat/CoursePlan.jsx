@@ -63,9 +63,11 @@ function CoursePlan() {
             </ul>
             <button
               className="purchase-button"
-              onClick={() => redirectToPayment("advanced")}
+              onClick={() =>
+                window.open("https://rzp.io/rzp/cubesat-tech", "_blank")
+              }
             >
-              Enroll for ₹4999
+              Know More
             </button>
           </div>
 
@@ -87,7 +89,14 @@ function CoursePlan() {
               <li>Research Paper &amp; Publishing Support</li>
               <li>Career Talk With Experts</li>
             </ul>
-            <button className="purchase-button">Enroll for ₹8999</button>
+            <button
+              className="purchase-button"
+              onClick={() =>
+                window.open("https://rzp.io/rzp/cubesat-tech", "_blank")
+              }
+            >
+              Know More
+            </button>
           </div>
         </div>
       </section>

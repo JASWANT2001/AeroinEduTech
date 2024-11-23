@@ -11,22 +11,24 @@ function ContactSection() {
         {/* Left Side Content */}
         <div className="contact-left-section">
           <h2>Contact Us</h2>
-          <p>Need support? We’re just a message away!.</p>
+          <p>Need support? We’re just a message away!</p>
           <div className="contact-info">
             <div className="contact-info-item">
               <span className="contact-icon">📞</span>
               <span>
-                <span className="highlight">Give us a call</span>
+                <span className="highlight">Give us a Ring !!</span>
                 <br />
-                <strong>+91 9176209914</strong>
+                <strong style={{ color: "#E6E6FA" }}>+91 9176209914</strong>
               </span>
             </div>
             <div className="contact-info-item">
               <span className="contact-icon">✉️</span>
               <span>
-                <span className="highlight">Write to us</span>
+                <span className="highlight">Write to us !!</span>
                 <br />
-                <strong>info@aeroinedutech.in</strong>
+                <strong style={{ color: "#E6E6FA" }}>
+                  info@aeroinedutech.in
+                </strong>
               </span>
             </div>
             <div className="contact-info-item">
@@ -34,7 +36,7 @@ function ContactSection() {
               <span>
                 <span className="highlight">Visit us in Chennai @</span>
                 <br />
-                <strong>
+                <strong style={{ color: "#E6E6FA" }}>
                   2nd floor, G.R.S Complex, 152, Velachery main road,
                   Pallikarnai, Chennai, Tamil Nadu 600100{" "}
                 </strong>
@@ -57,7 +59,7 @@ function ContactSection() {
         <div className="contact-right-section">
           <h2>Say Hello!</h2>
           <p>Ready to talk? Feel free to stop by and say Hello!</p>
-          <form className="contact-form mt-5">
+          <form className="contact-form mt-4">
             <label htmlFor="name">Name *</label>
             <input type="text" id="name" name="name" required="" />
             <label htmlFor="email">E-mail id *</label>

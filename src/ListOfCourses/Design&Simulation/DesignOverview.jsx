@@ -26,7 +26,7 @@ function DesignOverview() {
           <ul>
             <li data-aos="fade-up" data-aos-delay="400">
               <span>PROGRAM DURATION</span>{" "}
-              <span>4 weeks (30 Days) of Focused learning</span>
+              <span>15 weeks (Sat & Sun) -  2 Hours of Focused learning</span>
             </li>
             <hr />
             <li data-aos="fade-up" data-aos-delay="600">

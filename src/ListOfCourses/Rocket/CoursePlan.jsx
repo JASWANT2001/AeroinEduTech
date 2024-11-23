@@ -36,7 +36,7 @@ function CoursePlan() {
             </ul>
             <button
               className="purchase-button"
-              onClick={() => redirectToPayment('intermediate')}
+              onClick={() => redirectToPayment("intermediate")}
             >
               Enroll for Free
             </button>
@@ -47,7 +47,7 @@ function CoursePlan() {
             data-aos-duration="1500"
             data-aos-delay="400"
           >
-            <h2 className="plan-title">Innovative Programs</h2>
+            <h2 className="plan-title">Innovative Program</h2>
             <hr className="" style={{ backgroundColor: "white" }} />
             <ul className="plan-details mt-5">
               <li>Live, Interactive + Recorded Content</li>
@@ -62,9 +62,11 @@ function CoursePlan() {
             </ul>
             <button
               className="purchase-button"
-              onClick={() => redirectToPayment('advanced')}
+              onClick={() =>
+                window.open("https://rzp.io/rzp/rocket-propulsion", "_blank")
+              }
             >
-              Enroll for ₹4999
+              Know More
             </button>
           </div>
           <div
@@ -85,7 +87,14 @@ function CoursePlan() {
               <li>Research Paper &amp; Publishing Support</li>
               <li>Career Talk With Experts</li>
             </ul>
-            <button className="purchase-button">Enroll for ₹8999</button>
+            <button
+              className="purchase-button"
+              onClick={() =>
+                window.open("https://rzp.io/rzp/rocket-propulsion", "_blank")
+              }
+            >
+              Know More
+            </button>
           </div>
         </div>
       </section>
