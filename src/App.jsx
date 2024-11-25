@@ -19,6 +19,7 @@ import RefundPolicy from "./PoliciesPage/RefundPolicy.jsx";
 // Lottie JSON animation
 import SpaceLoader from "./assets/Space-Animation.json"
 import WhatsApp from "./assets/Whatsapp.jsx";
+import ComingSoon from "./ComingSoon.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,9 +42,9 @@ function App() {
         </div>
       ) : (
         <BrowserRouter>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<ComingSoon />} />
             <Route path="/course" element={<Course />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
@@ -61,7 +62,7 @@ function App() {
             <Route path="/termsandcondition" element={<TermsAndCondition />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
           <WhatsApp />
         </BrowserRouter>
       )}
