@@ -42,9 +42,7 @@ body {
 .navbar {
     padding: 20px 100px;
     text-align: center;
-    /* background-color: #181818; */
     background-color: #0000;
-    /* background: linear-gradient(to bottom, #181818 50%, rgba(24, 24, 24, 0) 100%); */
 }
 
 .navbar-brand {
@@ -54,17 +52,12 @@ body {
 
 .logo-img {
     width: 100px;
-    /* Adjust the width as per your need */
     height: auto;
-    /* This will automatically adjust the height proportionally */
     max-height: 80px;
 }
 
 .navbar h1 {
     font-size: 24px;
-    /* color: #3E4040; */
-    /* color: #5d5e5e; */
-    /* color: rgb(180, 171, 171); */
     color: whitesmoke;
     margin: 0;
 }
@@ -76,21 +69,14 @@ body {
 }
 
 .navbar-nav .nav-link {
-    /* color: #FFF; */
-    /* color: #5d5e5e; */
     color: whitesmoke;
     text-align: left;
-    /* 768px - 1024px screen size  */
     font-weight: 100;
     transition: color 0.3s ease-in-out;
-    /* margin-left: 20px; */
-    /* 768px - 1024px screen size   */
 }
 
 .navbar-nav .nav-link:hover {
-    /* color: #00FFBF; */
     color: #828E92
-        /* Hover effect */
 }
 
 /* For large desktops and monitors */
@@ -115,20 +101,16 @@ body {
 
 .hero {
     height: 85vh;
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%),
-        url('https://ik.imagekit.io/cjh0dpnmu/space-background-with-fictional-planets.jpg?updatedAt=1731719707691'); */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%),
         url('https://ik.imagekit.io/cjh0dpnmu/planet-earth-background.jpg?updatedAt=1731719706005');
     background-size: cover;
     background-position: calc(50% - 20px) calc(79% - 10px);
-    /* background-position: center; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-
 }
 
 /* Centering and adjusting the text position */
@@ -150,10 +132,8 @@ body {
 
 .hero-text span {
     font-size: 68px;
-    /* Adjusted to make the text smaller */
     font-weight: bold;
     color: rgba(255, 255, 255, 0);
-    /* Subtle text color */
     text-transform: uppercase;
     position: relative;
     z-index: 1;
@@ -162,7 +142,6 @@ body {
     background: linear-gradient(to bottom, #777 0%, rgba(0, 0, 0, 0.8) 73%);
     -webkit-background-clip: text;
     color: transparent;
-    /* Fading effect */
     overflow: hidden;
 }
 
@@ -172,14 +151,13 @@ body {
     top: 52%;
     left: 50%;
     width: 120%;
-    height: 120%;
-    transform: translate(-50%, -50%);
+    height: 150%;
+    transform: translate(-50%, -68%);
     background: linear-gradient(to bottom, transparent 0%, black 100%);
     z-index: 0;
 }
 
 /* Overlay images */
-/* General styling for overlay image container */
 .overlay-images a {
     position: absolute;
     transform: translateY(100px);
@@ -217,18 +195,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* filter: grayscale(100%); */
-    /* Apply black and white filter */
     transition: transform 0.3s ease, filter 0.3s ease;
-    /* Smooth transition */
     animation: moveUpDown 3s ease-in-out infinite;
 }
 
 /* When hovered, show the original color */
 .overlay-image:hover img {
     transform: scale(1.1);
-    /* filter: grayscale(0); */
-    /* Remove the black and white filter */
 }
 
 .overlay-images .drone-image {
@@ -287,7 +260,7 @@ body {
 }
 
 
-/* Accreduation Section */
+/* Accreditation Section */
 
 .accreditation-section {
     padding-top: 0;
@@ -309,28 +282,22 @@ body {
 
 .icon-box {
     background-color: #181818;
-    /* background-color:#BABCB3; */
-    /* background: linear-gradient(135deg, #1c1c1c, #3f3f3e);  */
-    /* background: radial-gradient(circle, #1c1c1c, #353535); */
     height: 100px;
     width: 180px;
-    /* Slightly reduced width */
     border-radius: 8px;
     margin: 10px;
-    /* Reduced margin */
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Light and subtle shadow */
-    /* box-shadow: 0 0 15px 5px rgba(211, 211, 211, 0.4); */
 }
 
 .icon-box img {
     max-width: 110px;
-    /* Adjusted icon size */
 }
+
+/* Who are we section */
 
 .about-section {
     margin-top: 30px;
@@ -338,15 +305,13 @@ body {
     border-radius: 0px;
     background-color: #2827273d;
     width: 100%;
-    /* background-image: url("https://img.freepik.com/free-vector/gray-geometric-shapes-wireframe-wave-background-vector_53876-177919.jpg?t=st=1727180436~exp=1727184036~hmac=6a11d1e8f40bcfe784c27732c45038453bde136b1f9a58c89c6fe50a5bcb1320&w=1060"); */
-    /* background-repeat: no-repeat; */
 }
 
 .about-section h2 {
     font-size: 35px;
     font-weight: 700;
     color: #E6E6FA;
-    /* color: #195880; */
+
 }
 
 .about-section p {
@@ -368,10 +333,7 @@ body {
 
 /* Why Aeroin EduTech */
 .growth-section {
-    /* background-color: #0e1b26; */
-    /* padding: 0px 80px; */
     margin-top: 50px;
-    /* background-color: #181818; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -383,16 +345,13 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 85%;
-    /* Limits the content width */
 }
 
 /* Left side - Icon container (now horizontal) */
 .growth-icon-container {
     display: flex;
     gap: 20px;
-    /* Adds space between icons */
     width: 55%;
-    /* 40% of the section width */
 }
 
 /* Common styles for all icons */
@@ -402,11 +361,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #195880; */
-    /* background-color: #0B1F32; */
-    /* background: linear-gradient(135deg, #1c1c1c, #3f3f3e);  */
     background: radial-gradient(circle, #1c1c1c, #353535);
-    /* background-color: #181818; */
     border-radius: 5px;
     animation: bounce 3s infinite ease-in-out;
     transition: transform 0.3s ease;
@@ -414,13 +369,9 @@ body {
 
 .grid-item h3 i {
     color: #2f9db6;
-    /* Matches the color scheme */
     margin-right: 10px;
-    /* Space between icon and text */
     font-size: 1.5rem;
-    /* Adjust icon size */
     vertical-align: middle;
-    /* Align icons with text */
 }
 
 /* Bounce animation for icons */
@@ -445,39 +396,32 @@ body {
 /* Specific classes for each icon */
 .icon-rocket:before {
     content: '\1F680';
-    /* Unicode character for rocket */
 }
 
 .icon-satellite:before {
     content: '\1F6F0';
-    /* Unicode character for satellite */
 }
 
 .icon-telescope:before {
     content: '\1F52D';
-    /* Unicode character for telescope */
 }
 
 .icon-planet:before {
     content: '\1FA90';
-    /* Unicode character for planet */
 }
 
 .icon-astronaut:before {
     content: '\1F468\200D\1F680';
-    /* Unicode character for astronaut */
 }
 
 .icon-star:before {
     content: '\1F31F';
-    /* Unicode character for star */
 }
 
 /* Right side - Heading and subtitle */
 .section-heading {
     text-align: left;
     width: 50%;
-    /* 50% of the section width */
 }
 
 .section-title {
@@ -489,16 +433,11 @@ body {
 
 
 .section-subtitle {
-    /* font-size: 1.2rem;
-        color: #c9d1d9; */
     font-size: 17px;
     font-weight: 100;
     color: #B4ABAB;
     line-height: 1.7;
 }
-
-/*  */
-
 
 /* 4 Grid Styling */
 div.grid-section {
@@ -519,7 +458,6 @@ div.grid-section {
 
 .grid-item {
     background-color: #181818;
-    /* Dark background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -539,40 +477,37 @@ div.grid-section {
     font-size: 27px;
     font-weight: 400;
     color: #E6E6FA;
-    /* Light heading color */
     font-weight: bold;
 }
 
 /* Customize icon colors separately from heading */
 .grid-item h3 i {
     color: #f7f0ef;
-    /* Default icon color */
     transition: color 0.3s ease;
 }
 
 /* Change color of the .fa-video icon on hover */
 .grid-item:hover i.fa-flask {
     color: #4bd8c3;
-    /* Custom color for the video icon */
+
 }
 
 .grid-item:hover i.fa-video {
     color: #da0303;
-    /* Custom color for the video icon */
+
 }
 
 .grid-item:hover i.fa-graduation-cap {
     color: #5a5a5a;
-    /* Custom color for the video icon */
+
 }
 
 .grid-item:hover i.fa-cogs {
     color: #6f57cf;
-    /* Custom color for the video icon */
+
 }
 
 .grid-item ul {
-
     padding: 30;
 }
 
@@ -581,13 +516,11 @@ div.grid-section {
     font-weight: 100;
     line-height: 1.8;
     color: #adadae;
-    /* Light text color */
     margin-bottom: 10px;
 }
 
 .grid-item a {
     color: #40E0D0;
-    /* Link color */
     text-decoration: none;
     font-weight: bold;
 }
@@ -599,16 +532,12 @@ div.grid-section {
 
 a i {
     margin-left: 8px;
-    /* Add space between text and icon */
     color: #eaeaea;
-    /* Icon color */
     transition: transform 0.3s ease;
-    /* Optional hover animation */
 }
 
 a:hover i {
     transform: translateY(-2px);
-    /* Slight bounce effect on hover */
 }
 
 /* Feedback Section Styles */
@@ -634,51 +563,42 @@ a:hover i {
 .feedback-card {
     background-color: #181818;
     padding: 27px;
-    /* Reduced padding for a more compact look */
+
     margin: 0 10px;
-    /* Adjusted margin for better spacing */
+
     border-radius: 8px;
     color: #E6E6FA;
 
     width: 450px;
-    /* Fixed width */
+
     height: 290px;
-    /* Fixed height */
+
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-    /* Adjusted shadow */
+
     display: flex;
-    /* Use flex to manage content layout */
+
     flex-direction: column;
-    /* Align items vertically */
+
     overflow: hidden;
-    /* Hide overflowing content */
+
 }
 
 .feedback-top {
     display: flex;
     justify-content: flex-end;
-    /* Align quote icon to the right */
+
     align-items: flex-start;
-    /* Align items to the top */
+
     height: 60px;
-    /* Set height to ensure the icon and content fit */
+
     opacity: 20%;
 }
 
 .feedback-top i {
     font-size: 1.7rem;
-    /* Adjusted icon size */
+
     color: #ccc;
 }
-
-/* .feedback-content {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #ddd;
-    text-align: justify;
-    overflow: auto;
-    text-overflow: ellipsis;
-} */
 
 .feedback-content {
     position: relative;
@@ -726,17 +646,17 @@ a:hover i {
     display: flex;
     align-items: center;
     margin-top: auto;
-    /* Pushes it to the bottom */
+
 }
 
 .feedback-bottom img {
     width: 35px;
-    /* Adjusted width */
+
     height: 32px;
-    /* Adjusted height */
+
     border-radius: 50%;
     margin-right: 10px;
-    /* Adjusted margin */
+
 }
 
 .feedback-bottom h5 {
@@ -777,15 +697,15 @@ a:hover i {
 
 .reveal {
     opacity: 0;
-    /* Start hidden */
+
     transform: translateY(5px);
-    /* Start position */
+
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .reveal.visible {
     opacity: 1;
-    /* End state */
+
     transform: translateY(0);
 }
 
@@ -797,10 +717,9 @@ a:hover i {
     margin: auto;
     padding: 10px;
     max-width: 1300px;
-    /* background-color: #181818; */
-    /* background-color: #0A0909; */
+
     border-radius: 8px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
     color: #E6E6FA;
 }
 
@@ -808,14 +727,14 @@ a:hover i {
 .contact-left-section {
     flex: 1;
     padding: 20px 50px;
-    /* border-right: 1px solid #252525; */
+
 }
 
 .contact-left-section h2 {
     font-size: 27px;
     font-weight: 700;
     color: #E6E6FA;
-    /* margin-bottom: 15px; */
+
     text-align: center;
 }
 
@@ -840,7 +759,7 @@ a:hover i {
 }
 
 .highlight {
-    /* color: #E6E6FA; */
+
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -857,16 +776,14 @@ a:hover i {
     background-color: #0A0909;
     border-radius: 10px;
     margin-bottom: 22px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.2); */
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* White-tinted shadow */
-    /* border: 1px solid #1F1F1F;  */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
 }
 
 .contact-right-section h2 {
     font-size: 27px;
     font-weight: 700;
     color: #E6E6FA;
-    /* margin-bottom: 15px; */
+
     text-align: center;
 }
 
@@ -897,28 +814,28 @@ a:hover i {
     border-radius: 4px;
     width: 100%;
     background-color: #181818;
-    /* Black background */
+
     color: #fff;
-    /* White text */
+
     caret-color: #fff;
-    /* White cursor color */
+
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: #999;
-    /* Light grey placeholder text */
+
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #353635;
-    /* Green border on focus */
+
     outline: none;
     background-color: #000;
-    /* Keep background black on focus */
+
     color: #fff;
-    /* Ensure text remains white */
+
 }
 
 .contact-form textarea {
@@ -945,22 +862,20 @@ a:hover i {
 /* About Page Styling */
 .carousel {
     height: 38vh;
-    /* You can adjust the height */
     overflow: hidden;
 }
 
 .carousel-item img {
     object-fit: initial;
     height: 300px;
-    /* width: 200px; */
+
 }
 
 /* Company Introduction Section */
 .company-intro-section {
     padding: 100px;
     padding-bottom: 50px;
-    /* background-color: #0e1b26; */
-    /* Dark background */
+
 }
 
 .company-intro-container {
@@ -977,17 +892,14 @@ a:hover i {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    /* Space between images */
+
 }
 
 .photo-gallery img {
     width: calc(33.33% - 10px);
-    /* Adjust this to fit the number of images in a row */
     height: 210px;
     border-radius: 20px;
-    object-fit: fill;
-    /* object-fit: cover; */
-    /* object-position: top; */
+    object-fit: cover;
     filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
@@ -1031,8 +943,6 @@ a:hover i {
 }
 
 /* Stats Row */
-
-
 .stat-icon {
     font-size: 60px;
     color: #E6E6FA;
@@ -1094,7 +1004,7 @@ a:hover i {
     font-size: 30px;
     font-weight: 800;
     color: #E6E6FA;
-    /* text-transform: uppercase; */
+
     letter-spacing: 1.5px;
 }
 
@@ -1119,7 +1029,7 @@ a:hover i {
 }
 
 .leader-box:hover {
-    /* transform: translateY(-10px); */
+
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
@@ -1138,10 +1048,10 @@ a:hover i {
 
 .leader-box p:first-of-type {
     font-size: 18px;
-    /* Example styling */
+
     font-weight: bold;
     color: #ffffff;
-    /* Adjust the color as needed */
+
     margin-bottom: 5px;
 }
 
@@ -1249,11 +1159,9 @@ a:hover i {
     }
 }
 
-/*  */
+
 /* Achievement Carousel Styling */
 .achievement-carousel-section {
-    /* padding: 30px; */
-    /* background-color: #f5f5f5; */
     padding-top: 70px;
     padding-bottom: 20px;
     position: relative;
@@ -1364,7 +1272,6 @@ a:hover i {
 
 
 
-
 /* About Page Industry Collbration Styling */
 .collaboration-carousel {
     margin-top: 120px;
@@ -1375,14 +1282,13 @@ a:hover i {
 .carousel-wrapper {
     width: 100%;
     overflow: hidden;
-    /* Ensure only visible items are shown */
     position: relative;
 }
 
 .carousel-items {
     display: flex;
     transition: transform 0.7s ease-in-out;
-    /* Smooth scrolling */
+
 }
 
 .carousel-icon-box {
@@ -1459,14 +1365,12 @@ a:hover i {
 
 /* Main Courses Page */
 .maincourse {
-    /* background-color: #0e0e0e; */
-    /* Darker background for contrast */
     color: #E6E6FA;
-    /* padding: 60px 0; */
+
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 80vh; */
+
 
 }
 
@@ -1475,19 +1379,17 @@ a:hover i {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* max-width: 1700px; */
     margin: 0 auto;
     background-color: #1a1a1a;
-    /* border-radius: 15px; */
     overflow: hidden;
     padding: 40px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-    /* Deeper shadow for depth */
+
 }
 
 .left-content {
     flex: 1;
-    /* padding-right: 40px; */
+
     padding-left: 70px;
 }
 
@@ -1495,7 +1397,7 @@ a:hover i {
     font-size: 38px;
     line-height: 1.6;
     color: #E6E6FA;
-    /* color: #6A5ACD; */
+
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -1515,20 +1417,16 @@ a:hover i {
 }
 
 .left-content ul li:before {
-    /* content: "\2022"; */
-    /* Bullet point */
+
     position: absolute;
     left: 0;
     top: 0;
     margin-bottom: 20px;
-    /* color: #6A5ACD; */
-    /* Softer accent color */
+
     font-size: 24px;
 }
 
-/* .left-content a {
-    margin-top: 200px;
-} */
+
 
 .right-content {
     flex: 1;
@@ -1544,12 +1442,12 @@ a:hover i {
     border-radius: 7px;
     transition: transform 0.4s ease, opacity 0.4s ease;
     opacity: 0.9;
-    /* Less opacity for softer effect */
+
 }
 
 .right-content img:hover {
     transform: scale(1.05);
-    /* Subtle hover scale */
+
     opacity: 1;
 }
 
@@ -1559,8 +1457,7 @@ a:hover i {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #0e0e0e; */
-    /* color: #E6E6FA; */
+
 }
 
 .about-us-space-edtech {
@@ -1568,20 +1465,18 @@ a:hover i {
     text-align: center;
     padding: 40px;
     border-radius: 15px;
-    /* background-color: #1a1a1a; */
-    /* Subtle background for section */
+
     box-shadow: 0 8px 30px rgba(35, 34, 34, 0.5);
-    /* Shadow for depth */
+
 
 }
 
 .about-us-space-edtech h2 {
     font-size: 36px;
     font-weight: 700;
-    /* color: #6A5ACD; */
+
     color: #E6E6FA;
-    /* Accent color */
-    /* margin-bottom: 20px; */
+
     text-align: center;
 }
 
@@ -1622,7 +1517,7 @@ a:hover i {
 /* Course-List Styling */
 
 .page-title {
-    /* margin-top: 30px; */
+
     font-size: 30px;
     font-weight: 800;
     color: #E6E6FA;
@@ -2085,12 +1980,11 @@ hr {
 /* Certification */
 .certification-section {
     margin-top: 50px;
-    /* margin-left: 0px;
-        margin-right: 0px; */
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: #0A2E1D; */
+
     padding: 40px;
     color: #E6E6FA;
 }
@@ -2106,7 +2000,7 @@ hr {
 }
 
 .certification-content p {
-    /* width: 550px; */
+
     margin-top: 40px;
     font-size: 17px;
     font-weight: 300;
@@ -2133,16 +2027,7 @@ hr {
     padding: 50px 0;
     text-align: center;
     margin: 80px auto;
-    /* background: linear-gradient(135deg, #181818 0%, #282828 100%); */
     background-color: #0f0e0e;
-    /* background-image:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("Image/galaxy-night-landscape.jpg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* border: 1px solid wheat; */
-    border-radius: 12px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 1300px;
@@ -2202,9 +2087,9 @@ hr {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    /* Full height of the viewport */
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    /* background-color: #f9f9f9; */
+
     overflow: auto;
 }
 
@@ -2373,8 +2258,8 @@ hr {
     margin-top: 40px;
     background-color: #181818;
     color: #E6E6FA;
-    padding: 40px 10px;
-    border-top: 1px solid #444;
+    padding: 40px 0px 0px 0px;
+    border-top: 0.1px solid #444;
 }
 
 .footer-content {
@@ -2382,6 +2267,7 @@ hr {
     justify-content: space-between;
     max-width: 1300px;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .footer-left {
@@ -2439,8 +2325,6 @@ hr {
 .footer-section ul {
     list-style-type: none;
     padding: 0;
-    /* font-size: 16px; */
-    /* line-height: 1.7; */
 }
 
 .footer-section ul li {
@@ -2460,7 +2344,7 @@ hr {
 .footer-section ul li i {
     margin-right: 8px;
     color: #E6E6FA;
-    /* or any color you'd like */
+
 }
 
 
@@ -2469,33 +2353,28 @@ hr {
 }
 
 .footer-bottom {
+    color: #C4C4D5;
+    font-weight: 500;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
+    padding: 20px 0;
+    font-size: 14px;
 }
 
 .footer-bottom p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #E6E6FA;
+    margin: 10px;
+    letter-spacing: 0.4px;
 }
 
-.footer-bottom a {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.7;
+.footer-link {
+    margin-left: 5px;
     color: #E6E6FA;
-}
-
-.footer-section p a {
-    color: #E6E6FA;
-    text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    text-decoration: none;
 }
 
-.footer-section p a:hover {
-    color: #E6E6FA;
+.footer-link:hover {
+    color: #999;
 }
 
 /* Privacy Policies */
@@ -2505,7 +2384,6 @@ hr {
     max-width: 1300px;
     margin: 2rem auto;
     padding: 2rem;
-    /* background-color: #fff; */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -2591,14 +2469,14 @@ hr {
     color: white;
     font-size: 30px;
     width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    height: 140px;
+    /* border-radius: 50%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     cursor: pointer;
-    animation: float 2s infinite ease-in-out;
+    /* animation: float 2s infinite ease-in-out; */
     transition: transform 0.5s ease;
     position: relative;
 }
@@ -2611,7 +2489,7 @@ hr {
     right: -10px;
     bottom: -10px;
     /* border: 2px solid rgba(69, 72, 71, 0.5); */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     animation: pulse 2s infinite;
 }
 
@@ -2647,6 +2525,27 @@ hr {
         opacity: 0;
     }
 }
+
+/* Preloader.css */
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    /* background: radial-gradient(circle, #000, #1a1a1a); */
+    color: #fff;
+}
+
+.loading-text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #61dafb;
+    font-family: "Roboto", sans-serif;
+}
+
+
 
 
 
@@ -2685,7 +2584,7 @@ hr {
     /* Hero Section Styling */
 
     .hero {
-        height: 85vh;
+        height: 75vh;
         background-size: cover;
         background-position: top;
     }
@@ -2696,20 +2595,24 @@ hr {
     }
 
     .hero-text span {
-        font-size: 35px;
-        /* Smaller font for tablets */
+        font-size: 38px;
+
+    }
+
+    .hero-text::before {
+        display: none;
     }
 
     .overlay-image {
         width: 90px;
-        /* Smaller image size */
+
         height: 90px;
         display: none;
     }
 
     .overlay-image img {
         animation: moveUpDown 2.5s ease-in-out infinite;
-        /* Adjust animation for smaller screens */
+
     }
 
     .overlay-images .drone-image {
@@ -2779,21 +2682,20 @@ hr {
     .about-section p {
         margin-top: 30px;
         font-size: 15px;
-        max-width: 100%;
+        width: 100%;
     }
 
     .about-section img {
-        margin-left: 65px;
+        /* margin-left: 65px; */
         margin-top: 0px;
-        max-width: 100%;
-        height: 80%;
+        max-width: 70%;
+        height: 70%;
     }
 
     /* Why Aeroin EduTech */
 
     .growth-section {
         height: auto;
-        /* Let content define height */
         flex-direction: column;
         margin-bottom: 20px;
     }
@@ -2802,7 +2704,6 @@ hr {
         flex-direction: column;
         align-items: center;
         width: 90%;
-        /* Adjust width */
         gap: 20px;
     }
 
@@ -2816,7 +2717,7 @@ hr {
 
     .growth-icon-box {
         width: 100px;
-        /* Reduced size */
+
         height: 70px;
     }
 
@@ -2838,7 +2739,6 @@ hr {
     }
 
     /* 4 Grid Section */
-
     .aeroin-edutech-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -2861,12 +2761,10 @@ hr {
     }
 
     /* Training Section */
-
     .training-section {
         margin-bottom: 90px;
         padding: 0px;
         text-align: center;
-        /* max-width: 100%; */
     }
 
     .training-section .container {
@@ -2874,7 +2772,7 @@ hr {
     }
 
     .heading h2 {
-        font-size: 24px;
+        font-size: 26px;
         margin-bottom: 10px;
     }
 
@@ -2888,48 +2786,46 @@ hr {
     .stats-row {
         display: flex;
         flex-wrap: wrap;
-        /* Wraps items to fit smaller screens */
         justify-content: space-between;
         margin: 20px 0;
-        /* Reduced margin for a better fit on tablets */
     }
 
     .stat-box {
         grid-template-columns: repeat(2, 1fr);
         background-color: #181818;
         padding: 15px;
-        /* Adjust padding for tablets */
+
         border-radius: 8px;
-        /* Slightly smaller border-radius for tablets */
+
         text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-        /* Reduced shadow for a cleaner look */
+
         width: 48%;
-        /* Adjust width to fit more items */
+
         margin-bottom: 20px;
-        /* Ensure spacing between rows on smaller screens */
+
     }
 
     .stat-box:hover {
         transform: translateY(-8px);
-        /* Slightly less translation for a more subtle effect */
+
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4),
             0 8px 16px rgba(255, 255, 255, 0.1),
             inset 0 0 8px rgba(255, 255, 255, 0.05);
-        /* Adjusted shadow for tablets */
+
     }
 
-    /* Additional style for headings */
+
     .stat-box h3 {
         font-size: 30px;
-        /* Slightly smaller font-size for tablets */
+
         color: #0CB6EB;
     }
 
     .stat-box p {
         font-size: 16px;
-        /* Slightly smaller font-size for tablets */
+
         color: #E6E6FA;
     }
 
@@ -2967,7 +2863,7 @@ hr {
     /* Footer Section */
 
     .footer-content {
-        padding: 20px;
+        padding: 0px 15px;
         flex-direction: column;
     }
 
@@ -2988,30 +2884,28 @@ hr {
     }
 
     .footer-bottom p {
-        font-size: 15px;
-        padding: 30px;
+        font-size: 14px;
+        /* padding: 30px; */
     }
 
     /* Main Course Page Styling */
+
     /* Maincourse 1st section */
     .split-section {
         flex-direction: column;
         justify-content: center;
-        /* Ensure column layout on tablets */
-        /* padding: 30px; */
-        /* Adjust padding */
     }
 
     .left-content {
         padding: 0px;
         width: 90%;
-        /* Full width for each section */
+
     }
 
     .left-content h1 {
         font-size: 24px;
         text-align: center;
-        /* Adjust font-size */
+
     }
 
     .right-content {
@@ -3021,9 +2915,9 @@ hr {
 
     .right-content img {
         margin-top: 20px;
-        height: auto;
+        height: 75vh;
         max-width: 90%;
-        /* Ensure responsiveness */
+
     }
 
     .right-content img:hover {
@@ -3035,20 +2929,21 @@ hr {
         text-align: center;
         list-style-type: none;
         font-size: 18px;
-        /* Adjust font-size */
+
     }
 
     .enquiry-button {
         display: flex;
-        justify-content: center;
-        /* padding: 12px 30px; */
+        margin-left: 40%;
+
         font-size: 15px;
+
     }
 
     /* Maincourse About Us */
     .about-us-space-edtech {
         padding: 20px;
-        width: 95%;
+        width: 94%;
     }
 
     .about-us-space-edtech h2 {
@@ -3084,6 +2979,7 @@ hr {
 
     .programs-page h1 {
         font-size: 24px;
+        margin-bottom: 55px;
     }
 
     .page-title {
@@ -3117,7 +3013,36 @@ hr {
 
     .program-description {
         font-size: 14px;
-        /* padding: 0px; */
+
+    }
+
+
+
+    /* Confused about plan Section */
+    .plan-enquiry-section {
+        padding: 40px 20px;
+        margin: 60px auto;
+    }
+
+    .plan-enquiry-section a {
+        margin: 0px 120px;
+    }
+
+    .enquiry-heading {
+        font-size: 25px;
+    }
+
+    .enquiry-subheading {
+        font-size: 15px;
+
+    }
+
+    .enquiry-button {
+
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
     /* Vertical Column Grid */
@@ -3144,29 +3069,13 @@ hr {
         font-size: 15px;
     }
 
-    /* Confused Section */
-    .plan-enquiry-section {
-        padding: 40px 20px;
-        margin: 60px auto;
-    }
-
-    .plan-enquiry-section a {
-        margin: 0px 120px;
-    }
-
-    .enquiry-heading {
-        font-size: 24px;
-    }
-
-    .enquiry-subheading {
-        font-size: 15px;
-    }
-
-    .enquiry-button {
-        font-size: 15px;
-    }
-
     /* About Page  */
+
+    .carousel-item img {
+        object-fit: contain;
+        height: 300px;
+    }
+
     .company-intro-section {
         max-width: 100%;
         padding: 50px;
@@ -3175,21 +3084,20 @@ hr {
 
     .company-intro-container {
         flex-direction: column;
-        /* width: 100%; */
     }
 
     .company-intro-left,
     .company-intro-right {
         flex: 1;
         width: 100%;
-        /* Adjust width for each section */
+
     }
 
     .company-intro-right {
 
         margin-top: 40px;
         padding: 0px 15px;
-        /* Add some padding */
+
     }
 
     .company-intro-right p {
@@ -3205,15 +3113,15 @@ hr {
 
     .photo-gallery img {
         width: calc(33.33% - 10px);
-        /* Three images per row */
         height: 210px;
-        /* Fixed height */
+        object-fit: cover;
     }
 
     /* Brains Behind Section */
     .leadership-section {
+        padding-top: 10px;
         max-width: 90%;
-        padding-left: 50px;
+        padding-left: 12%;
     }
 
     .leadership-section h2 {
@@ -3227,34 +3135,34 @@ hr {
     .leadership-container {
         padding: 0px;
         justify-content: center;
-        gap: 20px;
-        /* Increase gap */
+        gap: 45px;
+
     }
 
     .leader-box {
         width: calc(50% - 40px);
-        /* Two items per row */
         max-width: none;
-        /* Remove max-width restriction */
+
     }
 
     .leader-box img {
         width: 180px;
-        /* Increase image size */
+
         height: 180px;
     }
 
     /* Achevement Sections */
     .achievement-carousel-section {
-        max-width: 90%;
+        /* max-width: 95%; */
         margin-bottom: 100px;
+
     }
 
     .carousel-slide-achievement {
         flex-direction: column;
-        /* Stack content vertically */
         padding: 30px 40px;
-        /* Adjust padding */
+        border-radius: 0px;
+
     }
 
     .achievement-content-left {
@@ -3262,19 +3170,20 @@ hr {
     }
 
     .fixed-heading h2 {
-        font-size: 24px;
-        /* font-weight: 600; */
+        font-size: 18px;
+        margin-top: 10px;
         margin-bottom: 30px;
     }
 
     .achievement-content-left p {
         padding-right: 0px;
-        font-size: 14px;
+        font-size: 14.5px;
+        padding: 10px;
         margin-bottom: 30px;
     }
 
     .achievement-content-left h3 {
-        font-size: 20px;
+        font-size: 23px;
         font-size: 450;
         margin-bottom: 10px;
         /* Adjust heading size */
@@ -3282,9 +3191,9 @@ hr {
 
 
     .achievement-content-right img {
-        width: 100%;
-        /* Reduce image size */
+        width: 620px;
         margin-top: 20px;
+        object-fit: cover;
     }
 
     /* Mission Vission Section */
@@ -3297,35 +3206,34 @@ hr {
 
     .section-title {
         font-size: 28px;
-        /* Adjust font size */
+
     }
 
     .section-description {
         font-size: 14px;
-        /* Adjust font size */
+
     }
 
     .mission-box,
     .vision-box {
         padding: 20px 10px;
         text-align: center;
-        /* Adjust padding */
     }
 
-    /* Carousel */
+    /* About Page Industry Collbration Styling */
     .collaboration-carousel {
         padding-left: 50px;
         padding-right: 50px;
     }
 
     .carousel-icon-box {
-        flex: 0 0 16%;
+        flex: 0 0 30%;
         /* 4 icons visible at once (100% / 4) */
     }
 
     /* Contact Page */
     .contact-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         max-width: 90%;
     }
 
@@ -3340,12 +3248,17 @@ hr {
     .contact-left-section,
     .contact-right-section {
         padding: 20px;
+        width: 90%;
+        margin-left: 20px;
 
     }
 
     .contact-right-section {
         margin-top: 10px;
         margin-bottom: 0;
+        margin-left: 30px;
+        box-shadow: none;
+
     }
 
     /* Insights Page */
@@ -3472,8 +3385,7 @@ hr {
 
     .certification-section {
         flex-direction: column;
-        /* padding: 30px; */
-        /* text-align: center; */
+
         margin-top: 70px;
     }
 
@@ -3499,7 +3411,7 @@ hr {
     }
 
     .certification-image img {
-        height: auto;
+        height: 55vh;
         width: 100%;
     }
 
@@ -3562,7 +3474,34 @@ hr {
         /* Slightly larger padding for tablets */
     }
 
+    /* Privacy policies Page */
+
+    .privacy-container {
+        width: 90%;
+    }
+
+    .privacy-header {
+        text-align: center;
+        border-bottom: 0.5px solid #e9ecef;
+    }
+
+    .privacy-title {
+        font-size: 32px;
+    }
+
+    .section-heading {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .privacy-intro,
+    .privacy-section,
+    .privacy-policy p {
+        font-size: 15px;
+    }
+
 }
+
 
 /* For mobile devices (Till - 767px) */
 @media (max-width: 767px) {
@@ -3570,22 +3509,21 @@ hr {
     /* Styles for Navbar */
     .navbar {
         padding: 15px 10px;
-        /* Reduced padding for smaller screens */
+
     }
 
     .navbar h1 {
         font-size: 22px;
-        /* Slightly reduce the font size of the brand name */
+
     }
 
     .navbar-nav {
         flex-direction: column;
-        /* Stack the links vertically */
         align-items: flex-start;
     }
 
     .navbar-nav .nav-link {
-        font-size: 13px;
+        font-size: 15px;
         transition: color 0.2s ease-in-out;
     }
 
@@ -3595,33 +3533,35 @@ hr {
 
     /*  Hero Section */
     .hero {
-        height: 65vh;
+        height: 70vh;
         background-size: cover;
-        background-position: bottom;
+        background-position: center;
     }
 
     .hero-text {
         width: 100%;
-        bottom: 50%;
-
+        bottom: 5%;
     }
 
     .hero-text span {
-        font-size: 20px;
+        font-size: 21px;
         color: rgba(255, 255, 255, 0.056);
+    }
+
+    .hero-text::before {
+        background: none;
     }
 
 
     .overlay-image {
         width: 90px;
-        /* Smaller image size */
         height: 90px;
         display: none;
     }
 
     .overlay-image img {
         animation: moveUpDown 2.5s ease-in-out infinite;
-        /* Adjust animation for smaller screens */
+
     }
 
     .overlay-images .drone-image {
@@ -3651,7 +3591,7 @@ hr {
     /* Accredited By Section */
 
     .accreditation-section {
-        /* padding-top: 20px; */
+
         padding-bottom: 30px;
         margin-top: 10px;
         overflow: hidden;
@@ -3670,8 +3610,13 @@ hr {
 
     .icon-box {
         height: 100px;
-        width: 350px;
+        width: 300px;
     }
+
+    .icon-box img {
+        width: 120px;
+    }
+
 
     /* Who are we section */
 
@@ -3701,14 +3646,13 @@ hr {
         margin-left: 20px;
         margin-top: 30px;
         max-width: 100%;
-        height: 39vh;
+        height: 30vh;
     }
 
     /* Why Aeroin EduTech */
 
     .growth-section {
         height: auto;
-        /* Let content define height */
         flex-direction: column;
         margin-bottom: 20px;
     }
@@ -3717,7 +3661,6 @@ hr {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        /* Adjust width */
         gap: 20px;
     }
 
@@ -3726,12 +3669,12 @@ hr {
         justify-content: space-around;
         width: 90%;
         gap: 15px;
-        /* Reduced gap between icons */
+
     }
 
     .growth-icon-box {
         width: 110px;
-        /* Reduced size */
+
         height: 70px;
     }
 
@@ -3743,13 +3686,13 @@ hr {
     }
 
     .section-heading h1 {
-        font-size: 19px;
+        font-size: 22px;
         text-align: center;
     }
 
 
     .section-subtitle {
-        font-size: 11px;
+        font-size: 13px;
         text-align: center;
         margin-bottom: 10px;
     }
@@ -3779,29 +3722,25 @@ hr {
 
     /* Training Section */
     .training-section {
-
         margin-bottom: 50px;
-        /* Reduce bottom margin */
         padding: 0px;
         text-align: center;
-        /* Ensure the section takes the full width of the mobile screen */
     }
 
     .training-section .container {
         max-width: 98%;
-        /* Make the container full width on mobile */
+
     }
 
     .heading h2 {
-        font-size: 19px;
-        /* Reduce font size for better readability on small screens */
+        font-size: 22px;
         margin-bottom: 8px;
         /* Slightly reduce bottom margin */
     }
 
     .heading p {
         color: #666;
-        font-size: 12px;
+        font-size: 14px;
         /* Slightly smaller text for better scaling */
         margin-bottom: 30px;
         /* Reduce bottom margin to fit smaller screen */
@@ -3821,45 +3760,45 @@ hr {
         /* Wraps items to fit smaller screens */
         justify-content: space-between;
         margin: 20px 0;
-        /* Reduced margin for a better fit on tablets */
+
     }
 
     .stat-box {
         grid-template-columns: repeat(2, 1fr);
         background-color: #181818;
         padding: 15px;
-        /* Adjust padding for tablets */
+
         border-radius: 8px;
-        /* Slightly smaller border-radius for tablets */
+
         text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-        /* Reduced shadow for a cleaner look */
+
         width: 48%;
-        /* Adjust width to fit more items */
+
         margin-bottom: 20px;
-        /* Ensure spacing between rows on smaller screens */
+
     }
 
     .stat-box:hover {
         transform: translateY(-8px);
-        /* Slightly less translation for a more subtle effect */
+
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4),
             0 8px 16px rgba(255, 255, 255, 0.1),
             inset 0 0 8px rgba(255, 255, 255, 0.05);
-        /* Adjusted shadow for tablets */
+
     }
 
     /* Additional style for headings */
     .stat-box h3 {
         font-size: 20px;
-        /* Slightly smaller font-size for tablets */
+
         color: #0CB6EB;
     }
 
     .stat-box p {
         font-size: 13px;
-        /* Slightly smaller font-size for tablets */
+
         color: #E6E6FA;
     }
 
@@ -3900,56 +3839,56 @@ hr {
         width: 100%;
         padding: 30px 20px;
         display: flex;
-        /* Use flexbox */
+
         flex-direction: column;
-        /* Stack items vertically */
+
     }
 
     .footer-content {
         display: flex;
-        /* Flex container */
+
         flex-wrap: wrap;
-        /* Allow wrapping */
+
         justify-content: space-between;
-        /* Space out sections */
+
     }
 
     .footer-left,
     .footer-right {
         flex: 1 1 100%;
-        /* Full width on mobile */
+
         padding: 10px;
-        /* Adjust padding */
+
     }
 
     .footer-right {
         margin-top: 20px;
         display: flex;
-        /* Flex container for sections */
+
         flex-direction: column;
-        /* Stack sections */
+
     }
 
     .footer-section {
         margin-bottom: 20px;
-        /* Add space between sections */
+
         text-align: left;
-        /* Align text to the left */
+
     }
 
     /* Social icons - center aligned */
     .social-icons {
         justify-content: left;
-        /* Center align icons */
+
         gap: 10px;
-        /* Reduce gap between icons */
+
     }
 
     .footer-left p {
         text-align: justify;
-        /* Center-align paragraph */
+
         font-size: 14px;
-        /* Adjust font size */
+
     }
 
     .footer-bottom p {
@@ -3968,9 +3907,7 @@ hr {
     .split-section {
         flex-direction: column;
         justify-content: center;
-        /* Ensure column layout on tablets */
-        /* padding: 30px; */
-        /* Adjust padding */
+
     }
 
     .left-content {
@@ -4012,13 +3949,12 @@ hr {
     .enquiry-button {
         display: flex;
         justify-content: center;
-        /* padding: 12px 30px; */
+        margin-left: 30%;
         font-size: 15px;
     }
 
     /* Maincourse About Us */
     .about-us-space-edtech {
-
         padding: 20px;
         width: 95%;
     }
@@ -4055,17 +3991,17 @@ hr {
     }
 
     .programs-page h1 {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .page-title {
-        font-size: 24px;
+        font-size: 23px;
     }
 
     .programs-list {
         width: 100%;
         margin-top: 20px;
-        gap: 25px;
+        gap: 45px;
         display: flex;
         justify-content: space-evenly;
     }
@@ -4089,19 +4025,18 @@ hr {
 
     .program-description {
         font-size: 14px;
-        /* padding: 0px; */
+
     }
 
     /* Vertical Column Grid */
     .aeroin-edutech {
-        padding: 50px;
+        padding: 25px;
         justify-content: center;
     }
 
     .box {
         min-width: 100%;
-        /* max-width: calc(33.33% - 20px); */
-        /* Adjust to 3 columns */
+
     }
 
     .icon {
@@ -4127,11 +4062,11 @@ hr {
     }
 
     .enquiry-heading {
-        font-size: 15.5px;
+        font-size: 21px;
     }
 
     .enquiry-subheading {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .enquiry-button {
@@ -4139,6 +4074,11 @@ hr {
     }
 
     /* About Page Section */
+
+    .carousel {
+        display: none;
+    }
+
     .company-intro-section {
         max-width: 100%;
         padding: 50px;
@@ -4176,11 +4116,13 @@ hr {
 
     }
 
+
     .photo-gallery img {
         width: calc(50% - 10px);
-        /* Three images per row */
+        object-fit: cover;
         height: 210px;
-        /* Fixed height */
+        width: 100%;
+
     }
 
     /* Brains Behind Section */
@@ -4213,6 +4155,7 @@ hr {
     }
 
     .leader-box img {
+        margin-top: 40px;
         width: 180px;
         /* Increase image size */
         height: 180px;
@@ -4220,15 +4163,15 @@ hr {
 
     /* Achevement Sections */
     .achievement-carousel-section {
-        max-width: 90%;
+        max-width: 100%;
         margin-bottom: 100px;
+
     }
 
     .carousel-slide-achievement {
         flex-direction: column;
-        /* Stack content vertically */
         padding: 30px 40px;
-        /* Adjust padding */
+        border-radius: 0px;
     }
 
     .achievement-content-left {
@@ -4236,8 +4179,7 @@ hr {
     }
 
     .fixed-heading h2 {
-        font-size: 21px;
-        /* font-weight: 600; */
+        font-size: 15px;
         margin-bottom: 30px;
     }
 
@@ -4250,27 +4192,27 @@ hr {
     .achievement-content-left h3 {
         font-size: 20px;
         margin-bottom: 10px;
-        /* Adjust heading size */
-    }
 
+    }
 
     .achievement-content-right img {
         width: 100%;
-        /* Reduce image size */
         margin-top: 20px;
+        object-fit: contain;
+        height: 30vh;
     }
 
     /* Mission Vission Section */
     .mission-vision-section {
         display: flex;
         flex-direction: row;
-        /* padding-left: 25px; */
-        /* padding-right: 15px; */
+        padding-left: 0px;
+        padding-right: 0px;
         width: 100%;
     }
 
     .section-title {
-        font-size: 24px;
+        font-size: 22px;
         /* Adjust font size */
     }
 
@@ -4287,66 +4229,104 @@ hr {
         /* Adjust padding */
     }
 
-    /* Carousel */
+    /* About Page Industry Collbration Styling */
     .collaboration-carousel {
         font-size: 14px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .collaboration-carousel h2 {
         font-size: 22px;
     }
 
+    .carousel-items {
+        transition: transform 1.2s ease-in-out;
+    }
+
     .carousel-icon-box {
-        flex: 0 0 16%;
+        flex: 0 0 50%;
         /* 4 icons visible at once (100% / 4) */
     }
 
     /* Contact Page */
     .contact-container {
-        flex-direction: column;
-        max-width: 100%;
-    }
-
-    .contact-left-section h2 {
-        text-align: center;
-
-    }
-
-    .contact-left-section p {
-        text-align: center;
-        font-size: 15px;
-    }
-
-    .contact-info .contact-info-item {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 1rem;
+        gap: 1.5rem;
+    
+      }
+    
+      .contact-left-section,
+      .contact-right-section {
+        width: 100%;
+        padding: 1rem;
+        text-align: left;
+      }
+    
+      .contact-left-section h2,
+      .contact-right-section h2 {
+        font-size: 22px;
+        margin-bottom: 0.5rem;
+      }
+    
+      .contact-left-section p,
+      .contact-right-section p {
         font-size: 14px;
-    }
-
-    .contact-info .contact-info-item .contact-icon {
-        font-size: 20px;
-    }
-
-    .highlight {
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    .contact-left-section,
-    .contact-right-section {
-        padding: 20px;
-        font-size: 15px;
-
-    }
-
-    .contact-right-section {
-        margin-top: 10px;
-        margin-bottom: 0;
-    }
-
-    .contact-right-section p {
-        font-size: 15px;
-    }
+        margin-bottom: 1rem;
+      }
+    
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    
+      .contact-info-item {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        text-align: left;
+        gap: 0.5rem;
+      }
+    
+      .contact-icon {
+        font-size: 14px;
+      }
+    
+      .contact-info-item span {
+        font-size: 0.95rem;
+      }
+    
+      .contact-map iframe {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+      }
+    
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    
+      .contact-form label {
+        font-size: 0.9rem;
+        text-align: left;
+      }
+    
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.9rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    
+      
 
     /* Insights Page */
 

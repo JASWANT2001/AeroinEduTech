@@ -35,19 +35,26 @@ function Footer() {
               <i className="fab fa-instagram" />
             </a>
             <a
+              href="https://api.whatsapp.com/send/?phone=919176209914&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-whatsapp" />
+            </a>
+            <a
               href="https://www.linkedin.com/company/aeroin-edutech"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-linkedin-in" />
             </a>
+            
           </div>
         </div>
 
         {/* Right Section */}
         <div className="footer-right">
           {/* Support Section */}
-       
 
           <div className="footer-section">
             <h3>Programs</h3>
@@ -69,20 +76,22 @@ function Footer() {
 
           {/* Company Section */}
           <div className="footer-section">
-            <h3>Support</h3>
+            <h3>Get Support</h3>
             <ul>
               <li>
                 {/* <i className="fas fa-phone" /> */}
-                <a href="tel:+91 9176209914">+91 9176209914</a>
+                <a href="tel:+91 9176209914">📞 +91 9176209914</a>
               </li>
               <li>
                 {/* <i className="fas fa-mobile-alt" /> */}
-                <a href="/contact">Schedule a Callback</a>
+                <a href="/contact">📅 Schedule a Callback</a>
               </li>
-              
+
               <li>
                 {/* <i className="fas fa-envelope" /> */}
-                <a href="mailto:info@aeroinedutech.in">info@aeroinedutech.in</a>
+                <a href="mailto:info@aeroinedutech.in">
+                  📧 info@aeroinedutech.in
+                </a>
               </li>
               <li>
                 {/* <i className="fab fa-whatsapp" style={{ color: "#25D366" }} /> */}
@@ -91,32 +100,31 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Chat with Us on WhatsApp
+                  💬 Chat with Us on WhatsApp
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Courses Section */}
-         
 
           <div className="footer-section">
             <h3>Company</h3>
             <ul>
-              <li>
+              {/* <li>
                 <a href="/about">About Us</a>
+              </li> */}
+              <li>
+                <a href="/contact">📄 Contact Us</a>
               </li>
               <li>
-                <a href="/contact">Contact Us</a>
+                <a href="/privacy-policy">🔒 Privacy Policy</a>
               </li>
               <li>
-                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/termsandcondition">⚖️ Terms and Conditions</a>
               </li>
               <li>
-                <a href="/termsandcondition">Terms and Conditions</a>
-              </li>
-              <li>
-                <a href="/refund-policy">Refund and Cancellation</a>
+                <a href="/refund-policy">💳 Refund and Cancellation</a>
               </li>
             </ul>
           </div>
@@ -124,18 +132,24 @@ function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="footer-bottom">
+      <div class="footer-bottom">
         <p>
-          © 2024 Aeroin SpaceTech Private Limited |  All rights reserved by Aeroin SpaceTech. Designed
-           by{" "}
+          Copyright © 2024 All Rights Reserved By{" "}
+          <a
+            href="https://aeroinedutech.in"
+            rel="noopener noreferrer"
+            class="footer-link"
+          >
+            Aeroin EduTech
+          </a>{" "}
+          | Website designed by
           <a
             href="https://jaswant.vercel.app"
-            target="_blank"
             rel="noopener noreferrer"
+            class="footer-link"
           >
             Jash
           </a>
-          
         </p>
       </div>
     </footer>
