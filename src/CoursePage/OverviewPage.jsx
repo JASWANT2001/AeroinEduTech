@@ -25,11 +25,11 @@ function OverviewPage() {
             className="left-content"
             data-aos="fade-down" // AOS animation for left content
           >
-            <h1>Master Space Science with Top Experts from Aeroin EduTech</h1>
+            <h1>Master Space Science with Experts at Aeroin EduTech</h1>
             <ul>
-              <li>Guidance from Leading Space Industry Professionals</li>
-              <li>Hands-on Experience with Real-World Space Projects</li>
-              <li>Earn Globally Recognized Space Science Certification</li>
+              <li>Learn from Top Space Industry Professionals</li>
+              <li>Hands-on Experience with Space Tech Projects</li>
+              <li>Earn a Globally Recognized Space Science Certification</li>
             </ul>
             <button onClick={scrollToSection} className="enquiry-button">
               Join Now

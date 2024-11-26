@@ -98,7 +98,7 @@ function CourseDisplay() {
                 alt="Design Simulation"
                 className="program-image"
               />
-              <h2 className="program-title">Design &amp; Simulation </h2>
+              <h2 className="program-title">Design &amp; Simulation</h2>
               <p className="program-description">
                 We offer expert training in 2D, 3D, and Simulation techniques,
                 preparing students to tackle industry-level projects.

@@ -21,16 +21,16 @@ function MissionSection() {
               <div className="mission-content">
                 <h2 className="section-title text-center mb-4">Our Mission</h2>
                 <p className="section-description">
-                  At Aeroin EduTech, our mission is to revolutionize space
-                  education by blending innovative technology with interactive
-                  learning. We are dedicated to fostering curiosity and sparking
-                  a passion for aerospace and space sciences. Through our
-                  advanced educational platforms and hands-on experiences, we
-                  strive to deliver immersive learning solutions that empower
-                  the next generation of space enthusiasts and innovators. Our
-                  goal is to create an environment where learners can explore,
-                  experiment, and excel in the realm of space technology, paving
-                  the way for groundbreaking discoveries and advancements.
+                  At Aeroin EduTech, our mission is to transform space education
+                  through cutting-edge technology and immersive learning
+                  experiences. We are committed to fostering curiosity and
+                  sparking a passion for aerospace and space sciences. By
+                  offering hands-on aerospace education and advanced interactive
+                  platforms, we aim to empower the next generation of space
+                  innovators and enthusiasts. Our goal is to create an
+                  environment where learners can explore, experiment, and excel
+                  in the realm of space technology, driving groundbreaking
+                  advancements and discoveries in the field.
                 </p>
               </div>
             </div>
@@ -44,16 +44,15 @@ function MissionSection() {
                 <h2 className="section-title text-center mb-4">Our Vision</h2>
                 <p className="section-description">
                   At Aeroin EduTech, we envision a future where space education
-                  is seamlessly integrated with cutting-edge technology and
-                  interactive learning experiences. Our goal is to become a
-                  global leader in aerospace education by providing innovative,
-                  accessible, and transformative learning solutions. We aspire
-                  to inspire and equip learners of all ages with the knowledge
-                  and skills necessary to drive advancements in space science
-                  and technology. Through our commitment to excellence and
-                  continuous innovation, we aim to empower a new generation of
-                  space explorers and tech pioneers who will shape the future of
-                  the cosmos and beyond.
+                  seamlessly integrates with innovative platforms and
+                  interactive learning tools. Our aspiration is to become a
+                  global leader in aerospace education by providing accessible,
+                  transformative, and cutting-edge solutions. We aim to inspire
+                  and equip learners of all ages with the knowledge and skills
+                  needed to advance space science and technology. Through our
+                  dedication to excellence and innovation, we strive to empower
+                  a new generation of space explorers and tech pioneers who will
+                  shape the future of the cosmos and beyond.
                 </p>
               </div>
             </div>

@@ -17,7 +17,7 @@ function Training() {
       <section className="training-section">
         <div className="container">
           <div className="heading" data-aos="fade-up" data-aos-duration="1500">
-            <h2>India’s Leading Space Tech Education</h2>
+            <h2>India’s Leading Space Tech Education & Training</h2>
             <p>
               Leading the way in Space Education, Aeroin EduTech offers
               unparalleled training in the most advanced aerospace technologies.
@@ -35,7 +35,7 @@ function Training() {
                 <i className="fas fa-user-graduate" />
               </div>
               <h3>6000+</h3>
-              <p>Learners &amp; Counting</p>
+              <p>Space Tech Learners</p>
             </div>
 
             <div
@@ -47,7 +47,7 @@ function Training() {
                 <i className="fas fa-rocket" />
               </div>
               <h3>44+</h3>
-              <p>Internship &amp; Training</p>
+              <p>Space Tech Internships</p>
             </div>
 
             <div
@@ -59,7 +59,7 @@ function Training() {
                 <i className="fas fa-user-tie" />
               </div>
               <h3>10+</h3>
-              <p>Expert Mentors</p>
+              <p>Expert Aerospace Mentors</p>
             </div>
 
             <div
@@ -71,7 +71,7 @@ function Training() {
                 <i className="fas fa-microphone-alt" />
               </div>
               <h3>15+</h3>
-              <p>Space Talks Delivered</p>
+              <p>Space Tech Talks Delivered</p>
             </div>
           </div>
         </div>

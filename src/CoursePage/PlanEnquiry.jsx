@@ -22,14 +22,14 @@ function PlanEnquiry() {
             data-aos="fade-in" // Adds a fade-in animation to the heading
             data-aos-delay="200" // Delays the animation for 200ms
           >
-            Confused about which plan to choose?
+            Confused about which Program plan to choose?
           </h2>
           <p
             className="enquiry-subheading"
             data-aos="fade-in" // Adds a fade-in animation to the subheading
             data-aos-delay="400" // Delays the animation for 400ms
           >
-            Let our experts guide you to the perfect choice!
+            Let our experts guide you to the best learning plan tailored for your needs!
           </p>
           <a
             className="enquiry-button"

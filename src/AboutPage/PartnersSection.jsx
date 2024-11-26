@@ -12,12 +12,8 @@ function PartnersSection() {
       <section className="accreditation-section">
         <div className="container">
           {/* Recognized Section */}
-          <h2
-            className="text-center"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Partners &amp; Collaboration
+          <h2 className="text-center" data-aos="fade-up" data-aos-delay="200">
+            Esteemed Partners &amp; Collaborations
           </h2>
           <div className="row recognized-icons">
             <div
@@ -27,7 +23,7 @@ function PartnersSection() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/isro_logo.png?updatedAt=1731906916398"
-                alt="Recognition 1"
+                alt="ISRO - Indian Space Research Organisation Partner"
                 className="img-fluid"
                 style={{ maxHeight: "100%", maxWidth: "100%" }}
               />
@@ -39,7 +35,7 @@ function PartnersSection() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/smac_logo.png?updatedAt=1731906920261"
-                alt="Recognition 2"
+                alt="SMAC - Space Manufacturing and Collaboration Partner"
                 className="img-fluid"
                 style={{ maxHeight: "100%", maxWidth: "95%" }}
               />
@@ -51,7 +47,7 @@ function PartnersSection() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/cosmo_logo.webp?updatedAt=1731906915551"
-                alt="Recognition 3"
+                alt="Cosmo Foundation - Space Education Partner"
                 className="img-fluid"
                 style={{ maxHeight: "100%", maxWidth: "92%" }}
               />
@@ -63,7 +59,7 @@ function PartnersSection() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/labrat.png?updatedAt=1731906916726"
-                alt="Recognition 4"
+                alt="Labrat Research Institute - Innovation and Technology Partner"
                 className="img-fluid"
                 style={{ maxHeight: "95%", maxWidth: "90%" }}
               />
@@ -75,7 +71,7 @@ function PartnersSection() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/file%20(4).png?updatedAt=1731906915553"
-                alt="Recognition 5"
+                alt="Partner Institution - Advanced Space Tech Research"
                 className="img-fluid"
                 style={{ maxHeight: 110, maxWidth: "100%" }}
               />
@@ -87,7 +83,7 @@ function PartnersSection() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/file%20(3).png"
-                alt="Recognition 6"
+               alt="Partner Collaboration - Aerospace Engineering"
                 className="img-fluid"
                 style={{ maxHeight: "90%", maxWidth: "100%" }}
               />

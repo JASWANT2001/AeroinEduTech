@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Lottie from "lottie-react";
 import Navbar from "./HomePage/Navbar";

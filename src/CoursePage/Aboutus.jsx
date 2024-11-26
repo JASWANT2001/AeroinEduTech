@@ -37,19 +37,19 @@ function Aboutus() {
             data-aos="fade-up" // Description animates with fade-up
             data-aos-delay="600" // Delays animation
           >
-            At Aeroin EduTech, we educate students and space enthusiasts on
+            At Aeroin EduTech, we educate students and space enthusiasts in
             Aerospace, Aeronautics, Cosmology, and Astronomy. We offer{" "}
-            <strong>Internship programs</strong> and hands-on projects, aiding
-            students in publishing research papers. Our R&amp;D team is working
-            on Small Lift Launch Vehicles. Our mission is to build a thriving
-            community of aerospace enthusiasts through{" "}
+            <strong>Internship programs</strong> and hands-on projects, helping
+            students publish research papers. Our R&amp;D team works on Small
+            Lift Launch Vehicles. We aim to build a thriving aerospace community
+            through{" "}
             <strong>
-              STEAM Education (S - Science, T - Technology, E - Engineering, A -
-              Aerospace, M - Mathematics)
+              STEAM Education (Science, Technology, Engineering, Aerospace,
+              Mathematics)
             </strong>
-            , valuable resources, and professional development. We collaborate
-            with institutions to conduct workshops on Rocketry, CubeSat
-            technology, Design &amp; Simulation, and Space Robotics.
+            , providing valuable resources and professional development. We
+            collaborate with institutions to offer workshops on Rocketry, CubeSat
+            technology, Design &amp; Simulation, and Stress Analysis.
           </p>
           <button
             onClick={scrollToSection}

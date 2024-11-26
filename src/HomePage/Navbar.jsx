@@ -1,28 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Navbar() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Reduced global animation duration
+      once: true, // Animate elements only once when scrolled into view
+      easing: "ease-in-out", // Use lighter easing for better performance
+    });
+  }, []);
+
+  const handleLinkClick = () => {
+    // Close the navbar toggle when a link is clicked (for small screens)
+    const navbarToggler = document.getElementById("navbarToggler");
+    if (navbarToggler && !navbarToggler.classList.contains("collapsed")) {
+      navbarToggler.click();
+    }
+  };
+
   return (
     <>
-      <motion.nav
+      <nav
         className="navbar navbar-expand-lg navbar-dark"
-        initial={{ opacity: 0, y: -350 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}
+        data-aos="fade-up"
+        aria-label="Primary navigation"
       >
         <div className="container-fluid">
-          <motion.a
-            className="navbar-brand"
-            href="/"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}
-          >
+          <a className="navbar-brand" href="/" aria-label="Go to home page">
             <h1>Aeroin EduTech</h1>
-          </motion.a>
+          </a>
           <button
             className="navbar-toggler"
+            id="navbarToggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -32,63 +43,62 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon" />
           </button>
-          <motion.div
-            className="collapse navbar-collapse"
-            id="navbarNav"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}
-          >
+          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
-              <motion.li
-                className="nav-item"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 1.5 }}
-              >
-                <Link className="nav-link" to={"/"}>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to={"/"}
+                  aria-label="Go to home page"
+                  onClick={handleLinkClick} // Close toggle on link click
+                >
                   Home
                 </Link>
-              </motion.li>
-              <motion.li
-                className="nav-item"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 1.5 }}
-              >
-                <Link className="nav-link" to={"/course"}>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to={"/course"}
+                  aria-label="View available courses"
+                  onClick={handleLinkClick} // Close toggle on link click
+                >
                   Courses
                 </Link>
-              </motion.li>
-              <motion.li
-                className="nav-item"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 1.5 }}
-              >
-                <Link className="nav-link" to={"/about"}>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to={"/about"}
+                  aria-label="Learn more about us"
+                  onClick={handleLinkClick} // Close toggle on link click
+                >
                   About
                 </Link>
-              </motion.li>
-              <motion.li
-                className="nav-item"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 1.5 }}
-              >
-                <Link className="nav-link" to={"/contact"}>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to={"/contact"}
+                  aria-label="Get in touch with us"
+                  onClick={handleLinkClick} // Close toggle on link click
+                >
                   Contact
                 </Link>
-              </motion.li>
-              <motion.li
-                className="nav-item"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 1.5 }}
-              >
-                <Link className="nav-link" to={"/insights"}>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to={"/insights"}
+                  aria-label="Explore insights"
+                  onClick={handleLinkClick} // Close toggle on link click
+                >
                   Insights
                 </Link>
-              </motion.li>
+              </li>
             </ul>
-          </motion.div>
+          </div>
         </div>
-      </motion.nav>
+      </nav>
     </>
   );
 }

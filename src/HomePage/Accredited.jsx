@@ -1,12 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import isro from "./Image/isro_img.png";
-import inspace from "./Image/IN-SPACe_Logo.png";
 import startuptn from "./Image/startup_tn_logo.png";
-import thub from "./Image/t-hub_logo.png";
-import minify from "./Image/logo-minfy.png";
-import aws from "./Image/aws_logo.webp";
+
 
 function Accredited() {
   useEffect(() => {
@@ -34,7 +30,7 @@ function Accredited() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/isro_logo.png?updatedAt=1731906916398"
-                alt="Recognition 1"
+                alt="ISRO logo - Indian Space Research Organisation"
                 className="img-fluid"
                 style={{ maxHeight: "100%", maxWidth: "100%" }}
               />
@@ -49,7 +45,7 @@ function Accredited() {
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/IN-SPACe_Logo.png"
                 alt="Recognition 2"
-                className="img-fluid"
+                className="IN-SPACe logo - Indian National Space Promotion and Authorization Center"
               />
             </div>
 
@@ -59,7 +55,7 @@ function Accredited() {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <img src={startuptn} alt="Recognition 3" className="img-fluid" />
+              <img src={startuptn} alt="StartupTN logo - Tamil Nadu Startup and Innovation Mission" className="img-fluid" />
             </div>
 
             {/* Logo 4 */}
@@ -70,7 +66,7 @@ function Accredited() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/t-hub_logo.png?updatedAt=1731906920471"
-                alt="Recognition 4"
+                alt="T-Hub logo - Technology Innovation Hub for Startups"
                 className="img-fluid"
                 style={{ height: 60 }}
               />
@@ -84,7 +80,7 @@ function Accredited() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/logo-minfy.png?updatedAt=1731906917032"
-                alt="Recognition 5"
+                alt="Minfy logo - Cloud and Digital Transformation Services"
                 className="img-fluid"
               />
             </div>
@@ -97,7 +93,7 @@ function Accredited() {
             >
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Partners%20Content/aws_logo.webp"
-                alt="Recognition 6"
+                alt="AWS logo - Amazon Web Services"
                 className="img-fluid"
               />
             </div>

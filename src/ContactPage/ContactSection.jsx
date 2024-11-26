@@ -1,12 +1,14 @@
 import React from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 function ContactSection() {
   return (
     <>
       <div
         className="contact-container mt-3 mb-3"
-        // data-aos="fade-up"
-        // data-aos-duration={1500}
+        data-aos="fade-up"
+        data-aos-duration="1500"
       >
         {/* Left Side Content */}
         <div className="contact-left-section">
@@ -60,21 +62,23 @@ function ContactSection() {
           <h2>Say Hello!</h2>
           <p>Ready to talk? Feel free to stop by and say Hello!</p>
           <form className="contact-form mt-4">
+            {/* Mandatory Field: Name */}
             <label htmlFor="name">Name *</label>
-            <input type="text" id="name" name="name" required="" />
-            <label htmlFor="email">E-mail id *</label>
-            <input type="email" id="email" name="email" required="" />
+            <input type="text" id="name" name="name" required />
+
+            {/* Mandatory Field: E-mail */}
+            <label htmlFor="email">E-mail ID *</label>
+            <input type="email" id="email" name="email" required />
+
+            {/* Mandatory Field: Contact Number */}
             <label htmlFor="contact">Contact Number *</label>
-            <input type="tel" id="contact" name="contact" required="" />
-            {/* <label for="subject">Subject *</label>
-          <input type="text" id="subject" name="subject" required> */}
-            <label htmlFor="message">Message </label>
-            <textarea
-              id="message"
-              name="message"
-              required=""
-              defaultValue={""}
-            />
+            <input type="tel" id="contact" name="contact" required />
+
+            {/* Optional Field: Message */}
+            <label htmlFor="message">Message</label>
+            <textarea id="message" name="message" />
+
+            {/* Submit Button */}
             <button type="submit" className="mt-3">
               Send
             </button>

@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import about2 from "./Image/1709281378046.jpg";
-import about3 from "./Image/IMG_20240424_170839.jpg"
+import about3 from "./Image/IMG_20240424_170839.jpg";
 
 function AeroinAboutSection() {
   useEffect(() => {
@@ -15,7 +15,7 @@ function AeroinAboutSection() {
 
   return (
     <>
-      <section className="company-intro-section" data-aos="fade-up">
+      <section className="company-intro-section mb-5" data-aos="fade-up">
         <div className="company-intro-container">
           {/* Left Photo Gallery Section */}
           <div
@@ -26,37 +26,37 @@ function AeroinAboutSection() {
             <div className="photo-gallery">
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/About%20Page%20Content/Pondy%20startup%20conference.JPG"
-                alt="Gallery Image 1"
+                alt="Pondy Startup Conference - Aeroin EduTech"
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
               <img
                 src={about2}
-                alt="Gallery Image 2"
+                alt="Aerospace Training Event"
                 data-aos="zoom-in" // Specific animation for this image
                 data-aos-delay="400"
               />
               <img
                 src={about3}
-                alt="Gallery Image 3"
+                alt="Aeroin Space Robotics Workshop"
                 style={{ objectFit: "fill", objectPosition: "center" }}
                 data-aos="zoom-in"
                 data-aos-delay="600"
               />
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/About%20Page%20Content/about_img.jpg"
-                alt="Gallery Image 4"
+                alt="Advanced Rocket Science Workshop"
                 data-aos="zoom-in"
                 data-aos-delay="800"
               />
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/About%20Page%20Content/1709281245235.jpg"
-                alt="Gallery Image 5"
+                alt="CubeSat Development Session"
                 data-aos="zoom-in"
                 data-aos-delay="1000"
               />
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/About%20Page%20Content/RISE%202.jpg"
-                alt="Gallery Image 6"
+                alt="RISE International Conference - Aeroin EduTech"
                 style={{ objectFit: "fill", objectPosition: "bottom" }}
                 data-aos="zoom-in"
                 data-aos-delay="1200"
@@ -71,29 +71,31 @@ function AeroinAboutSection() {
             data-aos-delay="300"
           >
             <p>
-              Aeroin EduTech is leading the way in Aerospace Education in India,
-              offering state-of-the-art internships, training, workshops, and
-              courses in Rocket Science, CubeSats, Drones, and Space Robotics.
-              Our goal is to equip the next generation with the skills and
-              knowledge to excel in the aerospace industry.
+              <strong>Aeroin EduTech</strong> is a trailblazer in Aerospace and
+              Space Science Education, revolutionizing learning in{" "}
+              <strong>
+                Rocket Science, CubeSat Engineering, Stress Analysis
+              </strong>
+              , and <strong>Design & Simulation</strong>. We empower the next
+              generation of aerospace professionals with cutting-edge
+              internships, hands-on training, and comprehensive courses.
             </p>
             <p>
-              Our initiatives include educating students and space enthusiasts
-              about Aerospace, Aeronautics, Cosmology, and Astronomy. We offer
-              internship programs that provide practical experience and support
-              research paper publications.
+              Our mission is to cultivate a deeper understanding of{" "}
+              <strong>Aerospace Engineering, Aeronautics, Cosmology, </strong>
+              and <strong>Space Exploration</strong> through innovative
+              programs. Students and space enthusiasts gain practical skills and
+              real-world experience, including guidance on{" "}
+              <strong>research paper publications</strong>.
             </p>
             <p>
-              We strive to foster a vibrant aerospace community by providing
-              valuable resources, networking opportunities, and professional
-              development. We actively engage in international conferences,
-              taking students as volunteers to represent us, and conduct
-              workshops on Aerospace and Aeronautics across schools, colleges,
-              and universities.
+              We actively contribute to the global aerospace community by
+              fostering innovation, hosting international conferences, and
+              organizing professional workshops in schools, colleges, and
+              universities.
             </p>
             <p>
-              Join us in this transformative journey of aerospace education and
-              innovation.
+              "Be a part of Aeroin EduTech, where learning meets exploration."
             </p>
           </div>
         </div>

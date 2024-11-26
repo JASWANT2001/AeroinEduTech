@@ -9,7 +9,7 @@ const AchievementCarousel = () => {
       title: "AWS Space Accelerator, India",
       description:
         "Aeroin EduTech is honored to be selected for the prestigious AWS Space Accelerator in India. This program recognizes our innovative efforts in revolutionizing space education. With this recognition, we continue our commitment to advancing space exploration and learning through cutting-edge technology.",
-      imageUrl: "src/Images/AWS - AEROIN.webp",
+      imageUrl: "https://i.postimg.cc/fyb691FW/AWS-AEROIN.webp",
     },
     {
       title: "DeepTech Startup Award, Pondicherry",
@@ -22,7 +22,7 @@ const AchievementCarousel = () => {
       title: "National Seminar at Dr. MGR University",
       description:
         "Our CEO had the privilege of addressing attendees at the National Seminar at Dr. MGR University in Chennai. The session explored the latest innovations in space technology and their impact on education, reinforcing Aeroin EduTech's commitment to empowering future space professionals.",
-      imageUrl: "src/Images/mgr_award.webp",
+      imageUrl: "https://i.postimg.cc/1343Qj3Q/about-img3.jpg",
     },
     {
       title: "Guest Speaker at KCT, Coimbatore",

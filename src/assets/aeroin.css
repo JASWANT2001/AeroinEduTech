@@ -871,6 +871,22 @@ a:hover i {
 
 }
 
+/* CSS for the carousel buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /* Company Introduction Section */
 .company-intro-section {
     padding: 100px;
@@ -2553,19 +2569,19 @@ hr {
     height: 100vh;
     text-align: center;
     position: relative;
-  }
-  
-  /* Background Animation */
-  .background-animation {
+}
+
+/* Background Animation */
+.background-animation {
     position: absolute;
     width: 100%;
     height: 100%;
     background: radial-gradient(circle, #0d1b2a, #1b263b, #415a77);
     overflow: hidden;
     z-index: 0;
-  }
-  
-  .background-animation:before {
+}
+
+.background-animation:before {
     content: '';
     position: absolute;
     width: 200%;
@@ -2573,76 +2589,77 @@ hr {
     background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
     opacity: 0.1;
     animation: move-stars 60s linear infinite;
-  }
-  
-  @keyframes move-stars {
+}
+
+@keyframes move-stars {
     from {
-      transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%);
     }
+
     to {
-      transform: translate(10%, 10%);
+        transform: translate(10%, 10%);
     }
-  }
-  
-  /* Content Styling */
-  .content {
+}
+
+/* Content Styling */
+.content {
     position: relative;
     z-index: 2;
     max-width: 800px;
     padding: 20px;
-  }
-  
-  .logo img {
+}
+
+.logo img {
     max-width: 200px;
     margin-bottom: 20px;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
-  }
-  
-  .tagline {
+}
+
+.tagline {
     font-size: 1.5rem;
     margin: 10px 0 30px;
     color: #a9d6e5;
-  }
-  
-  /* Countdown Timer */
-  .countdown {
+}
+
+/* Countdown Timer */
+.countdown {
     font-size: 1.2rem;
     margin-bottom: 20px;
-  }
-  
-  .countdown-timer {
+}
+
+.countdown-timer {
     display: flex;
     justify-content: center;
     gap: 20px;
-  }
-  
-  .time-box {
+}
+
+.time-box {
     background: #112d4e;
     padding: 10px 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-  
-  .time {
+}
+
+.time {
     font-size: 2rem;
     font-weight: bold;
     color: #3fc1c9;
-  }
-  
-  .label {
+}
+
+.label {
     font-size: 0.9rem;
     color: #a9d6e5;
-  }
-  
-  /* Notify Button */
-  .notify-button {
+}
+
+/* Notify Button */
+.notify-button {
     background: linear-gradient(90deg, #3fc1c9, #112d4e);
     border: none;
     color: #fff;
@@ -2653,12 +2670,12 @@ hr {
     cursor: pointer;
     border-radius: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .notify-button:hover {
+}
+
+.notify-button:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(63, 193, 201, 0.7);
-  }
+}
 
 
 
@@ -4369,77 +4386,77 @@ hr {
         align-items: center;
         padding: 1rem;
         gap: 1.5rem;
-    
-      }
-    
-      .contact-left-section,
-      .contact-right-section {
+
+    }
+
+    .contact-left-section,
+    .contact-right-section {
         width: 100%;
         padding: 1rem;
         text-align: left;
-      }
-    
-      .contact-left-section h2,
-      .contact-right-section h2 {
+    }
+
+    .contact-left-section h2,
+    .contact-right-section h2 {
         font-size: 22px;
         margin-bottom: 0.5rem;
-      }
-    
-      .contact-left-section p,
-      .contact-right-section p {
+    }
+
+    .contact-left-section p,
+    .contact-right-section p {
         font-size: 14px;
         margin-bottom: 1rem;
-      }
-    
-      .contact-info {
+    }
+
+    .contact-info {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-      }
-    
-      .contact-info-item {
+    }
+
+    .contact-info-item {
         display: flex;
         align-items: left;
         justify-content: left;
         text-align: left;
         gap: 0.5rem;
-      }
-    
-      .contact-icon {
+    }
+
+    .contact-icon {
         font-size: 14px;
-      }
-    
-      .contact-info-item span {
+    }
+
+    .contact-info-item span {
         font-size: 0.95rem;
-      }
-    
-      .contact-map iframe {
+    }
+
+    .contact-map iframe {
         width: 100%;
         height: 200px;
         border-radius: 8px;
-      }
-    
-      .contact-form {
+    }
+
+    .contact-form {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-      }
-    
-      .contact-form label {
+    }
+
+    .contact-form label {
         font-size: 0.9rem;
         text-align: left;
-      }
-    
-      .contact-form input,
-      .contact-form textarea {
+    }
+
+    .contact-form input,
+    .contact-form textarea {
         width: 100%;
         padding: 0.75rem;
         font-size: 0.9rem;
         border: 1px solid #ccc;
         border-radius: 4px;
-      }
-    
-      
+    }
+
+
 
     /* Insights Page */
 

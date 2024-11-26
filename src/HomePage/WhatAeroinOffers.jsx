@@ -30,9 +30,9 @@ function WhatAeroinOffers() {
             </div>
           </div>
           <div className="section-heading">
-            <h1 className="section-title">What Aeroin EduTech Offers You?</h1>
+            <h1 className="section-title">What Our Space Programs Offer?</h1>
             <p className="section-subtitle">
-              Bridging the gap between Academics and Real-World Space.
+              Bridging the gap between Academics and Real-World Experience.
             </p>
           </div>
         </div>
