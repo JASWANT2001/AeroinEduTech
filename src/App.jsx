@@ -42,9 +42,9 @@ function App() {
         </div>
       ) : (
         <BrowserRouter>
-          {/* <Navbar /> */}
+          <Navbar />
           <Routes>
-            <Route path="/" element={<ComingSoon />} />
+            <Route path="/" element={<Home />} />
             <Route path="/course" element={<Course />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
@@ -62,7 +62,7 @@ function App() {
             <Route path="/termsandcondition" element={<TermsAndCondition />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
           <WhatsApp />
         </BrowserRouter>
       )}
