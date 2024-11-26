@@ -34,40 +34,37 @@ function App() {
 
   return (
     <>
-      {isLoading ? (
-        // Preloader with Lottie animation
+      {/* {isLoading ? (
+        
         <div className="preloader">
           <Lottie animationData={SpaceLoader} style={{ height: 400 }} />
           <h2 className="loading-text"></h2>
         </div>
-      ) : (
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/course" element={<Course />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/insights" element={<Insights />} />
+      ) : ( */}
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/course" element={<Course />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/insights" element={<Insights />} />
 
-            {/* List Of Courses */}
-            <Route path="/course/rocket" element={<RocketPropulsion />} />
-            <Route path="/course/cubesat" element={<CubeSatTech />} />
-            <Route path="/course/stressanalysis" element={<StressAnalysis />} />
-            <Route
-              path="/course/simulation"
-              element={<DesignandSimulation />}
-            />
+          {/* List Of Courses */}
+          <Route path="/course/rocket" element={<RocketPropulsion />} />
+          <Route path="/course/cubesat" element={<CubeSatTech />} />
+          <Route path="/course/stressanalysis" element={<StressAnalysis />} />
+          <Route path="/course/simulation" element={<DesignandSimulation />} />
 
-            {/* Policies */}
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/termsandcondition" element={<TermsAndCondition />} />
-            <Route path="/refund-policy" element={<RefundPolicy />} />
-          </Routes>
-          <Footer />
-          <WhatsApp />
-        </BrowserRouter>
-      )}
+          {/* Policies */}
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/termsandcondition" element={<TermsAndCondition />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+        </Routes>
+        <Footer />
+        <WhatsApp />
+      </BrowserRouter>
+      {/* )} */}
     </>
   );
 }
