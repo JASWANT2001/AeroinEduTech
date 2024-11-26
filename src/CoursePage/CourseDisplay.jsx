@@ -1,37 +1,16 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function CourseDisplay() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1500, // Global duration for animations
-      once: true, // Animates only once when scrolled into view
-    });
-  }, []);
-
   return (
     <>
-      <section
-        className="programs-page"
-        id="programs-page"
-        data-aos="fade-up" // Animates the whole section
-      >
+      <section className="programs-page" id="programs-page">
         <div className="container">
-          <h1
-            className="page-title"
-            data-aos="fade-in" // Title fades in
-            data-aos-delay="200" // Starts animation after 200ms
-          >
+          <h1 className="page-title">
             Educational Programs - Live Classes with Expert Help
           </h1>
           <div className="programs-list">
-            <div
-              className="program-card"
-              data-aos="zoom-in" // Card zooms in when it appears
-              data-aos-delay="300" // Adds a delay for animation
-            >
+            <div className="program-card">
               <div className="live-classes-badge">⭕ Live Classes</div>
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/rocket_propulsion_image_1.jpeg?updatedAt=1731894312988"
@@ -47,11 +26,7 @@ function CourseDisplay() {
                 Know More
               </a>
             </div>
-            <div
-              className="program-card"
-              data-aos="zoom-in"
-              data-aos-delay="400"
-            >
+            <div className="program-card">
               <div className="live-classes-badge">⭕ Live Classes</div>
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/cubesat_image_course.jpeg?updatedAt=1731894312726"
@@ -67,11 +42,7 @@ function CourseDisplay() {
                 Know More
               </a>
             </div>
-            <div
-              className="program-card"
-              data-aos="zoom-in"
-              data-aos-delay="500"
-            >
+            <div className="program-card">
               <div className="live-classes-badge">⭕ Live Classes</div>
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/stress_analysis_image2.jpeg?updatedAt=1731894313122"
@@ -87,11 +58,7 @@ function CourseDisplay() {
                 Know More
               </a>
             </div>
-            <div
-              className="program-card"
-              data-aos="zoom-in"
-              data-aos-delay="600"
-            >
+            <div className="program-card">
               <div className="live-classes-badge">⭕ Live Classes</div>
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/design_simulation_3d.jpeg?updatedAt=1731894313041"

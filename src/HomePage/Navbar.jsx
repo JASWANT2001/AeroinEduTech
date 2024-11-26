@@ -1,16 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 function Navbar() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Reduced global animation duration
-      once: true, // Animate elements only once when scrolled into view
-      easing: "ease-in-out", // Use lighter easing for better performance
-    });
-  }, []);
+ 
 
   const handleLinkClick = () => {
     // Close the navbar toggle when a link is clicked (for small screens)
@@ -24,7 +17,6 @@ function Navbar() {
     <>
       <nav
         className="navbar navbar-expand-lg navbar-dark"
-        data-aos="fade-up"
         aria-label="Primary navigation"
       >
         <div className="container-fluid">

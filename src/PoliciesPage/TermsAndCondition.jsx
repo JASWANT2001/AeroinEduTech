@@ -1,22 +1,13 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+
 
 function TermsAndCondition() {
-  // Initialize AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Default animation duration
-      once: true, // Animation happens only once
-      easing: "ease-out", // Smooth easing for animations
-    });
-  }, []);
+  
   return (
     <>
       <div
         className="privacy-container"
-        data-aos="fade-up"
-        data-aos-duration="1500"
+        
       >
         <header className="privacy-header">
           <h1 className="privacy-title">Terms of Service</h1>

@@ -3,11 +3,7 @@ import React from "react";
 function VerticalColumn() {
   return (
     <>
-      <section
-        className="aeroin-edutech"
-        // data-aos="fade-up"
-        // data-aos-duration={1500}
-      >
+      <section className="aeroin-edutech">
         <div className="box attractive-box">
           <video autoPlay="" muted="" loop="" className="box-video">
             <source

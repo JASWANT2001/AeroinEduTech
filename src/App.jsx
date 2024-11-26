@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Lottie from "lottie-react";
 import Navbar from "./HomePage/Navbar";
@@ -19,7 +17,7 @@ import TermsAndCondition from "./PoliciesPage/TermsAndCondition.jsx";
 import RefundPolicy from "./PoliciesPage/RefundPolicy.jsx";
 
 // Lottie JSON animation
-import SpaceLoader from "./assets/Space-Animation.json"
+import SpaceLoader from "./assets/Space-Animation.json";
 import WhatsApp from "./assets/Whatsapp.jsx";
 import ComingSoon from "./ComingSoon.jsx";
 
@@ -29,7 +27,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -56,7 +54,9 @@ function App() {
             <Route path="/course/rocket" element={<RocketPropulsion />} />
             <Route path="/course/cubesat" element={<CubeSatTech />} />
             <Route path="/course/stressanalysis" element={<StressAnalysis />} />
-            <Route path="/course/simulation" element={<DesignandSimulation />}
+            <Route
+              path="/course/simulation"
+              element={<DesignandSimulation />}
             />
 
             {/* Policies */}

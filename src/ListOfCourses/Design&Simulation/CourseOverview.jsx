@@ -1,31 +1,14 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 function CourseOverview() {
-  // Initialize AOS animations
-  useEffect(() => {
-    AOS.init({ duration: 1500, offset: 100 });
-  }, []);
-
   return (
     <>
-      <section
-        className="course-details-page"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-offset="200"
-      >
+      <section className="course-details-page">
         <div className="container">
-          <h1 className="course-title" data-aos="fade-up" data-aos-duration="1500">
+          <h1 className="course-title">
             About Aeroin EduTech's Design and Simulation Program
           </h1>
-          <p
-            className="course-description"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="200"
-          >
+          <p className="course-description">
             This comprehensive program equips students with industry-relevant
             skills in advanced 3D design, simulation, and analysis. With
             hands-on training in CATIA, ANSYS Workbench, and cutting-edge tools

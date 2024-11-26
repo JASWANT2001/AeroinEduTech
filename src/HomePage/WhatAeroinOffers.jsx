@@ -5,8 +5,6 @@ function WhatAeroinOffers() {
     <>
       <section
         className="growth-section"
-        data-aos="fade-up"
-        data-aos-duration={1500}
       >
         <div className="section-content">
           <div className="growth-icon-container">

@@ -1,23 +1,13 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function MissionSection() {
-  useEffect(() => {
-    AOS.init({ duration: 1500 }); // Initialize AOS with a default animation duration
-  }, []);
-
   return (
     <>
       <section className="mission-vision-section">
         <div className="container">
           <div className="row">
             {/* Mission */}
-            <div
-              className="col-lg-6 mission-box"
-              data-aos="fade-right"
-              data-aos-delay="200"
-            >
+            <div className="col-lg-6 mission-box">
               <div className="mission-content">
                 <h2 className="section-title text-center mb-4">Our Mission</h2>
                 <p className="section-description">
@@ -35,11 +25,7 @@ function MissionSection() {
               </div>
             </div>
             {/* Vision */}
-            <div
-              className="col-lg-6 vision-box"
-              data-aos="fade-left"
-              data-aos-delay="400"
-            >
+            <div className="col-lg-6 vision-box">
               <div className="vision-content">
                 <h2 className="section-title text-center mb-4">Our Vision</h2>
                 <p className="section-description">

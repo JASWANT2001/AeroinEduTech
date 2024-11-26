@@ -1,36 +1,16 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 function CourseDetails() {
-  useEffect(() => {
-    // Initialize AOS
-    AOS.init({
-      duration: 1500, // Animation duration in milliseconds
-      offset: 100, // Offset from the original trigger point
-      easing: "ease-out", // Easing animation type
-      once: true, // Animate only once when scrolled into view
-    });
-  }, []);
-
   return (
     <>
       <section className="course-details-page">
         <div className="container">
           {/* Title with animation */}
-          <h1
-            className="course-title"
-            data-aos="fade-up"
-            data-aos-delay="0"
-          >
+          <h1 className="course-title">
             About Aeroin EduTech's Rocketry Research Program
           </h1>
           {/* Description with animation */}
-          <p
-            className="course-description"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
+          <p className="course-description">
             The Virtual Internship on Rocketry by Aeroin EduTech offers an
             immersive experience into Space Launch Vehicle technologies,
             covering Rocket Aerodynamics, Propulsion Systems, and Space

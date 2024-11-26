@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 const AchievementCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,13 +34,6 @@ const AchievementCarousel = () => {
 
   const totalSlides = slides.length;
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation only happens once
-    });
-  }, []);
-
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
   };
@@ -54,16 +46,8 @@ const AchievementCarousel = () => {
 
   return (
     <section className="achievement-carousel-section">
-      <div
-        className="carousel-wrapper-achievement"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-      >
-        <div
-          className="carousel-container-achievement"
-          data-aos="fade-left"
-          data-aos-duration="1200"
-        >
+      <div className="carousel-wrapper-achievement">
+        <div className="carousel-container-achievement">
           {slides.map((slide, index) => (
             <div
               key={index}
@@ -71,7 +55,6 @@ const AchievementCarousel = () => {
               style={{
                 transform: `translateX(-${currentIndex * 100}%)`,
               }}
-              data-aos="zoom-in"
             >
               <div className="achievement-content-left">
                 <div className="fixed-heading">
@@ -80,11 +63,7 @@ const AchievementCarousel = () => {
                 <h3>{slide.title}</h3>
                 <p>{slide.description}</p>
               </div>
-              <div
-                className="achievement-content-right"
-                data-aos="fade-in"
-                data-aos-delay="200"
-              >
+              <div className="achievement-content-right">
                 <img
                   src={slide.imageUrl}
                   alt={slide.title}
@@ -103,7 +82,6 @@ const AchievementCarousel = () => {
           className="prev-btn-achievement"
           onClick={prevSlide}
           aria-label="Previous Slide"
-          data-aos="fade-up"
         >
           &#10094;
         </button>
@@ -111,7 +89,6 @@ const AchievementCarousel = () => {
           className="next-btn-achievement"
           onClick={nextSlide}
           aria-label="Next Slide"
-          data-aos="fade-up"
         >
           &#10095;
         </button>

@@ -1,15 +1,6 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function OverviewPage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 3500, // Animation duration in milliseconds
-      once: true, // Animation occurs only once
-    });
-  }, []);
-
   const scrollToSection = () => {
     const section = document.getElementById("programs-page");
     if (section) {
@@ -21,10 +12,7 @@ function OverviewPage() {
     <>
       <div className="maincourse">
         <div className="split-section">
-          <div
-            className="left-content"
-            data-aos="fade-down" // AOS animation for left content
-          >
+          <div className="left-content">
             <h1>Master Space Science with Experts at Aeroin EduTech</h1>
             <ul>
               <li>Learn from Top Space Industry Professionals</li>
@@ -35,10 +23,7 @@ function OverviewPage() {
               Join Now
             </button>
           </div>
-          <div
-            className="right-content"
-            data-aos="fade-down" // AOS animation for right content
-          >
+          <div className="right-content">
             <img
               src="https://ik.imagekit.io/cjh0dpnmu/overviewpage.jpg"
               alt="Space Science"

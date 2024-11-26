@@ -14,12 +14,11 @@ function RocketPropulsion() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Always scroll to top when the component mounts
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Smooth scrolling effect
+      behavior: "smooth",
     });
-  }, [pathname]); // Effect triggered whenever the pathname changes
+  }, [pathname]);
 
   return (
     <>
@@ -31,7 +30,7 @@ function RocketPropulsion() {
       <CoursePlan />
       <PlanEnquiry />
       <FeedBack />
-      <WhatsApp/>
+      <WhatsApp />
     </>
   );
 }

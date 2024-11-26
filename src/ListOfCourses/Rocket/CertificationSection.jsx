@@ -1,36 +1,16 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function CertificationSection() {
-  useEffect(() => {
-    // Initialize AOS
-    AOS.init({
-      duration: 1500, // Animation duration in milliseconds
-      offset: 100, // Offset from the original trigger point
-      easing: "ease-out", // Easing animation type
-      once: true, // Animate only once when scrolled into view
-    });
-  }, []);
-
   return (
     <>
       <div className="certification-section">
         <div className="certification-content">
           {/* Title with animation */}
-          <h1
-            className="certification-title"
-            data-aos="fade-up"
-            data-aos-delay="0"
-          >
+          <h1 className="certification-title">
             Your Certification from Aeroin EduTech
           </h1>
           {/* Description with animation */}
-          <p
-            className="certification-description"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
+          <p className="certification-description">
             Achieve recognition for your dedication and hard work in rocketry
             with a prestigious certificate that highlights your skills and
             accomplishments in the field. This certification not only showcases
@@ -42,14 +22,10 @@ function CertificationSection() {
         </div>
 
         {/* Image with animation */}
-        <div
-          className="certification-image"
-          data-aos="fade-up"
-          data-aos-delay="600"
-        >
+        <div className="certification-image">
           <img
             src="https://ik.imagekit.io/cjh0dpnmu/Course%20Content/cert.png"
-            alt="Sample Certificate"
+            alt="Aeroin EduTech Sample Certificate"
           />
         </div>
       </div>

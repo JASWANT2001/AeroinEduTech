@@ -3,34 +3,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function CourseDetails() {
-  // Initialize AOS animations
-  useEffect(() => {
-    AOS.init({ duration: 1500, offset: 100 });
-  }, []);
-
   return (
     <>
-      <section
-        className="course-details-page"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-offset="200"
-      >
+      <section className="course-details-page">
         <div className="container">
-          <h1
-            className="course-title"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="200"
-          >
+          <h1 className="course-title">
             About Aeroin EduTech's CubeSat Research Program
           </h1>
-          <p
-            className="course-description"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="400"
-          >
+          <p className="course-description">
             CubeSat technology revolutionizes space exploration through small,
             cost-effective satellites designed for diverse applications, from
             scientific research to Earth observation. Interns will gain hands-on

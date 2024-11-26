@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
 
 function TeamGallery() {
   const [activeTab, setActiveTab] = useState("team"); // Default active tab
@@ -10,21 +8,9 @@ function TeamGallery() {
     setActiveTab(tab);
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Default animation duration
-      once: true, // Animation happens only once
-      easing: "ease-out", // Smooth easing for animations
-    });
-  }, []);
-
   return (
     <>
-      <section
-        className="gallery-section"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-      >
+      <section className="gallery-section">
         <h1>Aeroin Insights</h1>
         <p>
           Discover the latest developments, collaborations, and achievements of
@@ -46,10 +32,6 @@ function TeamGallery() {
           >
             Events
           </button>
-          {/* Uncomment and add functionality for the below tab if needed */}
-          {/* <button className={`tab-button ${activeTab === "hab-missions" ? "active" : ""}`} onClick={() => showTab("hab-missions")}>
-            Missions
-          </button> */}
         </div>
         <div
           className="gallery-content"
@@ -111,7 +93,7 @@ function TeamGallery() {
             <div className="image-container">
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Team%20Content/team(6).png"
-                alt="Team Image 4"
+                alt="Team Image 5"
               />
               <div className="overlay">
                 <div className="overlay-text">
@@ -119,6 +101,19 @@ function TeamGallery() {
                   Maniammai Institute of Science and Technology for successfully
                   completing their one-month Research Training and Internship
                   with AeroinEduTech.
+                </div>
+              </div>
+            </div>
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/cjh0dpnmu/Team%20Content/crew.jpeg"
+                alt="Team Image 6"
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  Heartwarming to hear from our former interns as they gear up
+                  for NASA's Rover Challenge, inspired by their journey at
+                  Aeroin SpaceTech!
                 </div>
               </div>
             </div>
@@ -131,6 +126,20 @@ function TeamGallery() {
           style={{ display: activeTab === "events" ? "block" : "none" }}
         >
           <div className="image-grid">
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/SNS%20Collab.jpeg"
+                alt="SNS Cheif Guest"
+                style={{ objectFit: "fill" }}
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  Our CEO, Mr. Ragul, was honored to be invited as the Chief
+                  Guest to inaugurate the Avionz Association at the Department
+                  of Aerospace, SNS Institutions.
+                </div>
+              </div>
+            </div>
             <div className="image-container">
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/isor_award_2.png"
@@ -158,8 +167,9 @@ function TeamGallery() {
             </div>
             <div className="image-container">
               <img
-                src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/8.png?updatedAt=1731997565402"
+                src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/hcet.jpeg"
                 alt="HICET"
+                style={{ objectFit: "cover" }}
               />
               <div className="overlay">
                 <div className="overlay-text">
@@ -170,26 +180,27 @@ function TeamGallery() {
             </div>
             <div className="image-container">
               <img
-                src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/Event.jpg"
+                src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/aws.jpeg"
                 alt="Space Expo"
               />
               <div className="overlay">
                 <div className="overlay-text">
-                  Our CTO, Mr. Satyavrat Singh, and his team attended
-                  #SpaceExpo2022 in Bangalore, engaging with top aerospace
-                  leaders to foster collaboration and growth.
+                  Excited to be part of India's 1st Space Accelerator Program by
+                  AWS, T-Hub, and Minfy, as we accelerate space tech innovation
+                  at Aeroin SpaceTech!
                 </div>
               </div>
             </div>
             <div className="image-container">
               <img
-                src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/event_1.jpg"
-                alt="iDEX"
+                src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/Rocket-factory.jpeg"
+                alt="Rocket Factory MoU Signed"
               />
               <div className="overlay">
                 <div className="overlay-text">
-                  Our CEO, MS Ragul, and CTO, Satyavrat Singh, attended the iDEX
-                  challenge inauguration at Crescent College, Chennai.
+                  Aeroin SpaceTech proudly signs an MoU with Rocket Factory
+                  India to revolutionize aerospace education through practical
+                  innovation!
                 </div>
               </div>
             </div>
@@ -242,6 +253,34 @@ function TeamGallery() {
                 <div className="overlay-text">
                   Aero Expo, Flight’24 Guest Lecture at Madras Institute of
                   Technology , Chennai
+                </div>
+              </div>
+            </div>
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/Labrat.jpeg"
+                alt="Labrat design Services"
+                style={{ objectFit: "cover" }}
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  Proud to partner with LABRAT DESIGN SERVICES to elevate design
+                  and simulation for Aeroin SpaceTech and Aeroin EduTech
+                  projects!
+                </div>
+              </div>
+            </div>
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/svce.jpeg"
+                alt="Labrat design Services"
+                style={{ objectFit: "cover" }}
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  Honored to inaugurate the EWB-SVCE Club at Sri Venkateswara
+                  College of Engineering, inspiring innovation and empowering
+                  future innovators!
                 </div>
               </div>
             </div>

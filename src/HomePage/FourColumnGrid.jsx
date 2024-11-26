@@ -7,7 +7,7 @@ function FourColumnGrid() {
 
   return (
     <>
-      <div className="grid-section" data-aos="fade-up" data-aos-duration="1500">
+      <div className="grid-section" >
         <section className="aeroin-edutech-grid">
           <article
             className="grid-item"

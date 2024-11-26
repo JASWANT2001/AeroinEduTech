@@ -1,15 +1,9 @@
 import React from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 
 function ContactSection() {
   return (
     <>
-      <div
-        className="contact-container mt-3 mb-3"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-      >
+      <div className="contact-container mt-3 mb-3">
         {/* Left Side Content */}
         <div className="contact-left-section">
           <h2>Contact Us</h2>

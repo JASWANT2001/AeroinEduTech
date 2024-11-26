@@ -1,24 +1,10 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
 import feedback from "./Image/feedback_logo.png";
 
 function FeedBack() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Default animation duration
-      once: true, // Animation happens only once
-      easing: "ease-out", // Smooth easing for animations
-    });
-  }, []);
-
   return (
     <>
-      <section
-        className="feedback-container mt-5"
-        data-aos="fade-up"
-        data-aos-duration={1500}
-      >
+      <section className="feedback-container mt-5">
         <h2 className="text-center section-title">What Our Learners Say</h2>
         <p className="text-center mb-3 section-subtitle">
           Feedback from the New Generation of Space Innovators.

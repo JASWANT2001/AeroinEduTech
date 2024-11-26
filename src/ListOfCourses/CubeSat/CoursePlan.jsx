@@ -1,28 +1,11 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 function CoursePlan() {
-  // Initialize AOS animations
-  useEffect(() => {
-    AOS.init({ duration: 1500, offset: 100 });
-  }, []);
-
   return (
     <>
-      <section
-        className="course-plans-three"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-offset="200"
-      >
+      <section className="course-plans-three">
         <div className="course-plans">
-          <div
-            className="plan basic-plan"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="200"
-          >
+          <div className="plan basic-plan">
             <h2 className="plan-title">Free Webinar</h2>
             <hr className="" style={{ backgroundColor: "white" }} />
             <ul className="plan-details mt-5">
@@ -43,12 +26,7 @@ function CoursePlan() {
             </button>
           </div>
 
-          <div
-            className="plan intermediate-plan"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="400"
-          >
+          <div className="plan intermediate-plan">
             <h2 className="plan-title">Innovative Programs</h2>
             <hr className="" style={{ backgroundColor: "white" }} />
             <ul className="plan-details mt-5">
@@ -56,10 +34,26 @@ function CoursePlan() {
               <li>1-on-1 Mentorship with Experts</li>
               <li>Welcome Kit of Aeroin EduTech</li>
               <li>Research Intern Enrollment Incentive</li>
-              <li>Access To Study Materials</li>
+              <li>4 Weeks Program</li>
               <li>Program Completion Certificate</li>
-              <li className="strikethrough">Research Paper Support</li>
-              <li className="strikethrough">Career Talk With Experts</li>
+              <li
+                style={{
+                  textDecoration: "line-through",
+                  textDecorationColor: "red",
+                  color: "#777",
+                }}
+              >
+                Research Paper Support
+              </li>
+              <li
+                style={{
+                  textDecoration: "line-through",
+                  textDecorationColor: "red",
+                  color: "#777",
+                }}
+              >
+                Career Talk With Experts
+              </li>
             </ul>
             <button
               className="purchase-button"
@@ -67,16 +61,11 @@ function CoursePlan() {
                 window.open("https://rzp.io/rzp/cubesat-tech", "_blank")
               }
             >
-              Know More
+              Enroll Now
             </button>
           </div>
 
-          <div
-            className="plan advanced-plan"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="600"
-          >
+          <div className="plan advanced-plan">
             <h2 className="plan-title">Research Internship</h2>
             <hr className="" style={{ backgroundColor: "white" }} />
             <ul className="plan-details mt-5">
@@ -95,7 +84,7 @@ function CoursePlan() {
                 window.open("https://rzp.io/rzp/cubesat-tech", "_blank")
               }
             >
-              Know More
+              Enroll Now
             </button>
           </div>
         </div>

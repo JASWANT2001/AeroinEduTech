@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-import design from "./Image/hero_section_planet.png";
-import rocket from "./Image/rocketry.png";
-import stress from "./Image/hero_section_asteroid.png";
 import "../assets/aeroin.css";
 
 import { motion, useAnimation } from "framer-motion";
@@ -26,7 +23,7 @@ function Hero() {
         className="hero d-flex align-items-center"
         initial={{ opacity: 0, y: -350 }}
         animate={controls}
-        transition={{ duration: 2.5 }}
+        transition={{ duration: 0 }}
       >
         <div className="container">
           <div className="row">
@@ -35,7 +32,7 @@ function Hero() {
               className="hero-content"
               initial={{ opacity: 0 }}
               animate={controls}
-              transition={{ delay: 0.3, duration: 1 }}
+              transition={{ delay: 0, duration: 0 }}
             >
               {/* Overlay Images */}
               {/* <div className="overlay-images">
@@ -84,7 +81,7 @@ function Hero() {
           className="hero-text"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 3.0, duration: 0.5 }}
+          transition={{ delay: 0, duration: 0.5 }}
         >
           <span>Empowering Space EduTech</span>
         </motion.div>

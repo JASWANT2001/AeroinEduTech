@@ -21,11 +21,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: black;
-    /* Scrollbar thumb color */
+
     border-radius: 10px;
-    /* Rounded corners for the scrollbar */
+
     border: 2px solid grey;
-    /* Border color around the thumb */
+
 }
 
 /* For Firefox */
@@ -100,7 +100,7 @@ body {
 /* Hero Section Styling */
 
 .hero {
-    height: 85vh;
+    height: 80vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%),
         url('https://ik.imagekit.io/cjh0dpnmu/planet-earth-background.jpg?updatedAt=1731719706005');
     background-size: cover;
@@ -116,13 +116,13 @@ body {
 /* Centering and adjusting the text position */
 .hero-text {
     position: absolute;
-    /* Use absolute to move freely inside the hero section */
+
     bottom: 0%;
-    /* Move the text closer to the bottom, adjust as needed */
+
     left: 50%;
-    /* Horizontally center the text */
+
     transform: translateX(-50%);
-    /* Perfectly center the text horizontally */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,6 +131,7 @@ body {
 
 
 .hero-text span {
+
     font-size: 68px;
     font-weight: bold;
     color: rgba(255, 255, 255, 0);
@@ -139,13 +140,14 @@ body {
     z-index: 1;
     letter-spacing: 0.05em;
     display: inline-block;
-    background: linear-gradient(to bottom, #777 0%, rgba(0, 0, 0, 0.8) 73%);
+    background: linear-gradient(to bottom, rgb(232, 232, 232) 0%, rgba(0, 0, 0, 0.8) 73%);
     -webkit-background-clip: text;
     color: transparent;
     overflow: hidden;
 }
 
 .hero-text::before {
+
     content: '';
     position: absolute;
     top: 52%;
@@ -916,12 +918,8 @@ a:hover i {
     height: 210px;
     border-radius: 20px;
     object-fit: cover;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: filter 0.3s ease;
-}
-
-.photo-gallery img:hover {
-    filter: grayscale(0%);
 }
 
 
@@ -962,14 +960,13 @@ a:hover i {
 .stat-icon {
     font-size: 60px;
     color: #E6E6FA;
-    /* Light Lavender color for contrast */
-    margin-bottom: 15px;
+
     transition: color 0.3s ease;
 }
 
 .stat-box:hover .stat-icon {
     color: #0CB6EB;
-    /* Changes icon color on hover */
+
 }
 
 /* Ensuring the stat-row is properly styled */
@@ -986,7 +983,7 @@ a:hover i {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    /* Subtle shadow */
+
     width: 23%;
 }
 
@@ -1001,7 +998,7 @@ a:hover i {
 .stat-box h3 {
     font-size: 36px;
     color: #0CB6EB;
-    /* Bright yellow for highlighting stats */
+
 
 }
 
@@ -1160,21 +1157,10 @@ a:hover i {
 }
 
 .rocket {
-    width: 85%;
+    width: 100%;
     height: 100%;
-    animation: rotate 20s infinite linear;
+    object-fit: cover;
 }
-
-@keyframes rotate {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
 
 /* Achievement Carousel Styling */
 .achievement-carousel-section {
@@ -1309,7 +1295,7 @@ a:hover i {
 
 .carousel-icon-box {
     flex: 0 0 auto;
-    /* Maintain consistent size for items */
+
     background-color: #181818;
     height: 100px;
     width: 320px;
@@ -1351,31 +1337,31 @@ a:hover i {
     color: #bbb;
     font-size: 15px;
     font-weight: 200;
-    /* Slightly lighter color for text */
+
     line-height: 1.7;
-    /* Improved readability with line height */
+
     text-align: justify;
-    /* Center-align text */
+
     padding: 0 20px;
-    /* Padding for text */
+
 }
 
 .mission-box,
 .vision-box {
     background-color: #181818;
-    /* Black background for boxes */
+
     border-radius: 10px;
-    /* Rounded corners for a modern look */
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+
     padding: 40px;
-    /* Padding inside the boxes */
+
     margin: 10px;
-    /* Margin around each box */
+
     flex: 1;
-    /* Allow boxes to grow and shrink */
+
     box-sizing: border-box;
-    /* Include padding and border in the element's total width and height */
+
 }
 
 
@@ -1648,9 +1634,9 @@ a:hover i {
 
 .box {
     flex: 1;
-    /* border: 1px solid #E6E6FA; */
+
     background-color: #0F0E0E;
-    /* Slight variation from black */
+
     color: #E6E6FA;
     padding: 30px;
     border-radius: 15px;
@@ -1666,7 +1652,7 @@ a:hover i {
 .box:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(255, 255, 255, 0.103);
-    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); */
+
 }
 
 .box:hover .icon {
@@ -1677,7 +1663,7 @@ a:hover i {
 .attractive-box {
     color: #E6E6FA;
     padding: 0;
-    /* Remove padding if not needed */
+
     font-size: 19px;
     font-weight: 800;
     line-height: 1.8;
@@ -1699,8 +1685,7 @@ a:hover i {
     font-size: 3em;
     margin-bottom: 20px;
     color: #E6E6FA;
-    /* text-align: center; */
-    /* Gold pastel icon color */
+
 }
 
 .box h3 {
@@ -1730,8 +1715,7 @@ a:hover i {
 .aero-closing-gap {
     text-align: center;
     padding: 50px 20px;
-    /* background-color: #666; */
-    /* Assuming this is already set */
+
     color: #E6E6FA;
 }
 
@@ -1753,12 +1737,12 @@ a:hover i {
 
 .aero-grid-item {
     height: 55vh;
-    /* background-color: #1a1a1a; */
+
     border: 1px solid #E6E6FA;
-    /* Darker box to contrast with the background */
+
     border-radius: 10px;
     padding: 40px;
-    /* text-align: center; */
+
     width: 330px;
     transition: transform 0.3s, box-shadow 0.3s;
 
@@ -1790,7 +1774,7 @@ a:hover i {
 .aero-grid-description {
     font-size: 16px;
     color: #d3d3d3;
-    /* Slightly lighter grey for readability */
+
     line-height: 1.8;
     text-align: justify;
 }
@@ -1907,11 +1891,11 @@ a:hover i {
 /* Hover Effect */
 .plan:hover {
     transform: scale(1.03);
-    /* Slightly enlarges the card */
+
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* Larger shadow on hover */
+
     background-color: #222;
-    /* Darkens the background on hover */
+
 }
 
 .plan-title {
@@ -1933,11 +1917,10 @@ a:hover i {
 
 .basic-plan:hover {
     background-color: rgba(20, 90, 130, 0.9);
-    /* Slightly lighter color on hover */
+
     transform: scale(1.04);
-    /* Slight scale effect */
+
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    /* Slightly larger shadow on hover */
 }
 
 
@@ -1972,21 +1955,21 @@ hr {
     padding: 10px 20px;
     font-size: 18px;
     color: #000;
-    /* Text color for the button */
+
     background-color: #fff;
-    /* White background */
+
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s ease, color 0.3s ease;
-    /* Smooth transition */
+
 }
 
 .purchase-button:hover {
     background-color: #000;
-    /* Black background on hover */
+
     color: #fff;
-    /* White text on hover */
+
 }
 
 /* course-plans-three end */
@@ -2075,7 +2058,8 @@ hr {
     margin-top: 20px;
     margin-bottom: 30px;
     padding: 15px 30px;
-    background-color: #fbf8f8;
+    /* background-color: #fbf8f8; */
+    background-color: #4169e1;
     color: #000;
     border: none;
     border-radius: 5px;
@@ -2086,9 +2070,10 @@ hr {
 }
 
 .enquiry-button:hover {
-    background-color: #000;
-    border: 1px solid white;
-    color: #fbf8f8;
+
+    background-color: white;
+    color: #000;
+
 }
 
 /*Css for Enquiry Page */
@@ -2430,7 +2415,6 @@ hr {
     color: #EFEFEF;
     font-weight: 800;
     margin-bottom: 1rem;
-    /* border-bottom: 1px solid #007bff; */
     padding-bottom: 0.5rem;
 }
 
@@ -2481,19 +2465,19 @@ hr {
 
 /* Whatsapp Bot */
 .chat-icon {
-    /* background-color: #282928; */
+
     color: white;
     font-size: 30px;
     width: 80px;
     height: 140px;
-    /* border-radius: 50%; */
+
     display: flex;
     align-items: center;
     justify-content: center;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+
     cursor: pointer;
-    /* animation: float 2s infinite ease-in-out; */
-    transition: transform 0.5s ease;
+    /* animation: float 1.5s infinite ease-in-out;
+    transition: transform 0.5s ease; */
     position: relative;
 }
 
@@ -2504,8 +2488,7 @@ hr {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    /* border: 2px solid rgba(69, 72, 71, 0.5); */
-    /* border-radius: 50%; */
+
     animation: pulse 2s infinite;
 }
 
@@ -2550,7 +2533,7 @@ hr {
     align-items: center;
     height: 100vh;
     background-color: #000;
-    /* background: radial-gradient(circle, #000, #1a1a1a); */
+
     color: #fff;
 }
 
@@ -2688,17 +2671,16 @@ hr {
     /* Styles for Navbar */
     .navbar {
         padding: 15px 50px;
-        /* Reduced padding for smaller screens */
     }
 
     .navbar h1 {
         font-size: 24px;
-        /* Slightly reduce the font size of the brand name */
+
     }
 
     .navbar-nav {
         flex-direction: column;
-        /* Stack the links vertically */
+
         align-items: flex-start;
     }
 
@@ -2834,7 +2816,8 @@ hr {
         flex-direction: column;
         align-items: center;
         width: 90%;
-        gap: 20px;
+        gap: 50px;
+
     }
 
     .growth-icon-container {
@@ -2842,7 +2825,7 @@ hr {
         justify-content: space-evenly;
         width: 100%;
         gap: 15px;
-        /* Reduced gap between icons */
+
     }
 
     .growth-icon-box {
@@ -2873,7 +2856,7 @@ hr {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         width: 89%;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 
     .grid-item {
@@ -3183,8 +3166,7 @@ hr {
 
     .box {
         min-width: 48%;
-        /* max-width: calc(33.33% - 20px); */
-        /* Adjust to 3 columns */
+
     }
 
     .icon {
@@ -3464,7 +3446,7 @@ hr {
 
     .course-details-page .container {
         justify-content: center;
-        /* width: 900px; */
+
     }
 
     .course-title {
@@ -3570,7 +3552,7 @@ hr {
     .plan-details li {
         font-size: 14px;
         list-style-type: disc;
-        /* padding: 0px 20px; */
+
         line-height: 1.5;
 
     }
@@ -3590,18 +3572,18 @@ hr {
 
     .button-group {
         flex-direction: row;
-        /* Buttons side by side on tablet */
+
         justify-content: space-between;
     }
 
     .button-group a {
         width: 48%;
-        /* Keep buttons side by side */
+
     }
 
     .enquiry-section {
         padding: 20px;
-        /* Slightly larger padding for tablets */
+
     }
 
     /* Privacy policies Page */
@@ -3791,7 +3773,7 @@ hr {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        gap: 20px;
+        gap: 50px;
     }
 
     .growth-icon-container {
@@ -3865,15 +3847,15 @@ hr {
     .heading h2 {
         font-size: 22px;
         margin-bottom: 8px;
-        /* Slightly reduce bottom margin */
+
     }
 
     .heading p {
         color: #666;
         font-size: 14px;
-        /* Slightly smaller text for better scaling */
+
         margin-bottom: 30px;
-        /* Reduce bottom margin to fit smaller screen */
+
     }
 
     .stat-icon {
@@ -3887,7 +3869,7 @@ hr {
     .stats-row {
         display: flex;
         flex-wrap: wrap;
-        /* Wraps items to fit smaller screens */
+
         justify-content: space-between;
         margin: 20px 0;
 
@@ -4281,7 +4263,7 @@ hr {
         /* Two items per row */
         max-width: none;
         gap: 20px;
-        /* Remove max-width restriction */
+
     }
 
     .leader-box img {
@@ -4348,7 +4330,7 @@ hr {
 
     .section-description {
         font-size: 15px;
-        /* Adjust font size */
+
     }
 
     .mission-box,
@@ -4356,7 +4338,7 @@ hr {
         padding: 20px 10px;
         text-align: center;
         width: 100%;
-        /* Adjust padding */
+
     }
 
     /* About Page Industry Collbration Styling */
@@ -4533,7 +4515,7 @@ hr {
 
     .course-details-page .container {
         justify-content: center;
-        /* width: 900px; */
+
     }
 
     .course-title {
@@ -4587,8 +4569,7 @@ hr {
 
     .certification-section {
         flex-direction: column;
-        /* padding: 30px; */
-        /* text-align: center; */
+
         margin-top: 40px;
     }
 
@@ -4662,19 +4643,19 @@ hr {
 
     .button-group {
         flex-direction: column;
-        /* Stack buttons vertically */
+
     }
 
     .button-group a {
         width: 100%;
         margin-bottom: 10px;
-        /* Space between buttons */
+
     }
 
     .enquiry-section {
-        /* padding: 10px; */
+
         width: 95%;
-        /* Reduce padding for mobile */
+
     }
 
     .enquiry-section h2 {
@@ -4688,40 +4669,89 @@ hr {
     .contact-form input,
     .contact-form textarea {
         font-size: 13px;
-        /* Slightly smaller text for mobile */
+
     }
 
     .contact-form button {
         font-size: 14px;
-        /* Adjust button text size */
+
+    }
+
+    /* Privacy Policy */
+
+    .privacy-container {
+        padding: 1rem;
+    }
+
+    .privacy-title {
+        font-size: 20px;
+
+    }
+
+    .privacy-update-date {
+        font-size: 0.8rem;
+    }
+
+    .section-heading {
+        text-align: left;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .subsection-heading {
+
+       margin-top: 0px;
+        font-size: 1.2rem;
+    }
+
+    .subsection-heading-small {
+        font-size: 1rem;
+    }
+
+    .privacy-intro,
+    .privacy-section,
+    .privacy-policy p {
+        font-size: 0.95rem;
+    }
+
+    .definitions-list,
+    .data-list {
+        padding-left: 0.5rem;
+    }
+
+    .definitions-list li,
+    .data-list li {
+        padding-left: 1rem;
+    }
+
+    .privacy-header {
+        padding-bottom: 0.8rem;
+    }
+
+    .privacy-title {
+        font-size: 1.9rem;
+    }
+
+    .section-heading {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .subsection-heading,
+    .subsection-heading-small {
+        margin-top: 0.8rem;
+    }
+
+    .privacy-intro,
+    .privacy-section,
+    .privacy-policy p {
+        font-size: 0.95rem;
     }
 }
 
 
-
-
-
-
 /* Small Laptops: (1024px - 1366px) */
 /* @media (max-width: 1366px) {
-    .about-section {
-        padding: 35px;
-        margin-top: 25px;
-    }
-
-    .about-section h2 {
-        font-size: 32px;
-       
-    }
-
-    .about-section p {
-        font-size: 16px;
-       
-    }
-
-    #cta-typed-text {
-        font-size: 17px;
-       
-    } 
-
 }*/

@@ -1,34 +1,16 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 function BrainsSection() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1500, // Animation duration in milliseconds
-      once: true, // Animation happens only once when scrolled into view
-    });
-  }, []);
-
   return (
     <>
-      <section
-        className="leadership-section"
-        data-aos="fade-up"
-      >
-        <h2 data-aos="fade-right" data-aos-delay="200">
-          Brains Behind the Mission
-        </h2>
-        <p data-aos="fade-right" data-aos-delay="400">
+      <section className="leadership-section" >
+        <h2>Brains Behind the Mission</h2>
+        <p>
           Experts Shaping the Future of Space Education and Inspiring Tomorrow's
           Aerospace Leaders.
         </p>
-        <div
-          className="leadership-container"
-          data-aos="fade-up"
-          data-aos-delay="600"
-        >
-          <div className="leader-box" data-aos="zoom-in" data-aos-delay="800">
+        <div className="leadership-container">
+          <div className="leader-box">
             <img
               src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/ragul_pic.JPG?updatedAt=1731902174809"
               alt="Founder 1"
@@ -40,11 +22,11 @@ function BrainsSection() {
               <i className="fab fa-linkedin" />
             </a>
           </div>
-          <div className="leader-box" data-aos="zoom-in" data-aos-delay="1000">
+          <div className="leader-box">
             <img
-              src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/VISHNU%20PRAKASH.jpg?updatedAt=1731902174635"
+              src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/Vishnu.jpg?updatedAt=1732610451744"
               alt="Operational Manager"
-              style={{ objectFit: "cover", objectPosition: "0 45%" }}
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
             <p>Vishnu Prakash </p>
             <p>Operational Manager</p>
@@ -55,19 +37,19 @@ function BrainsSection() {
               <i className="fab fa-linkedin" />
             </a>
           </div>
-          <div className="leader-box" data-aos="zoom-in" data-aos-delay="1200">
+          <div className="leader-box">
             <img
               src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/nahla.webp?updatedAt=1731902173484"
-              alt="Business Development Executive"
+              alt="Head Business development"
               style={{ objectFit: "cover", objectPosition: "top" }}
             />
             <p>Nahla Rasheed</p>
-            <p>Business Development Executive</p>
+            <p>Head Business development</p>
             <a href="https://www.linkedin.com/in/nahla-rasheed" target="_blank">
               <i className="fab fa-linkedin" />
             </a>
           </div>
-          <div className="leader-box" data-aos="zoom-in" data-aos-delay="1400">
+          <div className="leader-box">
             <img
               src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/Thirunavukarasu_JPG.webp?updatedAt=1731902173223"
               alt="Public Relations Officer"
@@ -85,16 +67,12 @@ function BrainsSection() {
         </div>
         <br />
         <br />
-        <div
-          className="leadership-container"
-          data-aos="fade-up"
-          data-aos-delay="1600"
-        >
-          <div className="leader-box" data-aos="zoom-in" data-aos-delay="1500">
+        <div className="leadership-container">
+          <div className="leader-box">
             <img
-              src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/mdabdulah.webp?updatedAt=1731902173720"
+              src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/Abdulah.jpg"
               alt="Project Associate"
-              style={{ objectFit: "cover", objectPosition: "top" }}
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
             <p>MD Abdullah </p>
             <p>Project Associate</p>
@@ -105,7 +83,7 @@ function BrainsSection() {
               <i className="fab fa-linkedin" />
             </a>
           </div>
-          <div className="leader-box" data-aos="zoom-in" data-aos-delay="2000">
+          <div className="leader-box">
             <img
               src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/parthiv.webp?updatedAt=1731902173523"
               alt="CAD / CAM - Engineer"
@@ -120,7 +98,7 @@ function BrainsSection() {
               <i className="fab fa-linkedin" />
             </a>
           </div>
-          <div className="leader-box" data-aos="zoom-in" data-aos-delay="2200">
+          <div className="leader-box">
             <img
               src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/satyavignesh.webp?updatedAt=1731902173213"
               alt="Structural Engineer"
@@ -135,7 +113,7 @@ function BrainsSection() {
               <i className="fab fa-linkedin" />
             </a>
           </div>
-          <div className="leader-box" data-aos="zoom-in" data-aos-delay="2400">
+          <div className="leader-box">
             <img
               src="https://ik.imagekit.io/cjh0dpnmu/Linkedin%20Content/chandru.webp?updatedAt=1731902173864"
               alt="Design Engineer"

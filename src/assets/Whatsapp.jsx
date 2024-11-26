@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Lottie from "lottie-react";
 import whatsappAnimation from "../assets/whatsapp-animation.json"; // Import the animation file
 
