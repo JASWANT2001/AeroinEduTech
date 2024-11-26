@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 function Navbar() {
- 
-
   const handleLinkClick = () => {
     // Close the navbar toggle when a link is clicked (for small screens)
     const navbarToggler = document.getElementById("navbarToggler");
@@ -21,7 +18,17 @@ function Navbar() {
       >
         <div className="container-fluid">
           <a className="navbar-brand" href="/" aria-label="Go to home page">
-            <h1>Aeroin EduTech</h1>
+            <img
+              src="https://ik.imagekit.io/cjh0dpnmu/Logo/Edutech%20Black%20BG%20logo.jpg?updatedAt=1732635772558"
+              alt="Aeroin EduTech Logo"
+              className="img-fluid"
+              style={{
+                maxWidth: "auto",
+                height: "48px", 
+                objectFit: "contain", 
+                objectPosition: "center",
+              }}
+            />
           </a>
           <button
             className="navbar-toggler"
@@ -42,7 +49,7 @@ function Navbar() {
                   className="nav-link"
                   to={"/"}
                   aria-label="Go to home page"
-                  onClick={handleLinkClick} // Close toggle on link click
+                  onClick={handleLinkClick}
                 >
                   Home
                 </Link>
@@ -52,7 +59,7 @@ function Navbar() {
                   className="nav-link"
                   to={"/course"}
                   aria-label="View available courses"
-                  onClick={handleLinkClick} // Close toggle on link click
+                  onClick={handleLinkClick}
                 >
                   Courses
                 </Link>
@@ -62,7 +69,7 @@ function Navbar() {
                   className="nav-link"
                   to={"/about"}
                   aria-label="Learn more about us"
-                  onClick={handleLinkClick} // Close toggle on link click
+                  onClick={handleLinkClick}
                 >
                   About
                 </Link>
@@ -72,7 +79,7 @@ function Navbar() {
                   className="nav-link"
                   to={"/contact"}
                   aria-label="Get in touch with us"
-                  onClick={handleLinkClick} // Close toggle on link click
+                  onClick={handleLinkClick}
                 >
                   Contact
                 </Link>
@@ -82,7 +89,7 @@ function Navbar() {
                   className="nav-link"
                   to={"/insights"}
                   aria-label="Explore insights"
-                  onClick={handleLinkClick} // Close toggle on link click
+                  onClick={handleLinkClick}
                 >
                   Insights
                 </Link>
