@@ -39,7 +39,7 @@ function RocketOverview() {
         <div className="rocket-content">
           <div className="rocket-container">
             <img
-              src="https://ik.imagekit.io/cjh0dpnmu/Course%20Content/rocket-flying-through-space.jpg"
+              src="https://i.postimg.cc/kg555f9n/rocket-flying-through-space.jpg"
               alt="Advanced Rocketry Module"
               className="rocket"
             />
