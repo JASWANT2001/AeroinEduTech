@@ -2660,6 +2660,26 @@ hr {
     box-shadow: 0 5px 15px rgba(63, 193, 201, 0.7);
 }
 
+/* Custom Toast Style */
+.custom-toast {
+    width: 700px;
+    /* Adjust width as needed */
+    /* max-width: 100%; */
+    font-size: 16px;
+    /* Optional: Adjust font size */
+}
+
+.custom-toast-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Toastify__toast {
+    max-width: 700px;
+    /* Adjust the max-width for the toast */
+}
+
 
 
 /* Large screen devices more than 1024px - End */
@@ -4702,7 +4722,7 @@ hr {
 
     .subsection-heading {
 
-       margin-top: 0px;
+        margin-top: 0px;
         font-size: 1.2rem;
     }
 

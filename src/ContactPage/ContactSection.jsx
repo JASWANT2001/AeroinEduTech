@@ -1,6 +1,64 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast, Flip } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactSection() {
+  const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setIsLoading(true);
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          form.current.reset();
+          setIsLoading(false);
+
+          toast.success(
+            "Thank you for reaching out! We'll be in touch soon to assist you!",
+            {
+              position: "top-center",
+              autoClose: 1500,
+              hideProgressBar: true,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+              transition: Flip,
+              className: "custom-toast", // Apply custom class for styling
+            }
+          );
+        },
+        (error) => {
+          setIsLoading(false);
+
+          toast.error("Error sending message. Please try again.", {
+            position: "top-center",
+            autoClose: 1500,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Flip,
+            className: "custom-toast", // Apply custom class for styling
+          });
+        }
+      );
+  };
+
   return (
     <>
       <div className="contact-container mt-3 mb-3">
@@ -55,7 +113,7 @@ function ContactSection() {
         <div className="contact-right-section">
           <h2>Say Hello!</h2>
           <p>Ready to talk? Feel free to stop by and say Hello!</p>
-          <form className="contact-form mt-4">
+          <form className="contact-form mt-4" ref={form} onSubmit={sendEmail}>
             {/* Mandatory Field: Name */}
             <label htmlFor="name">Name *</label>
             <input type="text" id="name" name="name" required />
@@ -73,11 +131,22 @@ function ContactSection() {
             <textarea id="message" name="message" />
 
             {/* Submit Button */}
-            <button type="submit" className="mt-3">
-              Send
+            <button type="submit" className="mt-3" disabled={isLoading}>
+              {isLoading ? "Sending..." : "Send"}
             </button>
           </form>
         </div>
+        <ToastContainer
+          position="top-center" 
+          autoClose={1500}
+          hideProgressBar={true}
+          closeOnClick
+          pauseOnHover
+          draggable
+          progress={undefined}
+          theme="colored"
+          className="custom-toast-container" 
+        />
       </div>
     </>
   );
