@@ -49,7 +49,7 @@ function CourseDisplay() {
                 alt="Stress Analysis"
                 className="program-image"
               />
-              <h2 className="program-title">Stress Analysis</h2>
+              <h2 className="program-title">Aircraft Structure</h2>
               <p className="program-description">
                 Focused sessions offering practical insights into structural
                 basics, failure analysis, composites, FEM modeling.

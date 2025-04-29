@@ -5,8 +5,8 @@ function StressOverview() {
     <>
       <div className="overview-section">
         <div className="text-content">
-          <h1>Stress Analysis</h1>
-          <h2>Gain Experience in Stress Analysis !!</h2>
+          <h1>Aircraft Structure</h1>
+          <h2>Gain Experience in Aircraft Structure !!</h2>
           <ul>
             <li>
               <span>PROGRAM DURATION</span>{" "}

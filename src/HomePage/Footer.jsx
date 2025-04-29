@@ -66,7 +66,7 @@ function Footer() {
                 <a href="/course/cubesat">CubeSat Technology</a>
               </li>
               <li>
-                <a href="/course/stressanalysis">Stress Analysis</a>
+                <a href="/course/stressanalysis">Aircraft Structure</a>
               </li>
               <li>
                 <a href="/course/simulation">Design &amp; Simulation</a>

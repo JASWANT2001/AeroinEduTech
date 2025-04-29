@@ -1,28 +1,16 @@
 import React from "react";
 
-
 function CourseDetails() {
-
-
   return (
     <>
-      <section
-        className="course-details-page"
-       
-      >
+      <section className="course-details-page">
         <div className="container">
-          <h1
-            className="course-title"
-            
-          >
-            About Aeroin EduTech's Stress Analysis Program
+          <h1 className="course-title">
+            About Aeroin EduTech's Aircraft Structure Program
           </h1>
-          <p
-            className="course-description"
-          
-          >
-            This course offers a comprehensive introduction to structural
-            analysis in aerospace engineering, focusing on the fundamentals of
+          <p className="course-description">
+            This course offers a comprehensive introduction to Aircraft
+            Structure in aerospace engineering, focusing on the fundamentals of
             structural members, failure estimation, composite materials, and
             finite element modeling (FEM). Over a series of weekend sessions,
             participants will learn to analyze structural behavior, identify and
