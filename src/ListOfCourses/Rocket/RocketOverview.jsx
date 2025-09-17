@@ -10,7 +10,7 @@ function RocketOverview() {
           <ul>
             <li>
               <span>PROGRAM DURATION</span>{" "}
-              <span>4, 8 Weeks Of Focused Learning</span>
+              <span>5 Days Master Class / 4 to 8 Weeks Of Learning</span>
             </li>
             <hr />
             <li>
