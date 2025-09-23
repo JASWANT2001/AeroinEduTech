@@ -6,23 +6,34 @@ function CoursePlan() {
       <section className="course-plans-three">
         <div className="course-plans">
           <div className="plan basic-plan">
-            <h2 className="plan-title">Free Webinar</h2>
+            <h2 className="plan-title">5 - Days Master Class</h2>
             <hr className="" style={{ backgroundColor: "white" }} />
             <ul className="plan-details mt-5">
-              <li>Free Webinar Access</li>
-              <li>Expert-Led Interactions</li>
-              <li>Course Discount Upon Enrollment</li>
+              <li>Expert-Led Live Sessions</li>
+              <li>Exclusive Learning Resources</li>
+              <li>Access to Recorded Content (5 Days)</li>
               <li>1-on-1 Discussion Opportunities</li>
               <li>Participation Certificate</li>
               <li>Networking Opportunities</li>
               <li>Q&amp;A Session with Industry Experts</li>
-              <li>Exclusive Resources</li>
+              {/* <li>Exclusive Resources</li> */}
+              <li
+                style={{
+                  textDecoration: "line-through",
+                  textDecorationColor: "red",
+                  color: "#777",
+                }}
+              >
+                Welcome Kit of Aeroin EduTech
+              </li>
             </ul>
             <button
               className="purchase-button"
-              onClick={() => redirectToPayment("intermediate")}
+              onClick={() =>
+                window.open("https://rzp.io/rzp/stress-analysis", "_blank")
+              }
             >
-              Enroll for Free
+              Enroll Now
             </button>
           </div>
 

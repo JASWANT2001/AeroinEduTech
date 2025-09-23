@@ -10,7 +10,7 @@ function StressOverview() {
           <ul>
             <li>
               <span>PROGRAM DURATION</span>{" "}
-              <span>4, 8 Weeks Of Focused Learning</span>
+              <span>5 Days Master Class / 4 to 8 Weeks Of Learning</span>
             </li>
             <hr />
             <li>
@@ -44,7 +44,7 @@ function StressOverview() {
               src="https://ik.imagekit.io/cjh0dpnmu/Course%20Content/stress_analysis_3d.png"
               alt="Stress Analysis"
               className="rocket"
-              style={{objectFit:"contain"}}
+              style={{ objectFit: "contain" }}
             />
           </div>
         </div>
