@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 function Achieve() {
   return (
     <>
-      <div className="space-program-overview">
+      <div className="space-program-overview mt-5">
         <h2>What You’ll Achieve By End Of this Program</h2>
         <div className="space-content">
           <div className="space-left">

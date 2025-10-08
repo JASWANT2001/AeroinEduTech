@@ -5,8 +5,9 @@ function CertificationSection() {
     <>
       <div className="certification-section">
         <div className="certification-content">
-          <h1 className="certification-title">
-            Your Certification from Aeroin EduTech
+          <h1>
+            Your Certification from{" "}
+            <span className="highlighted-text">Aeroin EduTech</span>
           </h1>
           <p>
             Upon successful completion of this comprehensive program,

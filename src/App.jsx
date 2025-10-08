@@ -20,6 +20,9 @@ import RefundPolicy from "./PoliciesPage/RefundPolicy.jsx";
 import SpaceLoader from "./assets/Space-Animation.json";
 import WhatsApp from "./assets/Whatsapp.jsx";
 import ComingSoon from "./ComingSoon.jsx";
+import Ansys from "./ListOfCourses/Ansys/Ansys.jsx";
+import Drones from "./ListOfCourses/Drones/Drones.jsx";
+import OrbitalMechanics from "./ListOfCourses/OrbitalMechanics/OrbitalMechanics.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,6 +58,9 @@ function App() {
           <Route path="/course/cubesat" element={<CubeSatTech />} />
           <Route path="/course/stressanalysis" element={<StressAnalysis />} />
           <Route path="/course/simulation" element={<DesignandSimulation />} />
+          <Route path="/course/ansys" element={<Ansys />} />
+          <Route path="/course/drones" element={<Drones />} />
+          <Route path="/course/orbitalmechanics" element={<OrbitalMechanics />} />
 
           {/* Policies */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

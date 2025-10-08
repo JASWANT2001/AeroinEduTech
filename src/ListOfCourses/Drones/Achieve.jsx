@@ -3,29 +3,26 @@ import React, { useEffect } from "react";
 function Achieve() {
   return (
     <>
-      <div className="space-program-overview mt-5">
+      <div className="space-program-overview" style={{ marginTop: "100px" }}>
         <h2>Career Opportunities from This Project-Based Program</h2>
         <div className="space-content">
           <div className="space-left">
             <div className="space-item">
               <i className="fas fa-satellite" />
               <p>
-                Satellite Design: Design and integrate satellite subsystems as a
-                Satellite Systems Engineer.
+                Gain real exposure by working on drone-focused research and simulation projects.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-rocket" />
               <p>
-                Mission Operations: Oversee satellite operations and
-                communications.
+               Strengthen your technical expertise through practical design and simulation tasks.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-code" />
               <p>
-                Software Development: Create and maintain software for satellite
-                control and data handling.
+               Apply innovative thinking to tackle real-world challenges in UAV systems.
               </p>
             </div>
           </div>
@@ -33,22 +30,19 @@ function Achieve() {
             <div className="space-item">
               <i className="fas fa-flask" />
               <p>
-                Research: Conduct CubeSat space science research for Earth
-                observation.
+                Work alongside peers from different domains and build collaborative skills.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-cogs" />
               <p>
-                Project Management: Manage satellite development projects and
-                teams.
+               Take ownership of projects, driving them from initial idea to final validated outcome.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-briefcase" />
               <p>
-                Entrepreneurship: Start a business in CubeSat development and
-                services.
+               Showcase your technical journey with a professional project portfolio.
               </p>
             </div>
           </div>

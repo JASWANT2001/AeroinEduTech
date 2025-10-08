@@ -38,7 +38,119 @@ function CoursePlan() {
     <>
       <section className="course-plans-three">
         <div className="course-plans">
-         
+          <div
+            className="plan basic-plan"
+            style={{ position: "relative", overflow: "visible" }}
+          >
+            {/* New Program Badge */}
+            <div
+              style={{
+                position: "absolute",
+                top: "-18px",
+                left: "20px",
+                background: "linear-gradient(90deg, #ff4e32, #e32a0e)", // soft gradient instead of flat
+                color: "#fff",
+                fontWeight: "700",
+                fontSize: "0.8rem",
+                padding: "6px 18px",
+                borderRadius: "999px", // perfect pill shape
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                letterSpacing: "0.5px",
+                textTransform: "uppercase",
+                boxShadow: "0 4px 12px rgba(227,42,14,.35)",
+                transform: "translateY(0)",
+                transition: "transform 0.3s ease",
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.transform = "translateY(-2px)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.transform = "translateY(0)")
+              }
+            >
+              Newly Added 🚀
+            </div>
+
+            <h2 className="plan-title">5 Days Master Class</h2>
+            <hr className="" style={{ backgroundColor: "white" }} />
+            <ul className="plan-details mt-5">
+              {basicFeatures.map((text, i) => (
+                <li
+                  key={i}
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "26px 1fr",
+                    gap: "12px",
+                    alignItems: "start",
+                    fontSize: "0.95rem",
+                    color: "#eaf6ff",
+                    lineHeight: "1.5",
+                  }}
+                >
+                  <span
+                    style={{
+                      display: "grid",
+                      placeItems: "center",
+                      width: "22px",
+                      height: "22px",
+                      borderRadius: "50%",
+                      // background: "rgba(46,230,166,.18)",
+                      border: "1px solid rgba(46,230,166,.55)",
+                      fontWeight: "800",
+                      fontSize: "0.9rem",
+                      // color: "#2ee6a6",
+                      background: "linear-gradient(90deg, #e32a0e, #e32a0e)", // soft gradient instead of flat
+                    }}
+                  >
+                    ✓
+                  </span>
+                  {text}
+                </li>
+              ))}
+
+              {basicCut.map((text, i) => (
+                <li
+                  key={`cut-${i}`}
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "26px 1fr",
+                    gap: "12px",
+                    fontSize: "0.95rem",
+                    color: "#8aa0ac",
+                    textDecoration: "line-through",
+                    textDecorationColor: "red",
+                    lineHeight: "1.5",
+                  }}
+                >
+                  <span
+                    style={{
+                      display: "grid",
+                      placeItems: "center",
+                      width: "22px",
+                      height: "22px",
+                      borderRadius: "50%",
+                      background: "rgba(255,255,255,.06)",
+                      border: "1px solid rgba(255,255,255,.18)",
+                      color: "#cfdbe3",
+                    }}
+                  >
+                    —
+                  </span>
+                  {text}
+                </li>
+              ))}
+            </ul>
+
+            <button
+              className="purchase-button"
+              onClick={() => window.open("https://rzp.io/rzp/drones-uav", "_blank")}
+            >
+              Enroll Now
+            </button>
+          </div>
+
           <div
             className="plan intermediate-plan"
             style={{
@@ -78,7 +190,7 @@ function CoursePlan() {
                 boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
               }}
             >
-              15 Weeks Program
+              4 Weeks Program
             </div>
 
             <h2 className="plan-title">Innovative Programs</h2>
@@ -153,7 +265,7 @@ function CoursePlan() {
             <button
               className="purchase-button"
               onClick={() =>
-                window.open("https://pages.razorpay.com/design-simulation", "_blank")
+                window.open("https://rzp.io/rzp/drones-uav", "_blank")
               }
             >
               Enroll Now
@@ -199,7 +311,7 @@ function CoursePlan() {
                 boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
               }}
             >
-              15 Weeks Program
+              8 Weeks Program
             </div>
 
             <h2 className="plan-title">Research Internship</h2>
@@ -242,7 +354,7 @@ function CoursePlan() {
             <button
               className="purchase-button"
               onClick={() =>
-                window.open("https://pages.razorpay.com/design-simulation", "_blank")
+                window.open("https://rzp.io/rzp/drones-uav", "_blank")
               }
             >
               Enroll Now

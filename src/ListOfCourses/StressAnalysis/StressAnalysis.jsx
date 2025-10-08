@@ -26,9 +26,9 @@ function StressAnalysis() {
       <StressOverview />
       <CourseDetails />
       <SkillsGain />
-      <CertificationSection />
-      <Achieve />
       <CoursePlan />
+      <Achieve />
+      <CertificationSection />
       <PlanEnquiry />
       <FeedBack />
       <WhatsApp />

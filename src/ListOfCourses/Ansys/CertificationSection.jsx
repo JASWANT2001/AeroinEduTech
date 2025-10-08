@@ -5,19 +5,19 @@ function CertificationSection() {
     <>
       <div className="certification-section">
         <div className="certification-content">
-         <h1>
+          <h1>
             Your Certification from{" "}
             <span className="highlighted-text">Aeroin EduTech</span>
           </h1>
           <p>
-            Achieve recognition for your dedication and hard work in CubeSat
-            technologies with a prestigious certificate that highlights your
-            skills and accomplishments in this innovative field. This
-            certification not only showcases your expertise to potential
-            employers but also helps advance your career. Additionally, you’ll
-            join a network of passionate professionals in the aerospace
-            industry, opening doors to new opportunities and collaborations in
-            satellite development and space exploration.
+            Achieve recognition for your work with a Certificate of Completion
+            in High-Speed Aerodynamics & Shockwave Analysis. Participants who
+            successfully complete the research phase will gain personalized
+            mentorship on transforming their work into impactful presentations
+            or publishable papers. Exceptional performers may also be
+            recommended for letters of recognition, further strengthening their
+            profile for higher studies, research opportunities, or career
+            advancement.
           </p>
         </div>
         <div className="certification-image">

@@ -25,9 +25,9 @@ function RocketPropulsion() {
       <RocketOverview />
       <CourseDetails />
       <SkillsGain />
-      <CertificationSection />
-      <Achieve />
       <CoursePlan />
+      <Achieve />
+      <CertificationSection />
       <PlanEnquiry />
       <FeedBack />
       <WhatsApp />

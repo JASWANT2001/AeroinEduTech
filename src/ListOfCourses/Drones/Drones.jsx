@@ -1,17 +1,16 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import DesignOverview from "./DesignOverview";
-import CourseOverview from "./CourseOverview";
+import CourseDetails from "./CourseDetails";
 import SkillsGain from "./SkillsGain";
 import CertificationSection from "./CertificationSection";
 import Achieve from "./Achieve";
 import CoursePlan from "./CoursePlan";
-import FeedBack from "../../HomePage/FeedBack";
 import PlanEnquiry from "../../CoursePage/PlanEnquiry";
+import FeedBack from "../../HomePage/FeedBack";
 import WhatsApp from "../../assets/Whatsapp";
+import DronesOverview from "./DronesOverview";
 
-function DesignandSimulation() {
+function Drones() {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -23,8 +22,8 @@ function DesignandSimulation() {
   }, [pathname]); // Effect triggered whenever the pathname changes
   return (
     <>
-      <DesignOverview />
-      <CourseOverview />
+      <DronesOverview/>
+      <CourseDetails />
       <SkillsGain />
       <CoursePlan />
       <Achieve />
@@ -36,4 +35,4 @@ function DesignandSimulation() {
   );
 }
 
-export default DesignandSimulation;
+export default Drones;

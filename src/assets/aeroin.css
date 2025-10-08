@@ -1537,7 +1537,8 @@ a:hover i {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
     margin-top: 70px;
 }
 
@@ -1546,10 +1547,41 @@ a:hover i {
     border-radius: 7px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    width: 300px;
+    width: calc(33.333% - 20px);
+    /* 3 per row */
     transition: transform 0.2s;
     position: relative;
 }
+
+.program-card.full-width.special-layout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 40px;
+}
+
+.special-layout-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* space between image & text */
+    width: 100%;
+}
+
+.special-image {
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.special-text {
+    flex: 1;
+}
+
 
 .live-classes-badge {
     position: absolute;
@@ -1573,17 +1605,70 @@ a:hover i {
 }
 
 .program-image {
-    width: 242px;
-    height: 190px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /* Make it span full card width */
+    height: auto;
+    /* Keep your fixed height */
     border-radius: 5px;
     margin-bottom: 20px;
     border: 1px solid #444;
     object-fit: cover;
+    /* Ensures proper crop without distortion */
+    display: block;
+    /* Prevents extra spacing issues */
 }
+
+
+/* meta row */
+.program-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    /* sits just above the title */
+}
+
+/* rating badge (warm/orange like the example) */
+.rating-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 700;
+    /* background: #fff2d6;            */
+    color: #c26a00;
+    border: 1px solid #ffd79a;
+    border-radius: 999px;
+}
+
+.star-icon {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+/* learners pill (soft blue like the example) */
+.learner-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    /* background: #e6f0ff;          */
+    color: #7383ac;
+    border: 1px solid #c9dcff;
+    border-radius: 999px;
+}
+
+/* dark-theme adjustment on hover state of card still works */
+
 
 .program-title {
     font-size: 19px;
-    font-weight: 520;
+    font-weight: 600;
     color: #E6E6FA;
     margin-top: 10px;
 }
@@ -1598,7 +1683,7 @@ a:hover i {
 
 .program-card a {
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 .know-more-button {
@@ -1912,11 +1997,19 @@ a:hover i {
     margin-bottom: 10px;
     text-align: center;
     color: #fff;
-    background-color: #144761;
+    /* ✅ Dual background support */
+    background: linear-gradient(160deg, #0d3248, #09303b);
+    background-image: url("https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/white-snow-texture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* optional: dark overlay effect (if you wrap content inside) */
+    /* position: relative; */
 }
 
 .basic-plan:hover {
-    background-color: rgba(20, 90, 130, 0.9);
+    /* background-color: rgba(20, 90, 130, 0.9); */
 
     transform: scale(1.04);
 
@@ -1977,6 +2070,30 @@ hr {
 
 
 /* Certification */
+.highlighted-text {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    z-index: 1;
+}
+
+.highlighted-text::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.01em;
+    width: 100%;
+    height: 1.3em;
+    background: linear-gradient(120deg, #00fff7 0%, #00c2c3 20%, #000 100%);
+    opacity: 0.4;
+    transform: skewX(-24deg);
+    margin-left: 2.5px;
+    border-radius: 2px;
+    z-index: -1;
+}
+
+
 .certification-section {
     margin-top: 50px;
 
@@ -2025,17 +2142,35 @@ hr {
 .plan-enquiry-section {
     padding: 50px 0;
     text-align: center;
-    margin: 80px auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #0f0e0e;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 1300px;
     transition: transform 0.3s ease-in-out;
+    background:
+        linear-gradient(rgba(20, 20, 40, 0.6), rgba(20, 20, 40, 0.6)),
+        url('https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/low-angle-shot-range-aircraft-preparing-air-show-breathtaking-cloudy-sky.jpg?updatedAt=1759635078810');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
 }
 
 .plan-enquiry-section:hover {
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.plan-enquiry-section .container {
+    position: relative;
+    z-index: 2;
 }
 
 .enquiry-heading {
@@ -3097,6 +3232,7 @@ hr {
     }
 
     /* Course Listing */
+
     .programs-page {
         padding: 30px 0px;
         display: flex;
@@ -3130,8 +3266,28 @@ hr {
     .program-card {
         width: 48%;
         padding: 10px 20px;
-        height: 520px;
+        height: 680px;
 
+    }
+
+    .program-card a {
+
+        display: block;
+        /* remove flex here */
+        width: 100%;
+        /* keep it inside card */
+        margin-top: 20px;
+        /* spacing */
+        text-align: center;
+        /* center the button */
+    }
+
+    .know-more-button {
+        display: inline-block;
+        /* natural button sizing */
+        max-width: 100%;
+        /* prevent overflow */
+        box-sizing: border-box;
     }
 
     .program-image {
@@ -3148,6 +3304,28 @@ hr {
         font-size: 14px;
 
     }
+
+    .program-card.full-width.special-layout {
+        height: 520px;
+        flex-direction: column;
+        /* stack image and text vertically */
+        align-items: center;
+        /* center them */
+        padding: 25px;
+        /* less padding for compact look */
+        text-align: left;
+        /* center text for balance */
+    }
+
+    .special-image {
+        /* scale image for tablet */
+        max-width: 400px;
+        height: 300px;
+        margin-bottom: 20px;
+        /* space between image & text */
+        border-radius: 10px;
+    }
+
 
 
 
@@ -3485,7 +3663,7 @@ hr {
     /* What You'll gain? */
 
     .space-program-overview {
-        margin-top: 50px;
+        margin-top: 0px;
         width: 87%;
         padding: 35px;
     }
@@ -4139,9 +4317,9 @@ hr {
     }
 
     .program-card {
-        width: 380px;
+        width: 100%;
         padding: 10px 20px;
-        height: 520px;
+        height: 640px;
 
     }
 
@@ -4158,6 +4336,34 @@ hr {
     .program-description {
         font-size: 14px;
 
+    }
+
+    .know-more-button {
+        margin-top: 0;
+        /* display: inline-block; */
+        /* natural button sizing */
+        max-width: 100%;
+        /* prevent overflow */
+        box-sizing: border-box;
+    }
+
+    .program-card.full-width.special-layout {
+        height: auto;
+        flex-direction: column;   /* Stack image and text */
+        align-items: center;
+        padding: 20px;           /* Less padding on mobile */
+    }
+
+    .special-layout-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;               /* Reduce spacing */
+        text-align: left;      /* Center text on mobile */
+    }
+
+    .special-image {
+        width: 100%;             /* Take full width on mobile */
+        max-width: 400px;        /* Prevent overly large images */
     }
 
     /* Vertical Column Grid */

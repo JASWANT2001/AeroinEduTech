@@ -25,12 +25,12 @@ function CubeSatTech() {
       <CubeSatOverview />
       <CourseDetails />
       <SkillsGain />
-      <CertificationSection />
-      <Achieve />
       <CoursePlan />
+      <Achieve />
+      <CertificationSection />
       <PlanEnquiry />
       <FeedBack />
-      <WhatsApp/>
+      <WhatsApp />
     </>
   );
 }

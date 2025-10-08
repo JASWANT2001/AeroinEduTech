@@ -6,8 +6,9 @@ function CertificationSection() {
       <div className="certification-section">
         <div className="certification-content">
           {/* Title with animation */}
-          <h1 className="certification-title">
-            Your Certification from Aeroin EduTech
+          <h1>
+            Your Certification from{" "}
+            <span className="highlighted-text">Aeroin EduTech</span>
           </h1>
           {/* Description with animation */}
           <p className="certification-description">
