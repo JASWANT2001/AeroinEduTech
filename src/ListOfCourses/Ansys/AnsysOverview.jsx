@@ -40,7 +40,7 @@ function AnsysOverview() {
         <div className="rocket-content">
           <div className="rocket-container">
             <img
-              src="https://ik.imagekit.io/cjh0dpnmu/Course%20Content/cubesat_3d.png"
+              src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/WhatsApp%20Image%202025-10-05%20at%206.03.34%20PM.jpeg?updatedAt=1759669577564"
               alt="Advanced Rocketry Module"
               className="rocket"
             />
