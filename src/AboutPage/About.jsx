@@ -17,7 +17,7 @@ function About() {
       <CarouselSection />
       <AeroinAboutSection />
       <Training />
-      <BrainsSection />
+      {/* <BrainsSection /> */}
       <AchievementSection />
       <PartnersSection />
       <MissionSection />

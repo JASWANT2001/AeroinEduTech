@@ -35,17 +35,17 @@ function CourseDisplay() {
                   >
                     <path d="M12 17.27l6.18 3.73-1.64-7.03L21.5 9.24l-7.19-.62L12 2 9.69 8.62 2.5 9.24l4.96 4.73-1.64 7.03L12 17.27z" />
                   </svg>
-                  4.9
+                  5.0
                 </span>
 
-                <span className="learner-pill">2,899 learners</span>
+                <span className="learner-pill">1,601 learners</span>
               </div>
 
-              <h2 className="program-title mt-4">Rocket Propulsion Program</h2>
+              <h2 className="program-title mt-4">Design and Flow Simulation of Rocket Propulsion System using CFD</h2>
               <p className="program-description">
-                Master the principles of rocket design, propulsion, and launch
+                Master the principles of rocket design and launch
                 systems through engaging workshops and realistic simulations.
-                You’ll explore the science behind aerospace engineering.
+                
               </p>
               <a className="know-more-button" href={"/course/rocket"}>
                 Know More
@@ -72,16 +72,16 @@ function CourseDisplay() {
                   >
                     <path d="M12 17.27l6.18 3.73-1.64-7.03L21.5 9.24l-7.19-.62L12 2 9.69 8.62 2.5 9.24l4.96 4.73-1.64 7.03L12 17.27z" />
                   </svg>
-                  4.9
+                  5.0
                 </span>
 
-                <span className="learner-pill">2,145 learners</span>
+                <span className="learner-pill">1,539 learners</span>
               </div>
-              <h2 className="program-title mt-4">CubeSat Technology Program</h2>
+              <h2 className="program-title mt-4">Design & development of cubesat</h2>
               <p className="program-description">
                 Gain expertise in the design, manufacturing, and operation of
                 small satellite technology for diverse applications. Through
-                interactive practical exercises, you’ll learn how satellites are
+                practical exercises, you’ll learn how satellites are
                 conceptualized.
               </p>
               <a className="know-more-button" href={"/course/cubesat"}>
@@ -91,7 +91,7 @@ function CourseDisplay() {
             <div className="program-card">
               <div className="live-classes-badge">⭕ Live Classes</div>
               <img
-                src="https://ik.imagekit.io/cjh0dpnmu/stress_analysis_image2.jpeg?updatedAt=1731894313122"
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/technician-using-laptop-monitor-solar-panel-factory-assembly-lines-close-up.jpg"
                 alt="Stress Analysis"
                 className="program-image"
               />
@@ -109,16 +109,16 @@ function CourseDisplay() {
                   >
                     <path d="M12 17.27l6.18 3.73-1.64-7.03L21.5 9.24l-7.19-.62L12 2 9.69 8.62 2.5 9.24l4.96 4.73-1.64 7.03L12 17.27z" />
                   </svg>
-                  4.9
+                  5.0
                 </span>
 
-                <span className="learner-pill">2,071 learners</span>
+                <span className="learner-pill">1,678 learners</span>
               </div>
-              <h2 className="program-title mt-4">Aircraft Structure</h2>
+              <h2 className="program-title mt-4">Design and Failure Analysis of Aerospace Composite Structures.</h2>
               <p className="program-description">
                 Focused sessions offer practical insights into structural
-                fundamentals, failure analysis, advanced composites, and FEM
-                modeling, equipping you with theoretical knowledge and skills.
+                fundamentals, advanced composites, and FEM
+                modeling, equipping with theoretical knowledge.
               </p>
               <a className="know-more-button" href={"/course/stressanalysis"}>
                 Know More
@@ -147,7 +147,7 @@ function CourseDisplay() {
                   >
                     <path d="M12 17.27l6.18 3.73-1.64-7.03L21.5 9.24l-7.19-.62L12 2 9.69 8.62 2.5 9.24l4.96 4.73-1.64 7.03L12 17.27z" />
                   </svg>
-                  4.8
+                  5.0
                 </span>
 
                 <span className="learner-pill">Newly Added</span>
@@ -166,7 +166,7 @@ function CourseDisplay() {
             <div className="program-card">
               <div className="live-classes-badge">⭕ Live Classes</div>
               <img
-                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/drone-propeller-captures-mid-air-sunset-with-expertise-generated-by-ai.jpg"
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/man-s-hand-holding-drone-outdoors.jpg"
                 alt="Design Simulation"
                 className="program-image"
               />
@@ -184,7 +184,7 @@ function CourseDisplay() {
                   >
                     <path d="M12 17.27l6.18 3.73-1.64-7.03L21.5 9.24l-7.19-.62L12 2 9.69 8.62 2.5 9.24l4.96 4.73-1.64 7.03L12 17.27z" />
                   </svg>
-                  4.8
+                  5.0
                 </span>
 
                 <span className="learner-pill">Newly Added</span>
@@ -222,7 +222,7 @@ function CourseDisplay() {
                   >
                     <path d="M12 17.27l6.18 3.73-1.64-7.03L21.5 9.24l-7.19-.62L12 2 9.69 8.62 2.5 9.24l4.96 4.73-1.64 7.03L12 17.27z" />
                   </svg>
-                  4.8
+                  5.0
                 </span>
 
                 <span className="learner-pill">Newly Added</span>
@@ -264,10 +264,10 @@ function CourseDisplay() {
                       >
                         <path d="M12 17.27l6.18 3.73-1.64-7.03L21.5 9.24l-7.19-.62L12 2 9.69 8.62 2.5 9.24l4.96 4.73-1.64 7.03L12 17.27z" />
                       </svg>
-                      4.9
+                      5.0
                     </span>
 
-                    <span className="learner-pill">521 learners</span>
+                    <span className="learner-pill">1,682 learners</span>
                   </div>
                   <h2 className="program-title mt-4">
                     Design &amp; Simulation

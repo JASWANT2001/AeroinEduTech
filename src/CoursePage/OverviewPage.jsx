@@ -25,7 +25,7 @@ function OverviewPage() {
           </div>
           <div className="right-content">
             <img
-              src="https://ik.imagekit.io/cjh0dpnmu/overviewpage.jpg"
+              src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/IMG_5507_(1).jpg?updatedAt=1760233062990"
               alt="Space Science"
             />
           </div>

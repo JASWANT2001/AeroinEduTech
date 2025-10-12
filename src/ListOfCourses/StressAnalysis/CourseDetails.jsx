@@ -6,7 +6,7 @@ function CourseDetails() {
       <section className="course-details-page">
         <div className="container">
           <h1 className="course-title">
-            About Aeroin EduTech's Aircraft Structure Program
+            About Aeroin EduTech's Aerospace Structure Program
           </h1>
           <p className="course-description">
             This course offers a comprehensive introduction to Aircraft

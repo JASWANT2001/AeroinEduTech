@@ -6,7 +6,7 @@ function AnsysOverview() {
       <div className="overview-section">
         <div className="text-content">
           <h1>High-Speed Aerodynamics & Shockwave Analysis </h1>
-          <h2>Discover the Future of Space Technology!</h2>
+          <h2>Discover the Future of Space Technology</h2>
           <ul>
             <li >
               <span>PROGRAM DURATION</span>{" "}

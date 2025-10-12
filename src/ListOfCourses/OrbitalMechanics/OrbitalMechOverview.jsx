@@ -6,7 +6,7 @@ function OrbitalMechOverview() {
       <div className="overview-section">
         <div className="text-content">
           <h1>Orbital Mechanics and Space Mission Design</h1>
-          <h2>Discover the Future of Space Design!</h2>
+          <h2>Discover the Future of Space</h2>
           <ul>
             <li>
               <span>PROGRAM DURATION</span>{" "}

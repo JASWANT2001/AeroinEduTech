@@ -5,7 +5,7 @@ function CubeSatOverview() {
     <>
       <div className="overview-section">
         <div className="text-content">
-          <h1>CubeSat Technology</h1>
+          <h1>Design and development of cubesat</h1>
           <h2>Discover the Future of Space Technology!</h2>
           <ul>
             <li >

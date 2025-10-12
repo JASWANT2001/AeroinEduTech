@@ -18,16 +18,16 @@ function AeroinAboutSection() {
               />
               <img src={about2} alt="Aerospace Training Event" />
               <img
-                src={about3}
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/1737983071864.jpeg"
                 alt="Aeroin Space Robotics Workshop"
                 style={{ objectFit: "fill", objectPosition: "center" }}
               />
               <img
-                src="https://ik.imagekit.io/cjh0dpnmu/About%20Page%20Content/about_img.jpg"
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/1739624749876.jpeg"
                 alt="Advanced Rocket Science Workshop"
               />
               <img
-                src="https://ik.imagekit.io/cjh0dpnmu/About%20Page%20Content/1709281245235.jpg"
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/1759234817379.jpeg"
                 alt="CubeSat Development Session"
               />
               <img

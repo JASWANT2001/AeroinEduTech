@@ -100,10 +100,13 @@ body {
 /* Hero Section Styling */
 
 .hero {
-    height: 80vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%),
-        url('https://ik.imagekit.io/cjh0dpnmu/planet-earth-background.jpg?updatedAt=1731719706005');
+    height: 85vh;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%),
+        url('https://ik.imagekit.io/cjh0dpnmu/planet-earth-background.jpg?updatedAt=1731719706005'); */
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%),
+        url('https://imagekit.io/player/embed/glvwzrukg/Aeroin%20New%20Upgrades/0_Astronaut_Space_3840x2160%20-%20Trim%20-%20Trim.mov?controls=false&autoplay=true&loop=true&background=%23000000&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fglvwzrukg%2FAeroin%2520New%2520Upgrades%2F0_Astronaut_Space_3840x2160%2520-%2520Trim%2520-%2520Trim.mov%2Fik-thumbnail.jpg'); */
     background-size: cover;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%); */
     background-position: calc(50% - 20px) calc(79% - 10px);
     display: flex;
     justify-content: center;
@@ -111,6 +114,19 @@ body {
     flex-direction: column;
     position: relative;
     overflow: hidden;
+}
+
+.hero iframe.hero-iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    /* make it larger than the container */
+    height: 150%;
+    transform: translate(-50%, -60%);
+    border: none;
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* Centering and adjusting the text position */
@@ -4349,21 +4365,27 @@ hr {
 
     .program-card.full-width.special-layout {
         height: auto;
-        flex-direction: column;   /* Stack image and text */
+        flex-direction: column;
+        /* Stack image and text */
         align-items: center;
-        padding: 20px;           /* Less padding on mobile */
+        padding: 20px;
+        /* Less padding on mobile */
     }
 
     .special-layout-content {
         flex-direction: column;
         align-items: center;
-        gap: 20px;               /* Reduce spacing */
-        text-align: left;      /* Center text on mobile */
+        gap: 20px;
+        /* Reduce spacing */
+        text-align: left;
+        /* Center text on mobile */
     }
 
     .special-image {
-        width: 100%;             /* Take full width on mobile */
-        max-width: 400px;        /* Prevent overly large images */
+        width: 100%;
+        /* Take full width on mobile */
+        max-width: 400px;
+        /* Prevent overly large images */
     }
 
     /* Vertical Column Grid */

@@ -24,19 +24,19 @@ function TeamGallery() {
             className={`tab-button ${activeTab === "team" ? "active" : ""}`}
             onClick={() => showTab("team")}
           >
-            Our Crew
+            Milestones
           </button>
           <button
             className={`tab-button ${activeTab === "events" ? "active" : ""}`}
             onClick={() => showTab("events")}
           >
-            Events
+            Our Crew
           </button>
         </div>
         <div
           className="gallery-content"
-          id="team"
-          style={{ display: activeTab === "team" ? "block" : "none" }}
+          id="events"
+          style={{ display: activeTab === "events" ? "block" : "none" }}
         >
           <div className="image-grid">
             <div className="image-container">
@@ -122,10 +122,105 @@ function TeamGallery() {
 
         <div
           className="gallery-content"
-          id="events"
-          style={{ display: activeTab === "events" ? "block" : "none" }}
+          id="team"
+          style={{ display: activeTab === "team" ? "block" : "none" }}
         >
           <div className="image-grid">
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/IMG_5507_(1).jpg?updatedAt=1760233062990"
+                alt="SNS Cheif Guest"
+                style={{ objectFit: "fill" }}
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  Aeroin SpaceTech, through Aeroin EduTech and in collaboration
+                  with MH Cockpit, successfully trained 40+ Aeronautical
+                  students of VELS University in Aircraft Structures, UAVs, and
+                  Design & Simulation, bridging theory with hands-on aerospace
+                  innovation.
+                </div>
+              </div>
+            </div>
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/1759844597533.jpeg"
+                alt="SNS Cheif Guest"
+                style={{ objectFit: "fill" }}
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  AeroIn SpaceTech had an incredible experience exhibiting at
+                  AeroDefCon’25, Chennai Trade Centre, Showcasing our
+                  innovations in space & defense, connecting with industry
+                  leaders, and exploring exciting collaborations to drive the
+                  future of aerospace technology.
+                </div>
+              </div>
+            </div>
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/1759119878390.jpeg"
+                alt="SNS Cheif Guest"
+                style={{ objectFit: "fill" }}
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  Marking a new milestone, we’ve signed an MoU with MH Cockpit
+                  to collectively strengthen the Aerospace & Aviation sector.
+                  Bringing together MH Cockpit’s aviation training expertise and
+                  our focus on aerospace research.
+                </div>
+              </div>
+            </div>
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/1739624747479.jpeg"
+                alt="SNS Cheif Guest"
+                style={{ objectFit: "fill" }}
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  Honored to have interacted with the legendary Dr. Nambi
+                  Narayanan at an event by Vaanam Space LLP. Our Founder & CEO,
+                  MS Ragul, and CTO, Kishore Asok, had an inspiring discussion
+                  with him, gaining invaluable insights to advance our launch
+                  vehicle project and future space innovations.
+                </div>
+              </div>
+            </div>
+
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/1740144532423.jpeg"
+                alt="SNS Cheif Guest"
+                style={{ objectFit: "fill" }}
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  We recently conducted a 3-day workshop on Drone Technology at
+                  Sri Venkateswara College of Engineering (SVCE), in
+                  collaboration with Aeroin EduTech & Engineers Without Borders
+                  – SVCE.
+                </div>
+              </div>
+            </div>
+            <div className="image-container">
+              <img
+                src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/1735630980718.jpeg"
+                alt="SNS Cheif Guest"
+                style={{ objectFit: "fill" }}
+              />
+              <div className="overlay">
+                <div className="overlay-text">
+                  Dr. MGR Educational & Research Institute hosted an inspiring
+                  seminar on Emerging Trends in Space Technology, where experts
+                  highlighted innovations in satellites, space robotics, and AI
+                  in aerospace
+                </div>
+              </div>
+            </div>
+
             <div className="image-container">
               <img
                 src="https://ik.imagekit.io/cjh0dpnmu/Crew%20Content/SNS%20Collab.jpeg"

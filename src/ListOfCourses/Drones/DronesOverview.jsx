@@ -5,7 +5,7 @@ function DronesOverview() {
     <>
       <div className="overview-section">
         <div className="text-content">
-          <h1>Introduction to Drones and UAV </h1>
+          <h1>Introduction to UAV and Drones </h1>
           <h2>Discover the Future of Drone Technology!</h2>
           <ul>
             <li >
@@ -40,7 +40,7 @@ function DronesOverview() {
         <div className="rocket-content">
           <div className="rocket-container">
             <img
-              src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/drone-propeller-captures-mid-air-sunset-with-expertise-generated-by-ai.jpg"
+              src="https://ik.imagekit.io/glvwzrukg/Aeroin%20New%20Upgrades/man-s-hand-holding-drone-outdoors.jpg?updatedAt=1760244769685"
               alt="Intro to Drones and UAV"
               className="rocket"
             />

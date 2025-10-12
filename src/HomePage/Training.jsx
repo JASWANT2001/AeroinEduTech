@@ -19,7 +19,7 @@ function Training() {
               <div className="stat-icon">
                 <i className="fas fa-user-graduate" />
               </div>
-              <h3>6000+</h3>
+              <h3>6500+</h3>
               <p>Space Tech Learners</p>
             </div>
 
@@ -27,7 +27,7 @@ function Training() {
               <div className="stat-icon">
                 <i className="fas fa-rocket" />
               </div>
-              <h3>55+</h3>
+              <h3>65+</h3>
               <p>Space Tech Internships</p>
             </div>
 
@@ -43,7 +43,7 @@ function Training() {
               <div className="stat-icon">
                 <i className="fas fa-microphone-alt" />
               </div>
-              <h3>20+</h3>
+              <h3>45+</h3>
               <p>Space Tech Talks Delivered</p>
             </div>
           </div>

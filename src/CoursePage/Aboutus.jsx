@@ -29,7 +29,10 @@ function Aboutus() {
             </strong>
             , providing valuable resources and professional development. We
             collaborate with institutions to offer workshops on Rocketry,
-            CubeSat technology, Design &amp; Simulation, and Stress Analysis.
+            CubeSat technology, Design &amp; Simulation, and Aircraft Structure,
+            High-Speed Aerodynamics & Shockwave Analysis (ANSYS Fluent),
+            Introduction to Drones and UAVs: From Design to Simulation, Orbital
+            Mechanics & Space Mission Design.
           </p>
           <button onClick={scrollToSection} className="enquiry-button">
             Learn More

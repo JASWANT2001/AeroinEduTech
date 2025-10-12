@@ -25,6 +25,17 @@ function Hero() {
         animate={controls}
         transition={{ duration: 0 }}
       >
+
+        <iframe
+          className="hero-iframe"
+          // src="https://imagekit.io/player/embed/glvwzrukg/Aeroin%20New%20Upgrades/1851190-uhd_3840_2160_25fps.mp4?controls=false&autoplay=true&loop=true&background=%23000000&updatedAt=1760237413100&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fglvwzrukg%2FAeroin%2520New%2520Upgrades%2F1851190-uhd_3840_2160_25fps.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1760237413100&updatedAt=1760237413100" 
+          src="https://imagekit.io/player/embed/glvwzrukg/Aeroin%20New%20Upgrades/856857-uhd_4096_2160_30fps.mp4?controls=false&autoplay=true&loop=true&background=%23000000&updatedAt=1760236618185&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fglvwzrukg%2FAeroin%2520New%2520Upgrades%2F856857-uhd_4096_2160_30fps.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1760236618185&updatedAt=1760236618185" 
+          title="Hero Video"
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+        />
+
         <div className="container">
           <div className="row">
             {/* Hero Content */}

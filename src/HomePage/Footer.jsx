@@ -8,25 +8,15 @@ function Footer() {
         <div className="footer-left">
           <h3>Aeroin EduTech</h3>
           <p>
-            Aeroin EduTech is a division of Aeroin SpaceTech Pvt. Ltd., focused
-            on space education and innovation. We are committed to inspiring the
-            next generation of engineers and scientists.
+            Aeroin EduTech, a proud division of Aeroin SpaceTech Pvt. Ltd., is
+            dedicated to advancing space education and innovation. We aim to
+            ignite curiosity, nurture talent, and empower the next generation of
+            engineers with cutting-edge knowledge and hands-on learning. Through
+            world-class programs, industry-driven training, and real-world
+            projects, we are shaping future leaders who will drive the next wave
+            of aerospace.
           </p>
           <div className="social-icons">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-facebook-f" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter" />
-            </a>
             <a
               href="https://www.instagram.com/aeroin_edutech/"
               target="_blank"
@@ -48,7 +38,6 @@ function Footer() {
             >
               <i className="fab fa-linkedin-in" />
             </a>
-            
           </div>
         </div>
 
@@ -66,7 +55,16 @@ function Footer() {
                 <a href="/course/cubesat">CubeSat Technology</a>
               </li>
               <li>
-                <a href="/course/stressanalysis">Aircraft Structure</a>
+                <a href="/course/stressanalysis">Aerospace Structures</a>
+              </li>
+              <li>
+                <a href="/course/ansys">Aerodynamics & Shockwave</a>
+              </li>
+              <li>
+                <a href="/course/drones">Drones and UAV's</a>
+              </li>
+              <li>
+                <a href="/course/orbitalmechanics">Orbital Mechanics</a>
               </li>
               <li>
                 <a href="/course/simulation">Design &amp; Simulation</a>
@@ -80,18 +78,16 @@ function Footer() {
             <ul>
               <li>
                 {/* <i className="fas fa-phone" /> */}
-                <a href="tel:+91 9176209914">📞 +91 9176209914</a>
+                <a href="tel:+91 9176209914"> +91 9176209914</a>
               </li>
               <li>
                 {/* <i className="fas fa-mobile-alt" /> */}
-                <a href="/contact">📅 Schedule a Callback</a>
+                <a href="/contact"> Schedule a Callback</a>
               </li>
 
               <li>
                 {/* <i className="fas fa-envelope" /> */}
-                <a href="mailto:info@aeroinedutech.in">
-                  📧 info@aeroinedutech.in
-                </a>
+                <a href="mailto:info@aeroinedutech.in">info@aeroinedutech.in</a>
               </li>
               <li>
                 {/* <i className="fab fa-whatsapp" style={{ color: "#25D366" }} /> */}
@@ -100,8 +96,12 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  💬 Chat with Us on WhatsApp
+                  Chat with Us on WhatsApp
                 </a>
+              </li>
+              <li>
+                {/* <i className="fas fa-mobile-alt" /> */}
+                <a href="/course"> Learning Resources</a>
               </li>
             </ul>
           </div>
@@ -115,16 +115,25 @@ function Footer() {
                 <a href="/about">About Us</a>
               </li> */}
               <li>
-                <a href="/contact">📄 Contact Us</a>
+                <a href="/insights">Industry Insights</a>
               </li>
               <li>
-                <a href="/privacy-policy">🔒 Privacy Policy</a>
+                <a href="/course"> Learning Center</a>
               </li>
               <li>
-                <a href="/termsandcondition">⚖️ Terms and Conditions</a>
+                <a href="/about"> About Us</a>
               </li>
               <li>
-                <a href="/refund-policy">💳 Refund and Cancellation</a>
+                <a href="/contact"> Contact Us</a>
+              </li>
+              <li>
+                <a href="/privacy-policy"> Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/termsandcondition"> Terms and Conditions</a>
+              </li>
+              <li>
+                <a href="/refund-policy"> Refund and Cancellation</a>
               </li>
             </ul>
           </div>
@@ -134,15 +143,16 @@ function Footer() {
       {/* Bottom Section */}
       <div class="footer-bottom">
         <p>
-          Copyright © 2024 All Rights Reserved By{" "}
+          Copyright © 2025 
           <a
             href="https://aeroinedutech.in"
             rel="noopener noreferrer"
             class="footer-link"
           >
-            Aeroin EduTech
+            Aeroin EduTech.
           </a>{" "}
-          | Website designed by
+          All Rights Reserved · Innovation in
+          Space Education | Website Crafted by
           <a
             href="https://jaswant.vercel.app"
             rel="noopener noreferrer"

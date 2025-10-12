@@ -5,8 +5,8 @@ function RocketOverview() {
     <>
       <div className="overview-section">
         <div className="text-content">
-          <h1>Rocket Propulsion</h1>
-          <h2>Fuel your journey to mastery with Rocket Propulsion !!</h2>
+          <h1>Design and Flow Simulation of Rocket Propulsion System</h1>
+          <h2>Fuel your journey to mastery with Rocket !!</h2>
           <ul>
             <li>
               <span>PROGRAM DURATION</span>{" "}
