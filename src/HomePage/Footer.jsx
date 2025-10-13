@@ -152,13 +152,13 @@ function Footer() {
             Aeroin EduTech.
           </a>{" "}
           All Rights Reserved · Innovation in
-          Space Education | Website Crafted by
+          Space Education 
           <a
             href="https://jaswant.vercel.app"
             rel="noopener noreferrer"
             class="footer-link"
           >
-            Jash
+            {/* Jash */}
           </a>
         </p>
       </div>

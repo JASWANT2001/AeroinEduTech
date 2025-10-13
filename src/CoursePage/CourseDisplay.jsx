@@ -38,7 +38,7 @@ function CourseDisplay() {
                   5.0
                 </span>
 
-                <span className="learner-pill">1,601 learners</span>
+                {/* <span className="learner-pill">1,601 learners</span> */}
               </div>
 
               <h2 className="program-title mt-4">Design and Flow Simulation of Rocket Propulsion System using CFD</h2>
@@ -75,7 +75,7 @@ function CourseDisplay() {
                   5.0
                 </span>
 
-                <span className="learner-pill">1,539 learners</span>
+                {/* <span className="learner-pill">1,539 learners</span> */}
               </div>
               <h2 className="program-title mt-4">Design & development of cubesat</h2>
               <p className="program-description">
@@ -112,7 +112,7 @@ function CourseDisplay() {
                   5.0
                 </span>
 
-                <span className="learner-pill">1,678 learners</span>
+                {/* <span className="learner-pill">1,678 learners</span> */}
               </div>
               <h2 className="program-title mt-4">Design and Failure Analysis of Aerospace Composite Structures.</h2>
               <p className="program-description">
@@ -267,7 +267,7 @@ function CourseDisplay() {
                       5.0
                     </span>
 
-                    <span className="learner-pill">1,682 learners</span>
+                    {/* <span className="learner-pill">1,682 learners</span> */}
                   </div>
                   <h2 className="program-title mt-4">
                     Design &amp; Simulation
