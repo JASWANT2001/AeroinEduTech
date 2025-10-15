@@ -336,7 +336,8 @@ body {
     margin-top: 40px;
     font-size: 17px;
     font-weight: 100;
-    color: #B4ABAB;
+    /* color: #B4ABAB; */
+    color: #fff;
     line-height: 1.7;
     text-align: justify;
     max-width: 750px;
@@ -453,7 +454,8 @@ body {
 .section-subtitle {
     font-size: 17px;
     font-weight: 100;
-    color: #B4ABAB;
+    /* color: #B4ABAB; */
+    color: #fff;
     line-height: 1.7;
 }
 
@@ -533,7 +535,8 @@ div.grid-section {
     font-size: 16px;
     font-weight: 100;
     line-height: 1.8;
-    color: #adadae;
+    /* color: #adadae; */
+    color: #fff;
     margin-bottom: 10px;
 }
 
@@ -735,9 +738,7 @@ a:hover i {
     margin: auto;
     padding: 10px;
     max-width: 1300px;
-
     border-radius: 8px;
-
     color: #E6E6FA;
 }
 
@@ -751,14 +752,15 @@ a:hover i {
 .contact-left-section h2 {
     font-size: 27px;
     font-weight: 700;
-    color: #E6E6FA;
+    color: #E6E6FA; 
 
     text-align: center;
 }
 
 .contact-left-section p {
     margin-bottom: 40px;
-    color: #666;
+    /* color: #666; */
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -768,7 +770,7 @@ a:hover i {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
-    color: #666;
+    color: #999;
 }
 
 .contact-info .contact-info-item .contact-icon {
@@ -801,13 +803,13 @@ a:hover i {
     font-size: 27px;
     font-weight: 700;
     color: #E6E6FA;
-
     text-align: center;
 }
 
 .contact-right-section p {
     margin-bottom: 30px;
-    color: #666;
+    /* color: #666; */
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -821,7 +823,8 @@ a:hover i {
 
 .contact-form label {
     margin-bottom: 5px;
-    color: #a2a2a4;
+    /* color: #a2a2a4; */
+    color: #fff;
 }
 
 .contact-form input,
@@ -832,9 +835,7 @@ a:hover i {
     border-radius: 4px;
     width: 100%;
     background-color: #181818;
-
     color: #fff;
-
     caret-color: #fff;
 
 }
@@ -945,7 +946,8 @@ a:hover i {
 }
 
 .company-intro-right p {
-    color: #E6E6FA;
+    /* color: #E6E6FA; */
+    color: #fff;
     font-size: 16.5px;
     font-weight: 100;
     line-height: 1.7;
@@ -966,7 +968,8 @@ a:hover i {
 }
 
 .heading p {
-    color: #666;
+    /* color: #666; */
+    color: #fff;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 50px;
@@ -1039,6 +1042,7 @@ a:hover i {
 
 .leadership-section p {
     color: #666;
+    /* color: #fff; */
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 70px;
@@ -1124,7 +1128,8 @@ a:hover i {
 }
 
 .text-content p {
-    color: #666;
+    /* color: #666; */
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -1156,7 +1161,8 @@ a:hover i {
 }
 
 .text-content ul li span:first-child {
-    color: #bbb;
+    /* color: #40E0D0; */
+    color: #fff;
 }
 
 .rocket-content {
@@ -1244,7 +1250,8 @@ a:hover i {
     padding-right: 20px;
     padding-top: 10px;
     line-height: 1.5;
-    color: #828E92;
+    /* color: #828E92; */
+    color: #fff;
 
 }
 
@@ -1350,7 +1357,7 @@ a:hover i {
 }
 
 .section-description {
-    color: #bbb;
+    color: #fff;
     font-size: 15px;
     font-weight: 200;
 
@@ -1428,7 +1435,7 @@ a:hover i {
 .left-content ul li {
     font-size: 18px;
     line-height: 2;
-    color: #ccc;
+    color: #fff;
     margin-bottom: 10px;
     position: relative;
     padding-left: 30px;
@@ -1483,7 +1490,6 @@ a:hover i {
     text-align: center;
     padding: 40px;
     border-radius: 15px;
-
     box-shadow: 0 8px 30px rgba(35, 34, 34, 0.5);
 
 
@@ -1492,16 +1498,14 @@ a:hover i {
 .about-us-space-edtech h2 {
     font-size: 36px;
     font-weight: 700;
-
     color: #E6E6FA;
-
     text-align: center;
 }
 
 .subtitle {
     font-size: 18px;
     font-weight: 500;
-    color: #9b9a9a;
+    color: #fff;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -1509,7 +1513,7 @@ a:hover i {
 .description {
     font-size: 18px;
     line-height: 1.8;
-    color: #ccc;
+    color: #fff;
     margin-bottom: 25px;
     text-align: justify;
 }
@@ -1546,7 +1550,6 @@ a:hover i {
 /* Programs Page Styles */
 .programs-page {
     padding: 60px 0;
-
 }
 
 .programs-list {
@@ -1692,7 +1695,7 @@ a:hover i {
 .program-description {
     font-size: 15px;
     font-weight: 200;
-    color: #666;
+    color: #999;
     line-height: 1.5;
     padding: 18px 0;
 }
@@ -1735,9 +1738,7 @@ a:hover i {
 
 .box {
     flex: 1;
-
     background-color: #0F0E0E;
-
     color: #E6E6FA;
     padding: 30px;
     border-radius: 15px;
@@ -1764,7 +1765,6 @@ a:hover i {
 .attractive-box {
     color: #E6E6FA;
     padding: 0;
-
     font-size: 19px;
     font-weight: 800;
     line-height: 1.8;
@@ -1786,7 +1786,6 @@ a:hover i {
     font-size: 3em;
     margin-bottom: 20px;
     color: #E6E6FA;
-
 }
 
 .box h3 {
@@ -1803,7 +1802,7 @@ a:hover i {
     font-size: 15px;
     line-height: 1.7;
     position: relative;
-    color: #666;
+    color: #fff;
     z-index: 1;
     margin-top: 20px;
     text-align: center;
@@ -1897,7 +1896,8 @@ a:hover i {
 .course-description {
     font-size: 17px;
     font-weight: 300;
-    color: #666;
+    /* color: #666; */
+    color: #fff;
     text-align: justify;
 }
 
@@ -1926,7 +1926,8 @@ a:hover i {
     justify-content: space-between;
     font-size: 17px;
     font-weight: 300;
-    color: #767373;
+    /* color: #767373; */
+    color: #fff;
     line-height: 1.7;
 }
 
@@ -2136,7 +2137,8 @@ hr {
     margin-top: 40px;
     font-size: 17px;
     font-weight: 300;
-    color: #666;
+    /* color: #666; */
+    color: #fff;
     line-height: 1.6;
     text-align: justify;
 }
@@ -2323,7 +2325,7 @@ hr {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 60px;
-    color: #777;
+    color: #fff;
 }
 
 .gallery-nav {
@@ -2441,7 +2443,7 @@ hr {
     line-height: 1.7;
     margin-bottom: 30px;
     text-align: justify;
-    color: #888;
+    color: #fff;
 }
 
 .social-icons {
@@ -2486,7 +2488,7 @@ hr {
 }
 
 .footer-section ul li a {
-    color: #888;
+    color: #fff;
     font-size: 15px;
     line-height: 1.8;
     text-decoration: none;
@@ -3061,7 +3063,7 @@ hr {
     }
 
     .heading p {
-        color: #666;
+        color: #fff;
         font-size: 15px;
         margin-bottom: 40px;
     }
@@ -4065,9 +4067,8 @@ hr {
     }
 
     .heading p {
-        color: #666;
+        color: #fff;
         font-size: 14px;
-
         margin-bottom: 30px;
 
     }

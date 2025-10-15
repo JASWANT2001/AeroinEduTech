@@ -41,11 +41,12 @@ function CourseDisplay() {
                 {/* <span className="learner-pill">1,601 learners</span> */}
               </div>
 
-              <h2 className="program-title mt-4">Design and Flow Simulation of Rocket Propulsion System using CFD</h2>
+              <h2 className="program-title mt-4">
+                Design and Flow Simulation of Rocket Propulsion System using CFD
+              </h2>
               <p className="program-description">
-                Master the principles of rocket design and launch
-                systems through engaging workshops and realistic simulations.
-                
+                Master the principles of rocket design and launch systems
+                through engaging workshops and realistic simulations.
               </p>
               <a className="know-more-button" href={"/course/rocket"}>
                 Know More
@@ -77,7 +78,9 @@ function CourseDisplay() {
 
                 {/* <span className="learner-pill">1,539 learners</span> */}
               </div>
-              <h2 className="program-title mt-4">Design & development of cubesat</h2>
+              <h2 className="program-title mt-4">
+                Design & development of cubesat
+              </h2>
               <p className="program-description">
                 Gain expertise in the design, manufacturing, and operation of
                 small satellite technology for diverse applications. Through
@@ -114,11 +117,13 @@ function CourseDisplay() {
 
                 {/* <span className="learner-pill">1,678 learners</span> */}
               </div>
-              <h2 className="program-title mt-4">Design and Failure Analysis of Aerospace Composite Structures.</h2>
+              <h2 className="program-title mt-4">
+                Design and Failure Analysis of Aerospace Composite Structures.
+              </h2>
               <p className="program-description">
                 Focused sessions offer practical insights into structural
-                fundamentals, advanced composites, and FEM
-                modeling, equipping with theoretical knowledge.
+                fundamentals, advanced composites, and FEM modeling, equipping
+                with theoretical knowledge.
               </p>
               <a className="know-more-button" href={"/course/stressanalysis"}>
                 Know More
@@ -153,7 +158,8 @@ function CourseDisplay() {
                 <span className="learner-pill">Newly Added</span>
               </div>
               <h2 className="program-title mt-4">
-                High-Speed Aerodynamics & Shockwave Analysis (ANSYS Fluent)
+                High-Speed Aerodynamics & Shockwave Analysis{" "}
+                <span style={{ color: "#1A1A1A" }}>(ANSYS Fluent)</span>
               </h2>
               <p className="program-description">
                 Fuel your journey to mastery with our hands-on program in

@@ -8,7 +8,7 @@ function CourseDetails() {
       <section className="course-details-page">
         <div className="container">
           <h1 className="course-title">
-            About Aeroin EduTech's ANSYS Research Program
+            About Aeroin  Aerodynamics and Shockwave  Program
           </h1>
           <p className="course-description">
             The High-Speed Aerodynamics & Shockwave Analysis program offers an
