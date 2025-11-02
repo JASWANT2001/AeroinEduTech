@@ -145,7 +145,7 @@ function CoursePlan() {
 
             <button
               className="purchase-button"
-              onClick={() => window.open("https://pages.razorpay.com/rocket-propulsion", "_blank")}
+              onClick={() => window.open("https://rzp.io/rzp/spacerobo", "_blank")}
             >
               Enroll Now
             </button>
@@ -265,7 +265,7 @@ function CoursePlan() {
             <button
               className="purchase-button"
               onClick={() =>
-                window.open("https://pages.razorpay.com/rocket-propulsion", "_blank")
+                window.open("https://rzp.io/rzp/spacerobo", "_blank")
               }
             >
               Enroll Now
@@ -354,7 +354,7 @@ function CoursePlan() {
             <button
               className="purchase-button"
               onClick={() =>
-                window.open("https://pages.razorpay.com/rocket-propulsion", "_blank")
+                window.open("https://rzp.io/rzp/spacerobo", "_blank")
               }
             >
               Enroll Now
