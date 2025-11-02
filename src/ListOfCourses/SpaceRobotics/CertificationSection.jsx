@@ -12,13 +12,9 @@ function CertificationSection() {
           </h1>
           {/* Description with animation */}
           <p className="certification-description">
-            Achieve recognition for your dedication and hard work in rocketry
-            with a prestigious certificate that highlights your skills and
-            accomplishments in the field. This certification not only showcases
-            your expertise to potential employers but also helps advance your
-            career. Additionally, you’ll join a network of passionate
-            professionals in the aerospace industry, opening doors to new
-            opportunities and collaborations.
+            Upon completing the program, participants will receive a Certification from Aeroin EduTech
+            This certification validates your expertise in robotics simulation and space applications, highly valued across aerospace, defense, and automation industries.
+            You’ll also receive individual project deliverables, including your robotic arm simulation file (MATLAB) and mobile robot model (Webots), demonstrating your practical competency.
           </p>
         </div>
 

@@ -23,6 +23,7 @@ import ComingSoon from "./ComingSoon.jsx";
 import Ansys from "./ListOfCourses/Ansys/Ansys.jsx";
 import Drones from "./ListOfCourses/Drones/Drones.jsx";
 import OrbitalMechanics from "./ListOfCourses/OrbitalMechanics/OrbitalMechanics.jsx";
+import SpaceRobotics from "./ListOfCourses/SpaceRobotics/SpaceRobotics.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -61,7 +62,8 @@ function App() {
           <Route path="/course/ansys" element={<Ansys />} />
           <Route path="/course/drones" element={<Drones />} />
           <Route path="/course/orbitalmechanics" element={<OrbitalMechanics />} />
-
+          <Route path="/course/spacerobo" element={<SpaceRobotics />} />
+        
           {/* Policies */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/termsandcondition" element={<TermsAndCondition />} />

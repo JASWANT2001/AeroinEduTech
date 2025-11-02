@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import RocketOverview from "./RocketOverview";
 import CourseDetails from "./CourseDetails";
 import SkillsGain from "./SkillsGain";
 import { useLocation } from "react-router-dom";
@@ -9,8 +8,9 @@ import CoursePlan from "./CoursePlan";
 import PlanEnquiry from "../../CoursePage/PlanEnquiry";
 import FeedBack from "../../HomePage/FeedBack";
 import WhatsApp from "../../assets/Whatsapp";
+import SpaceRoboticsOverview from "./SpaceRoboticsOverview";
 
-function RocketPropulsion() {
+function SpaceRobotics() {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function RocketPropulsion() {
 
   return (
     <>
-      <RocketOverview />
+      <SpaceRoboticsOverview />
       <CourseDetails />
       <SkillsGain />
       <CoursePlan />
@@ -35,4 +35,4 @@ function RocketPropulsion() {
   );
 }
 
-export default RocketPropulsion;
+export default SpaceRobotics;

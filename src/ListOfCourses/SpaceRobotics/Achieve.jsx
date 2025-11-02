@@ -10,22 +10,19 @@ function Achieve() {
             <div className="space-item">
               <i className="fas fa-rocket" />
               <p>
-                Contribute to Space Research: Participate in cutting-edge space
-                exploration.
+               Robotic Manipulators: Master kinematics and control of robotic arms used in space operations.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-cogs" />
               <p>
-                Work with Advanced Technologies: Get hands-on with the latest
-                space tools.
+                Space Mobility: Explore rover locomotion and drive mechanisms for Moon and Mars missions.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-lightbulb" />
               <p>
-                Solve Complex Problems: Tackle engineering challenges with
-                creativity.
+                Simulation Proficiency: Gain expertise in MATLAB/Simulink and Webots-based modelling.
               </p>
             </div>
           </div>
@@ -33,14 +30,13 @@ function Achieve() {
             <div className="space-item">
               <i className="fas fa-users" />
               <p>
-                Collaborate Across Disciplines: Strengthen teamwork with diverse
-                peers.
+                Research Internship: Extend your learning through a guided 4-week research internship focused on aerospace robotics projects.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-project-diagram" />
               <p>
-                Lead Space Projects: Manage projects from concept to execution.
+                Industry Readiness: Build skills applicable to aerospace, robotics, and mechatronics careers.
               </p>
             </div>
             <div className="space-item">

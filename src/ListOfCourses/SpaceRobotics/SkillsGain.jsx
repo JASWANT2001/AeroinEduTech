@@ -10,22 +10,19 @@ function SkillsGain() {
             <div className="space-item">
               <i className="fas fa-robot" />
               <p>
-                Practical hands-on experience in designing and building model
-                rockets.
+                Understand the fundamentals of robotics and their applications in space.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-tools" />
               <p>
-                Comprehensive proficiency in CAD design and analysis for
-                advanced propulsion systems.
+                Analyze robotic arm kinematics using Denavit–Hartenberg conventions.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-user-graduate" />
               <p>
-                Enhanced research skills through thorough literature reviews and
-                data analysis.
+                Model and simulate robotic manipulators using MATLAB/Simulink.
               </p>
             </div>
           </div>
@@ -33,22 +30,19 @@ function SkillsGain() {
             <div className="space-item">
               <i className="fas fa-brain" />
               <p>
-                Valuable mentorship from experienced professionals in space
-                research and technology.
+               Explain design and locomotion principles of mobile robots for planetary exploration.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-handshake" />
               <p>
-                Meaningful networking opportunities with industry experts and
-                like-minded peers.
+                Perform mobile robot simulations using Webots.
               </p>
             </div>
             <div className="space-item">
               <i className="fas fa-satellite" />
               <p>
-                Prestigious Certificate of Completion from an official space
-                tutor of ISRO.
+                Recognize challenges in space robotics, including microgravity and communication delay.
               </p>
             </div>
           </div>
